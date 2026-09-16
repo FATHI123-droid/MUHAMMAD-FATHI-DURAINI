@@ -95,7 +95,7 @@ These provisions provide a useful framework for examining the relationship betwe
 Malaysia's engagement with the CRPD Committee should be examined through the UN Treaty Body Database.
 
 Relevant categories of material include:
-
+As of the current research stage, the OHCHR Treaty Body Database records Malaysia's initial State party report as CRPD/C/MYS/1. The report was due on 19 August 2012 and was recorded in the database on 13 December 2025. No CRPD concluding observations for Malaysia are currently identified in the database. The first review dialogue is currently indicated as expected in March 2031.
 * State Party reports
 * Lists of issues
 * Replies to lists of issues
@@ -315,7 +315,7 @@ Each CRPD-related document should be assessed according to:
 
 # 15 · RESEARCH PRIORITY
 
-The next stage should focus on obtaining the current official CRPD materials from the OHCHR Treaty Body Database.
+The next stage should focus on analysing the official CRPD materials already identified in the OHCHR Treaty Body Database and monitoring the subsequent stages of Malaysia's review process.
 
 Priority:
 
