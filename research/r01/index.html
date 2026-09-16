@@ -1,867 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>R01 | Malaysia & International Human Rights Law</title>
-
-  <meta
-    name="description"
-    content="Research Project 01 by Muhammad Fathi Duraini on Malaysia and International Human Rights Law."
-  >
-
-  <style>
-    :root {
-      --bg: #f5f4f0;
-      --surface: #ffffff;
-      --text: #171717;
-      --muted: #6b6b6b;
-      --line: #deddd8;
-      --accent: #1d3b35;
-      --accent-light: #e7eeeb;
-      --dark: #151918;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(1180px, 92%);
-      margin: auto;
-    }
-
-    /* NAVIGATION */
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(245, 244, 240, 0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .nav-inner {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: 0.04em;
-    }
-
-    .brand span {
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      font-size: 14px;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 88vh;
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 0.6fr;
-      gap: 60px;
-      align-items: end;
-      padding: 90px 0;
-    }
-
-    .eyebrow {
-      font-size: 13px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
-
-    h1 {
-      font-size: clamp(52px, 8vw, 108px);
-      line-height: 0.95;
-      letter-spacing: -0.06em;
-      max-width: 900px;
-      margin-bottom: 34px;
-    }
-
-    .hero-description {
-      max-width: 720px;
-      font-size: 19px;
-      color: #4d4d4d;
-    }
-
-    .hero-side {
-      border-left: 1px solid var(--line);
-      padding-left: 28px;
-    }
-
-    .meta {
-      margin-bottom: 26px;
-    }
-
-    .meta small {
-      display: block;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 11px;
-      margin-bottom: 5px;
-    }
-
-    .meta strong {
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    /* BUTTONS */
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 34px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 20px;
-      border: 1px solid var(--text);
-      font-size: 14px;
-      transition: 0.25s ease;
-    }
-
-    .button.primary {
-      background: var(--dark);
-      color: white;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-      opacity: 0.88;
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 100px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .section-heading {
-      display: grid;
-      grid-template-columns: 0.3fr 1fr;
-      gap: 30px;
-      margin-bottom: 55px;
-    }
-
-    .section-number {
-      color: var(--muted);
-      font-size: 13px;
-      letter-spacing: 0.12em;
-    }
-
-    h2 {
-      font-size: clamp(34px, 5vw, 64px);
-      line-height: 1;
-      letter-spacing: -0.04em;
-    }
-
-    .question {
-      font-size: clamp(25px, 3vw, 42px);
-      line-height: 1.2;
-      max-width: 900px;
-      letter-spacing: -0.025em;
-    }
-
-    /* FRAMEWORK */
-
-    .framework {
-      display: grid;
-      gap: 2px;
-      background: var(--line);
-      border: 1px solid var(--line);
-    }
-
-    .framework-item {
-      background: var(--surface);
-      padding: 24px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .framework-item strong {
-      font-size: 17px;
-    }
-
-    .framework-item span {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .arrow {
-      text-align: center;
-      background: var(--surface);
-      color: var(--muted);
-      padding: 5px;
-      font-size: 18px;
-    }
-
-    /* RESEARCH MATERIALS */
-
-    .materials {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-
-    .material {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      padding: 30px;
-      min-height: 190px;
-      transition: 0.25s ease;
-    }
-
-    .material:hover {
-      transform: translateY(-4px);
-      border-color: #aaa;
-    }
-
-    .material-number {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 35px;
-    }
-
-    .material h3 {
-      font-size: 23px;
-      margin-bottom: 8px;
-    }
-
-    .material p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* STATUS */
-
-    .status-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-
-    .status-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      padding: 30px;
-    }
-
-    .status-card small {
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 10px;
-    }
-
-    .status-card strong {
-      display: block;
-      margin-top: 12px;
-      font-size: 19px;
-    }
-
-    /* OUTPUT */
-
-    .output {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .output-text {
-      font-size: 18px;
-      color: #4d4d4d;
-      max-width: 620px;
-    }
-
-    .output-list {
-      border-top: 1px solid var(--line);
-    }
-
-    .output-list div {
-      padding: 18px 0;
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .output-list span {
-      color: var(--muted);
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding: 45px 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    /* RESPONSIVE */
-
-    @media (max-width: 800px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero-grid,
-      .section-heading,
-      .output {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .hero-side {
-        border-left: none;
-        border-top: 1px solid var(--line);
-        padding-left: 0;
-        padding-top: 25px;
-      }
-
-      .materials,
-      .status-grid {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 70px 0;
-      }
-
-      h1 {
-        font-size: 58px;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- NAVIGATION -->
-
-  <nav>
-    <div class="container nav-inner">
-
-      <!-- R01 → MAIN PORTFOLIO -->
-      <a
-        href="https://muhammadfathiduraini.github.io/MUHAMMAD-FATHI-DURAINI/"
-        class="brand"
-      >
-        FATHI <span>/ R01</span>
-      </a>
-
-      <div class="nav-links">
-        <a href="#question">Question</a>
-        <a href="#framework">Framework</a>
-        <a href="#materials">Materials</a>
-        <a href="#status">Status</a>
-      </div>
-
-    </div>
-  </nav>
-
-
-  <!-- HERO -->
-
-  <header class="hero">
-
-    <div class="container hero-grid">
-
-      <div>
-
-        <div class="eyebrow">
-          Research Project 01
-        </div>
-
-        <h1>
-          Malaysia &<br>
-          International<br>
-          Human Rights Law
-        </h1>
-
-        <p class="hero-description">
-          An independent academic research project examining the
-          relationship between international human rights law,
-          Malaysian domestic law, institutional practice and
-          human rights protection in Malaysia.
-        </p>
-
-        <div class="buttons">
-
-          <a
-            class="button primary"
-            href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/tree/main/research/malaysia-international-human-rights-law"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Explore Research Materials ↗
-          </a>
-
-          <!-- BACK TO MAIN PORTFOLIO -->
-          <a
-            class="button"
-            href="https://muhammadfathiduraini.github.io/MUHAMMAD-FATHI-DURAINI/"
-          >
-            Back to Portfolio
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <aside class="hero-side">
-
-        <div class="meta">
-          <small>Researcher</small>
-          <strong>Muhammad Fathi Duraini</strong>
-        </div>
-
-        <div class="meta">
-          <small>Field</small>
-          <strong>International Relations</strong>
-        </div>
-
-        <div class="meta">
-          <small>Focus</small>
-          <strong>International Human Rights Law</strong>
-        </div>
-
-        <div class="meta">
-          <small>Scope</small>
-          <strong>Malaysia</strong>
-        </div>
-
-        <div class="meta">
-          <small>Status</small>
-          <strong>Research in Progress</strong>
-        </div>
-
-      </aside>
-
-    </div>
-
-  </header>
-
-
-  <!-- RESEARCH QUESTION -->
-
-  <section id="question">
-
-    <div class="container">
-
-      <div class="section-heading">
-        <div class="section-number">01 / QUESTION</div>
-
-        <h2>
-          The Research Question
-        </h2>
-      </div>
-
-      <p class="question">
-        How does international human rights law interact with
-        Malaysia's domestic legal framework, and what are the
-        implications for human rights protection and development
-        in Malaysia?
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- ANALYTICAL FRAMEWORK -->
-
-  <section id="framework">
-
-    <div class="container">
-
-      <div class="section-heading">
-        <div class="section-number">02 / FRAMEWORK</div>
-
-        <h2>
-          Analytical Framework
-        </h2>
-      </div>
-
-      <div class="framework">
-
-        <div class="framework-item">
-          <strong>International Standards / Instruments</strong>
-          <span>01</span>
-        </div>
-
-        <div class="arrow">↓</div>
-
-        <div class="framework-item">
-          <strong>Legal / Normative Status</strong>
-          <span>02</span>
-        </div>
-
-        <div class="arrow">↓</div>
-
-        <div class="framework-item">
-          <strong>Malaysia's International Position</strong>
-          <span>03</span>
-        </div>
-
-        <div class="arrow">↓</div>
-
-        <div class="framework-item">
-          <strong>Domestic Legal Framework</strong>
-          <span>04</span>
-        </div>
-
-        <div class="arrow">↓</div>
-
-        <div class="framework-item">
-          <strong>Institutional Practice</strong>
-          <span>05</span>
-        </div>
-
-        <div class="arrow">↓</div>
-
-        <div class="framework-item">
-          <strong>Judicial / Administrative Practice</strong>
-          <span>06</span>
-        </div>
-
-        <div class="arrow">↓</div>
-
-        <div class="framework-item">
-          <strong>Implementation</strong>
-          <span>07</span>
-        </div>
-
-        <div class="arrow">↓</div>
-
-        <div class="framework-item">
-          <strong>Identified Issues & Policy Implications</strong>
-          <span>08</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- RESEARCH MATERIALS -->
-
-  <section id="materials">
-
-    <div class="container">
-
-      <div class="section-heading">
-        <div class="section-number">03 / MATERIALS</div>
-
-        <h2>
-          Research Materials
-        </h2>
-      </div>
-
-
-      <div class="materials">
-
-        <a class="material" href="../malaysia-international-human-rights-law/01-federal-constitution.md" target="_blank">
-          <div class="material-number">01</div>
-          <h3>Federal Constitution</h3>
-          <p>Constitutional framework for fundamental liberties and rights in Malaysia.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/02-human-rights-commission-act-1999.md" target="_blank">
-          <div class="material-number">02</div>
-          <h3>Human Rights Commission Act 1999</h3>
-          <p>Statutory framework establishing SUHAKAM and its functions.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/03-convention-on-the-rights-of-the-child.md" target="_blank">
-          <div class="material-number">03</div>
-          <h3>Convention on the Rights of the Child</h3>
-          <p>International framework concerning children's rights.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/04-convention-on-the-elimination-of-all-forms-of-discrimination-against-women.md" target="_blank">
-          <div class="material-number">04</div>
-          <h3>CEDAW</h3>
-          <p>International standards concerning discrimination against women.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/05-convention-on-the-rights-of-persons-with-disabilities.md" target="_blank">
-          <div class="material-number">05</div>
-          <h3>CRPD</h3>
-          <p>International standards concerning the rights and participation of persons with disabilities.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/06-universal-declaration-of-human-rights.md" target="_blank">
-          <div class="material-number">06</div>
-          <h3>Universal Declaration of Human Rights</h3>
-          <p>Foundational international human rights standard.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/07-international-covenant-on-civil-and-political-rights.md" target="_blank">
-          <div class="material-number">07</div>
-          <h3>ICCPR</h3>
-          <p>International framework concerning civil and political rights.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/08-international-covenant-on-economic-social-and-cultural-rights.md" target="_blank">
-          <div class="material-number">08</div>
-          <h3>ICESCR</h3>
-          <p>International framework concerning economic, social and cultural rights.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/09-malaysian-human-rights-case-law.md" target="_blank">
-          <div class="material-number">09</div>
-          <h3>Malaysian Human Rights Case Law</h3>
-          <p>Initial collection of relevant Malaysian judicial decisions.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/10-legal-analysis-malaysia-and-international-human-rights-law.md" target="_blank">
-          <div class="material-number">10</div>
-          <h3>Legal Analysis</h3>
-          <p>Preliminary analysis of international and domestic legal relationships.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/11-academic-literature.md" target="_blank">
-          <div class="material-number">11</div>
-          <h3>Academic Literature</h3>
-          <p>Initial scholarly literature supporting the research.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/12-un-treaty-body-materials-malaysia.md" target="_blank">
-          <div class="material-number">12</div>
-          <h3>UN Treaty Body Materials</h3>
-          <p>UN human rights treaty-body materials concerning Malaysia.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/13-crpd-treaty-body-materials-malaysia.md" target="_blank">
-          <div class="material-number">13</div>
-          <h3>CRPD Treaty Body Materials</h3>
-          <p>Treaty-body materials concerning Malaysia's CRPD implementation and review process.</p>
-        </a>
-
-        <!-- 14 · RESEARCH FINDINGS -->
-        <a class="material" href="../malaysia-international-human-rights-law/14-research-findings.md" target="_blank">
-          <div class="material-number">14</div>
-          <h3>Research Findings</h3>
-          <p>Preliminary findings examining the relationship between Malaysian domestic law and international human rights law.</p>
-        </a>
-
-        <a class="material" href="../malaysia-international-human-rights-law/SOURCES.md" target="_blank">
-          <div class="material-number">SOURCE ARCHIVE</div>
-          <h3>Source Archive</h3>
-          <p>Primary, institutional and academic sources used throughout the project.</p>
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- RESEARCH STATUS -->
-
-  <section id="status">
-
-    <div class="container">
-
-      <div class="section-heading">
-        <div class="section-number">04 / STATUS</div>
-
-        <h2>
-          Research Status
-        </h2>
-      </div>
-
-
-      <div class="status-grid">
-
-        <div class="status-card">
-          <small>Completed</small>
-          <strong>Constitutional & Institutional Framework</strong>
-        </div>
-
-        <div class="status-card">
-          <small>Completed</small>
-          <strong>International Human Rights Instruments</strong>
-        </div>
-
-        <div class="status-card">
-          <small>Initial</small>
-          <strong>Malaysian Case Law</strong>
-        </div>
-
-        <div class="status-card">
-          <small>Initial</small>
-          <strong>Academic Literature</strong>
-        </div>
-
-        <div class="status-card">
-          <small>Initial</small>
-          <strong>UN Treaty Body Materials</strong>
-        </div>
-
-        <div class="status-card">
-          <small>Pending</small>
-          <strong>Domestic Implementation Analysis</strong>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- OUTPUT -->
-
-  <section>
-
-    <div class="container output">
-
-      <div>
-
-        <div class="eyebrow">
-          Research Development
-        </div>
-
-        <h2>
-          From Evidence<br>
-          to Analysis.
-        </h2>
-
-        <p class="output-text" style="margin-top: 28px;">
-          The purpose of this project is not simply to collect
-          documents. It is to examine how international standards
-          interact with Malaysian law, institutions and
-          implementation, and to develop evidence-based academic
-          analysis over time.
-        </p>
-
-      </div>
-
-
-      <div class="output-list">
-
-        <div>
-          <strong>Research Paper</strong>
-          <span>Planned</span>
-        </div>
-
-        <div>
-          <strong>Legal Research Memorandum</strong>
-          <span>Planned</span>
-        </div>
-
-        <div>
-          <strong>Policy Brief</strong>
-          <span>Planned</span>
-        </div>
-
-        <div>
-          <strong>Focused Case Study</strong>
-          <span>Planned</span>
-        </div>
-
-        <div>
-          <strong>Comparative Legal Analysis</strong>
-          <span>Planned</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <div class="container footer-inner">
-
-      <div>
-        R01 · Malaysia & International Human Rights Law
-      </div>
-
-      <div>
-        Muhammad Fathi Duraini · Academic Research
-      </div>
-
-    </div>
-
-  </footer>
-
-</body>
-</html>
+FATHI / R01
+Question
+Framework
+Materials
+Status
+Research Project 01
+Malaysia &
+International
+Human Rights Law
+An independent academic research project examining the relationship between international human rights law, Malaysian domestic law, institutional practice and human rights protection in Malaysia.
+
+Explore Research Materials ↗
+Back to Portfolio
+Researcher
+Muhammad Fathi Duraini
+Field
+International Relations
+Focus
+International Human Rights Law
+Scope
+Malaysia
+Status
+Research in Progress
+01 / QUESTION
+The Research Question
+How does international human rights law interact with Malaysia's domestic legal framework, and what are the implications for human rights protection and development in Malaysia?
+
+02 / FRAMEWORK
+Analytical Framework
+International Standards / Instruments
+01
+↓
+Legal / Normative Status
+02
+↓
+Malaysia's International Position
+03
+↓
+Domestic Legal Framework
+04
+↓
+Institutional Practice
+05
+↓
+Judicial / Administrative Practice
+06
+↓
+Implementation
+07
+↓
+Identified Issues & Policy Implications
+08
+03 / MATERIALS
+Research Materials
+01
+Federal Constitution
+Constitutional framework for fundamental liberties and rights in Malaysia.
+
+02
+Human Rights Commission Act 1999
+Statutory framework establishing SUHAKAM and its functions.
+
+03
+Convention on the Rights of the Child
+International framework concerning children's rights.
+
+04
+CEDAW
+International standards concerning discrimination against women.
+
+05
+CRPD
+International standards concerning the rights and participation of persons with disabilities.
+
+06
+Universal Declaration of Human Rights
+Foundational international human rights standard.
+
+07
+ICCPR
+International framework concerning civil and political rights.
+
+08
+ICESCR
+International framework concerning economic, social and cultural rights.
+
+09
+Malaysian Human Rights Case Law
+Initial collection of relevant Malaysian judicial decisions.
+
+10
+Legal Analysis
+Preliminary analysis of international and domestic legal relationships.
+
+11
+Academic Literature
+Initial scholarly literature supporting the research.
+
+12
+UN Treaty Body Materials
+UN human rights treaty-body materials concerning Malaysia.
+
+13
+CRPD Treaty Body Materials
+Treaty-body materials concerning Malaysia's CRPD implementation and review process.
+
+SOURCE ARCHIVE
+Source Archive
+Primary, institutional and academic sources used throughout the project.
+
+04 / STATUS
+Research Status
+Completed
+Constitutional & Institutional Framework
+Completed
+International Human Rights Instruments
+Initial
+Malaysian Case Law
+Initial
+Academic Literature
+Initial
+UN Treaty Body Materials
+Pending
+Domestic Implementation Analysis
+Research Development
+From Evidence
+to Analysis.
+The purpose of this project is not simply to collect documents. It is to examine how international standards interact with Malaysian law, institutions and implementation, and to develop evidence-based academic analysis over time.
+
+Research Paper
+Planned
+Legal Research Memorandum
+Planned
+Policy Brief
+Planned
+Focused Case Study
+Planned
+Comparative Legal Analysis
+Planned
+R01 · Malaysia & International Human Rights Law
+Muhammad Fathi Duraini · Academic Research
