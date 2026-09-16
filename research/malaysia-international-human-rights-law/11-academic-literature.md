@@ -155,8 +155,7 @@ This literature will support the institutional component of the research, partic
 
 **Author:** Ahmad Ibrahim
 
-**Publication:** Journal of Malaysian and Comparative Law, Vol. 9, 1982, pp. 41–74
-
+Publication: Journal of Malaysian and Comparative Law, Vol. 9, Nos. 1–2, 1982, pp. 41–74
 **Research relevance:**
 
 Examines the application of the Geneva Convention framework in Malaysia and the relationship between international humanitarian law and domestic legislation.
@@ -177,8 +176,7 @@ Although the present research focuses primarily on international human rights la
 
 # 07 · LITERATURE THEMATIC MAP
 
-The literature collected so far can be organised into five themes:
-
+The literature collected so far can be organised into six themes:
 | Theme                                          | Literature         |
 | ---------------------------------------------- | ------------------ |
 | International law and domestic law             | Shah Alam          |
