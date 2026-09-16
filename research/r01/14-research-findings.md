@@ -322,3 +322,147 @@ International Human Rights Instruments
         │
         ↓
  Fundamental Liberties
+
+
+# 14 · Key Legal Distinctions
+
+The research establishes several distinctions that should be maintained throughout the project.
+
+| Concept | Meaning |
+|---|---|
+| Treaty ratification/accession | Malaysia's international acceptance of treaty obligations |
+| Treaty incorporation | Giving treaty obligations domestic legal effect through domestic law |
+| Constitutional right | A right protected within the Federal Constitution |
+| International human rights norm | A norm recognised within the international human rights system |
+| Treaty-body recommendation | An international institutional assessment or recommendation |
+| Judicial interpretation | A domestic court's interpretation of applicable Malaysian law |
+| SUHAKAM recommendation | Institutional advice or recommendation within SUHAKAM's statutory mandate |
+
+These concepts may interact, but they are not legally interchangeable.
+
+---
+
+# 15 · Preliminary Finding
+
+The research indicates that the relationship between Malaysian domestic law and international human rights law is best understood as an interaction between different legal and institutional layers rather than as a simple question of whether international human rights law "applies" in Malaysia.
+
+The Federal Constitution remains central to domestic rights protection.
+
+Malaysia's treaty participation creates international obligations, but treaty participation and domestic incorporation must be distinguished.
+
+Malaysian courts have developed significant constitutional rights jurisprudence through domestic constitutional interpretation.
+
+International human rights norms may also appear in legal and institutional discussions, but their use must be distinguished from automatic incorporation of treaty provisions into domestic law.
+
+SUHAKAM provides an institutional mechanism through which international human rights standards can be studied, discussed and connected to Malaysian legislation, policy and human rights practice.
+
+The United Nations treaty-body system provides an additional international review mechanism through which Malaysia's implementation of treaty obligations can be examined.
+
+Taken together, these elements demonstrate a layered relationship between domestic constitutional law, international human rights obligations, judicial interpretation and institutional human rights practice.
+
+---
+
+# 16 · Research Limitations
+
+These findings are preliminary.
+
+The research does not attempt to provide an exhaustive analysis of:
+
+- every Malaysian constitutional rights case;
+- every international human rights treaty relevant to Malaysia;
+- every reservation or declaration;
+- every SUHAKAM recommendation;
+- every UN treaty-body document;
+- customary international human rights law; or
+- every academic interpretation of the relationship between international and domestic law.
+
+The analysis should therefore be expanded through additional primary sources and case law before being presented as a comprehensive legal conclusion.
+
+---
+
+# 17 · Questions for Further Research
+
+The findings generate several questions for the next stage of Research Project 01.
+
+### Question 1
+
+To what extent have Malaysian courts used international human rights instruments as interpretive material when interpreting constitutional rights?
+
+### Question 2
+
+How has the Federal Court's constitutional jurisprudence developed after Lee Kwan Woh, Sivarasa Rasiah and Alma Nudo Atenza?
+
+### Question 3
+
+How does SUHAKAM use international human rights standards when advising the Malaysian Government?
+
+### Question 4
+
+What domestic legislation has been enacted specifically to implement Malaysia's obligations under CRC, CEDAW and CRPD?
+
+### Question 5
+
+How closely does Malaysian legislation correspond with the recommendations issued by UN treaty bodies?
+
+### Question 6
+
+What legal and institutional barriers affect the implementation of international human rights obligations in Malaysia?
+
+### Question 7
+
+How should international human rights norms be distinguished from binding treaty obligations in Malaysian legal analysis?
+
+---
+
+# 18 · Research Integrity Statement
+
+This research distinguishes between:
+
+- established legal rules;
+- judicial reasoning;
+- international treaty obligations;
+- institutional positions;
+- academic interpretations;
+- empirical evidence; and
+- the researcher's own analysis.
+
+Where legal authorities differ in their approach, the differences should be identified rather than concealed.
+
+International human rights standards should not be presented as Malaysian domestic law unless an appropriate domestic legal basis exists.
+
+Likewise, the absence of domestic incorporation should not be interpreted automatically as meaning that international human rights obligations have no relevance to Malaysia's international legal position or institutional practice.
+
+---
+
+# 19 · Sources Supporting These Findings
+
+The principal sources supporting this preliminary analysis include:
+
+- Federal Constitution of Malaysia;
+- Human Rights Commission of Malaysia Act 1999 [Act 597], including subsequent amendments;
+- Bato Bagi & Ors v Kerajaan Negeri Sarawak & Another Appeal [2011] 8 CLJ 766;
+- Lee Kwan Woh v Public Prosecutor [2009] 5 MLJ 301;
+- Sivarasa Rasiah v Badan Peguam Malaysia & Anor [2010] 2 MLJ 333;
+- Alma Nudo Atenza v Public Prosecutor & Another Appeal [2019] 3 MLRA 1;
+- United Nations Treaty Body Database;
+- Human Rights Commission of Malaysia (SUHAKAM) materials;
+- relevant peer-reviewed academic literature.
+
+Primary sources should remain the preferred basis for future expansion of the research.
+
+---
+
+# STATUS
+
+**Research Project:** R01  
+**Stage:** Preliminary Findings  
+**Research Status:** Ongoing  
+**Primary Source Collection:** Completed at initial stage  
+**Case Law Collection:** Initial stage completed  
+**UN Treaty Body Materials:** Initial stage completed  
+**Academic Literature:** Initial stage completed  
+**Final Research Paper:** Not yet drafted
+
+---
+
+> **The purpose of legal research is not merely to identify what the law says, but to establish which source says it, what legal authority it carries, and how it should be understood within the wider legal framework.**
