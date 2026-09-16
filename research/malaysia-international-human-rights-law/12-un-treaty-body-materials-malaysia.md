@@ -41,8 +41,6 @@ They may provide evidence of international monitoring and recommendations, but t
 
 **Document:** CRC/C/MYS/2-4
 
-**Submitted:** 5 August 2021
-
 The report forms part of Malaysia's periodic reporting process under the CRC.
 
 ---
@@ -53,7 +51,7 @@ The report forms part of Malaysia's periodic reporting process under the CRC.
 
 **Date:** 12 January 2026
 
-Malaysia submitted written replies to the Committee's List of Issues in preparation for the examination of its periodic reports.
+Malaysia submitted written replies to the Committee's List of Issues in preparation for the examination of its periodic reports. The Committee subsequently considered Malaysia's combined second to fourth periodic reports during its 97th session in January 2026.
 
 The document provides evidence of Malaysia's responses to questions raised within the CRC review process.
 
