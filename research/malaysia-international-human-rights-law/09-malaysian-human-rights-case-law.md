@@ -250,8 +250,7 @@ Potential areas include:
 
 ### 1. Facts
 
-Lee Kwan Woh was charged under the Dangerous Drugs Act 1952 in relation to the possession of cannabis.
-
+Lee Kwan Woh was charged with trafficking 420g of cannabis under section 39B(1)(a) of the Dangerous Drugs Act 1952.
 At the close of the prosecution's case, the appellant sought to make a submission that there was no case to answer.
 
 The trial judge did not allow the appellant to make the submission and proceeded with the trial.
@@ -333,6 +332,77 @@ It provides a basis for examining the relationship between:
 Further research should examine the judgment's treatment of international human rights standards and compare the relevant constitutional protections with applicable international standards, while maintaining a clear distinction between international obligations and domestic legal effect.
 
 ---
+# 09.1 · INTERNATIONAL LAW ANALYSIS
+
+## Lee Kwan Woh and International Human Rights Standards
+
+The constitutional issues in **Lee Kwan Woh v Public Prosecutor [2009] 5 MLJ 301** can be examined comparatively alongside international human rights standards concerning fair trial and personal liberty.
+
+This comparison should be distinguished from the domestic legal holding of the Federal Court.
+
+### 1. International Standards Relevant to the Issue
+
+The **Universal Declaration of Human Rights (UDHR)** provides relevant international standards concerning fair trial and criminal justice.
+
+In particular:
+
+* **Article 10** recognises the right to a fair and public hearing by an independent and impartial tribunal.
+* **Article 11(1)** recognises the presumption of innocence and the requirement for a public trial in which necessary guarantees for defence are provided.
+
+These provisions provide an international normative framework relevant to the procedural fairness issues examined in Lee Kwan Woh.
+
+### 2. International Covenant on Civil and Political Rights
+
+The **International Covenant on Civil and Political Rights (ICCPR)** contains more detailed treaty provisions concerning fair trial.
+
+**Article 14** addresses equality before courts and tribunals, fair and public hearings, the presumption of innocence and minimum guarantees for persons charged with a criminal offence.
+
+Malaysia is **not a State Party to the ICCPR**. Accordingly, Article 14 should not be presented as a treaty obligation directly binding Malaysia.
+
+For the purposes of this research, Article 14 is used as a **comparative international human rights standard**, rather than as a source of directly applicable Malaysian domestic law.
+
+### 3. Comparison with Article 5(1)
+
+The Federal Court's decision is primarily grounded in the **Federal Constitution**, particularly Article 5(1), rather than in an international treaty obligation.
+
+The case recognised constitutional protection relating to a fair trial and personal liberty. The Court's interpretation of fundamental liberties was therefore developed within the Malaysian constitutional framework.
+
+The relevant comparative relationship is:
+
+**Malaysian Constitutional Protection ↔ International Human Rights Standard**
+
+The comparison should not be understood as establishing that the international standard automatically forms part of Malaysian domestic law.
+
+### 4. Domestic Legal Effect
+
+The case is useful for examining the distinction between:
+
+1. An international human rights standard;
+2. An international treaty obligation; and
+3. A domestic constitutional right.
+
+These categories should remain analytically separate.
+
+A human rights standard may provide a basis for comparative legal analysis without necessarily having the force of domestic law in Malaysia.
+
+### 5. Research Observation
+
+For Research Project 01, Lee Kwan Woh can therefore be used to examine whether Malaysian constitutional protection of fair trial and personal liberty corresponds with internationally recognised human rights standards.
+
+The analysis should distinguish between:
+
+**International Normative Standard → International Legal Obligation → Domestic Legal Effect**
+
+The first does not automatically establish the second, and the second does not automatically establish the third.
+
+### 6. Research Limitation
+
+This section does not claim that the Federal Court's decision was based on the UDHR or ICCPR.
+
+Any claim concerning the Court's express reliance on a particular international human rights instrument should only be made after verification against the full judgment.
+
+The primary legal significance of the case remains its interpretation and application of the Malaysian Federal Constitution.
+
 
 # 10 · CASE ANALYSIS STATUS
 
