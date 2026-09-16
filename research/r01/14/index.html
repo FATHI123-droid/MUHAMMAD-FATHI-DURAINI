@@ -1,0 +1,1932 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Research Findings — Research Project 01: Malaysia and International Human Rights Law by Muhammad Fathi Duraini."
+    >
+
+    <meta
+        name="author"
+        content="Muhammad Fathi Duraini"
+    >
+
+    <title>Research Findings · R01</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f5f2;
+            color: #171717;
+            line-height: 1.72;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        /* NAV */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(245, 245, 242, 0.94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #deded9;
+        }
+
+        .nav-inner {
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .brand span {
+            color: #777;
+            font-weight: 500;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .nav-button {
+            padding: 9px 13px;
+            border: 1px solid #d2d2cd;
+            font-size: 12px;
+            color: #555;
+            transition: .2s ease;
+        }
+
+        .nav-button:hover {
+            background: #171717;
+            border-color: #171717;
+            color: white;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 100px 0 80px;
+            border-bottom: 1px solid #deded9;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            font-size: clamp(48px, 7vw, 82px);
+            line-height: .98;
+            letter-spacing: -.055em;
+            margin-bottom: 26px;
+        }
+
+        .hero h1 span {
+            color: #777;
+        }
+
+        .hero-description {
+            max-width: 780px;
+            color: #5b5b5b;
+            font-size: 19px;
+        }
+
+        .hero-meta {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            border: 1px solid #d5d5d0;
+            padding: 8px 12px;
+            font-size: 12px;
+            color: #666;
+            background: #f8f8f5;
+        }
+
+        /* LAYOUT */
+
+        .research-layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 70px;
+            padding: 70px 0 100px;
+        }
+
+        .toc {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+
+        .toc-title {
+            font-size: 11px;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 18px;
+        }
+
+        .toc a {
+            display: block;
+            padding: 7px 0;
+            font-size: 13px;
+            color: #777;
+            border-bottom: 1px solid transparent;
+        }
+
+        .toc a:hover {
+            color: #171717;
+        }
+
+        .content {
+            min-width: 0;
+        }
+
+        /* CONTENT */
+
+        .section {
+            padding: 0 0 75px;
+            margin-bottom: 75px;
+            border-bottom: 1px solid #deded9;
+            scroll-margin-top: 100px;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-label {
+            font-size: 11px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 13px;
+        }
+
+        .section h2 {
+            font-size: clamp(30px, 4vw, 48px);
+            line-height: 1.08;
+            letter-spacing: -.04em;
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 21px;
+            line-height: 1.25;
+            letter-spacing: -.02em;
+            margin: 35px 0 12px;
+        }
+
+        .section p {
+            max-width: 800px;
+            color: #414141;
+            font-size: 16px;
+            margin-bottom: 17px;
+        }
+
+        .section strong {
+            color: #171717;
+        }
+
+        /* QUESTION */
+
+        .question-box {
+            margin: 30px 0;
+            padding: 30px;
+            border-left: 3px solid #171717;
+            background: #ecece7;
+            font-size: 22px;
+            line-height: 1.45;
+            letter-spacing: -.02em;
+        }
+
+        /* LISTS */
+
+        .numbered,
+        .bullet-list {
+            margin: 18px 0 24px 22px;
+            color: #414141;
+        }
+
+        .numbered li,
+        .bullet-list li {
+            padding: 5px 0;
+            padding-left: 5px;
+        }
+
+        /* FINDING CARDS */
+
+        .finding-card {
+            margin: 35px 0;
+            padding: 28px;
+            background: #f8f8f5;
+            border: 1px solid #deded9;
+        }
+
+        .finding-card h3 {
+            margin-top: 0;
+        }
+
+        /* DISTINCTION */
+
+        .distinction {
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: #d8d8d2;
+            border: 1px solid #d8d8d2;
+        }
+
+        .distinction-item {
+            padding: 25px;
+            background: #f8f8f5;
+        }
+
+        .distinction-item span {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: #888;
+            margin-bottom: 7px;
+        }
+
+        .distinction-item strong {
+            font-size: 17px;
+        }
+
+        /* ANALYTICAL DIAGRAM */
+
+        .diagram {
+            margin: 35px 0;
+            padding: 35px 25px;
+            background: #171717;
+            color: white;
+            overflow-x: auto;
+        }
+
+        .diagram-inner {
+            min-width: 620px;
+            text-align: center;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.5;
+        }
+
+        .diagram-node {
+            display: inline-block;
+            padding: 11px 18px;
+            border: 1px solid #777;
+            margin: 5px;
+            background: #242424;
+        }
+
+        .diagram-arrow {
+            color: #aaa;
+            font-size: 20px;
+        }
+
+        .diagram-split {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin: 8px 0;
+        }
+
+        /* TABLE */
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 30px 0;
+            border: 1px solid #deded9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 620px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 17px 18px;
+            border-bottom: 1px solid #deded9;
+            vertical-align: top;
+        }
+
+        th {
+            background: #ecece7;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+        }
+
+        td {
+            font-size: 14px;
+            color: #444;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* QUESTIONS */
+
+        .research-question {
+            padding: 22px 0;
+            border-bottom: 1px solid #deded9;
+        }
+
+        .research-question:last-child {
+            border-bottom: none;
+        }
+
+        .question-number {
+            font-size: 11px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 7px;
+        }
+
+        .research-question h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* STATUS */
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: #deded9;
+            border: 1px solid #deded9;
+        }
+
+        .status-item {
+            background: #f8f8f5;
+            padding: 22px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .status-name {
+            font-size: 14px;
+        }
+
+        .status-state {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: #888;
+            white-space: nowrap;
+        }
+
+        /* SOURCE BOX */
+
+        .source-box {
+            padding: 30px;
+            background: #ecece7;
+            border: 1px solid #deded9;
+        }
+
+        .source-box li {
+            margin: 8px 0;
+            color: #444;
+        }
+
+        /* QUOTE */
+
+        .closing-quote {
+            margin-top: 35px;
+            padding: 35px 30px;
+            border-top: 1px solid #171717;
+            border-bottom: 1px solid #171717;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 24px;
+            line-height: 1.45;
+            letter-spacing: -.015em;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #deded9;
+            padding: 50px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        .footer-title {
+            color: #171717;
+            font-weight: 650;
+            margin-bottom: 5px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            .research-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .toc {
+                position: static;
+                padding: 20px;
+                border: 1px solid #deded9;
+                background: #f8f8f5;
+            }
+
+            .toc-links {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0 20px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .hero {
+                padding: 70px 0 60px;
+            }
+
+            .research-layout {
+                padding-top: 45px;
+            }
+
+            .distinction {
+                grid-template-columns: 1fr;
+            }
+
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .diagram-inner {
+                min-width: 500px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+            .toc-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-inner">
+
+        <a
+            class="brand"
+            href="../"
+        >
+            FATHI <span>/ R01</span>
+        </a>
+
+        <div class="nav-actions">
+
+            <a
+                class="nav-button"
+                href="../"
+            >
+                ← Back to R01
+            </a>
+
+            <a
+                class="nav-button"
+                href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/14-research-findings.md"
+                target="_blank"
+                rel="noopener"
+            >
+                View Source ↗
+            </a>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<header class="hero">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            Research Project 01 · Preliminary Findings
+        </div>
+
+        <h1>
+            Research<br>
+            <span>Findings</span>
+        </h1>
+
+        <p class="hero-description">
+            Malaysia and International Human Rights Law
+        </p>
+
+        <div class="hero-meta">
+            <div class="tag">International Relations</div>
+            <div class="tag">International Human Rights Law</div>
+            <div class="tag">Malaysia</div>
+            <div class="tag">Research in Progress</div>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="container research-layout">
+
+    <aside class="toc">
+
+        <div class="toc-title">
+            Contents
+        </div>
+
+        <div class="toc-links">
+
+            <a href="#purpose">01 · Purpose</a>
+            <a href="#finding-one">02 · Dualist Framework</a>
+            <a href="#finding-two">03 · Ratification</a>
+            <a href="#finding-three">04 · Constitution</a>
+            <a href="#finding-four">05 · Case Law</a>
+            <a href="#finding-five">06 · International Norms</a>
+            <a href="#finding-six">07 · Bato Bagi</a>
+            <a href="#finding-seven">08 · SUHAKAM</a>
+            <a href="#finding-eight">09 · Treaty Bodies</a>
+            <a href="#finding-nine">10 · Treaty Participation</a>
+            <a href="#finding-ten">11 · Reservations</a>
+            <a href="#finding-eleven">12 · Points of Interaction</a>
+            <a href="#framework">13 · Framework</a>
+            <a href="#distinctions">14 · Distinctions</a>
+            <a href="#preliminary">15 · Preliminary Finding</a>
+            <a href="#limitations">16 · Limitations</a>
+            <a href="#questions">17 · Further Research</a>
+            <a href="#integrity">18 · Integrity</a>
+            <a href="#sources">19 · Sources</a>
+            <a href="#status">Status</a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="content">
+
+
+        <!-- 01 -->
+
+        <section class="section" id="purpose">
+
+            <div class="section-label">
+                01 · Purpose of the Findings
+            </div>
+
+            <h2>
+                Purpose of the Findings
+            </h2>
+
+            <p>
+                This section presents the preliminary findings developed from
+                the primary legal materials, international human rights
+                instruments, Malaysian case law, United Nations treaty body
+                materials, institutional materials and academic literature
+                collected for Research Project 01.
+            </p>
+
+            <p>
+                The purpose is not to provide a final conclusion on every
+                aspect of Malaysia's human rights framework. Instead, this
+                section identifies the principal legal relationships and
+                analytical issues emerging from the research.
+            </p>
+
+            <div class="question-box">
+                <strong>Central Research Question</strong><br><br>
+                How does Malaysian domestic law interact with international
+                human rights law?
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="section" id="finding-one">
+
+            <div class="section-label">
+                02 · Finding One
+            </div>
+
+            <h2>
+                Malaysia Operates Within a Dualist Legal Framework
+            </h2>
+
+            <p>
+                The research indicates that international treaties do not
+                automatically become part of Malaysian domestic law merely
+                because Malaysia has become a party to a treaty.
+            </p>
+
+            <p>
+                The domestic legal effect of an international treaty depends
+                upon the relationship between international obligations and
+                Malaysian constitutional and legislative arrangements.
+            </p>
+
+            <p>
+                This distinction is important because treaty participation
+                and domestic enforceability are separate legal questions.
+            </p>
+
+            <p>
+                Malaysia may assume obligations at the international level
+                while a separate domestic legal mechanism may be required
+                before particular treaty provisions can operate as directly
+                enforceable rules of Malaysian domestic law.
+            </p>
+
+            <div class="finding-card">
+
+                <h3>Analytical Significance</h3>
+
+                <p>
+                    The research therefore distinguishes between:
+                </p>
+
+                <ol class="numbered">
+                    <li>Malaysia's status as a State Party to an international treaty;</li>
+                    <li>Malaysia's international obligations under that treaty;</li>
+                    <li>incorporation or implementation of treaty obligations through domestic legislation; and</li>
+                    <li>the ability of Malaysian courts to apply a treaty provision as part of domestic law.</li>
+                </ol>
+
+                <p>
+                    These should not be treated as interchangeable concepts.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="section" id="finding-two">
+
+            <div class="section-label">
+                03 · Finding Two
+            </div>
+
+            <h2>
+                Ratification and Domestic Incorporation Are Distinct
+            </h2>
+
+            <p>
+                Malaysia's participation in international human rights
+                treaties demonstrates the importance of separating
+                international legal status from domestic legal effect.
+            </p>
+
+            <p>
+                Malaysia is a State Party to several core international human
+                rights conventions, including:
+            </p>
+
+            <ul class="bullet-list">
+                <li>Convention on the Rights of the Child (CRC);</li>
+                <li>Convention on the Elimination of All Forms of Discrimination against Women (CEDAW);</li>
+                <li>Convention on the Rights of Persons with Disabilities (CRPD).</li>
+            </ul>
+
+            <p>
+                The United Nations Treaty Body Database records Malaysia's
+                treaty participation and reporting activities.
+            </p>
+
+            <p>
+                The existence of these international obligations does not,
+                by itself, establish that every treaty provision forms part
+                of Malaysian domestic law.
+            </p>
+
+            <div class="distinction">
+
+                <div class="distinction-item">
+                    <span>International Question</span>
+                    <strong>Has Malaysia accepted the international obligation?</strong>
+                </div>
+
+                <div class="distinction-item">
+                    <span>Domestic Question</span>
+                    <strong>Has the obligation been given domestic legal effect?</strong>
+                </div>
+
+            </div>
+
+            <p>
+                This distinction is fundamental to understanding Malaysia's
+                human rights framework.
+            </p>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="section" id="finding-three">
+
+            <div class="section-label">
+                04 · Finding Three
+            </div>
+
+            <h2>
+                The Federal Constitution Remains the Central Domestic Legal Framework
+            </h2>
+
+            <p>
+                Part II of the Federal Constitution provides the principal
+                constitutional framework for fundamental liberties in
+                Malaysia.
+            </p>
+
+            <p>
+                Accordingly, the domestic legal analysis of human rights
+                begins with the Constitution rather than assuming that an
+                international treaty automatically supplies the applicable
+                domestic rule.
+            </p>
+
+            <p>
+                This is also reflected institutionally in the statutory
+                framework governing SUHAKAM.
+            </p>
+
+            <p>
+                The Human Rights Commission of Malaysia Act 1999 defines
+                "human rights" by reference to the fundamental liberties
+                enshrined in Part II of the Federal Constitution.
+            </p>
+
+            <p>
+                This creates an important institutional connection between
+                constitutional rights and Malaysia's national human rights
+                institution.
+            </p>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="section" id="finding-four">
+
+            <div class="section-label">
+                05 · Finding Four
+            </div>
+
+            <h2>
+                Malaysian Courts Have Developed Significant Constitutional Rights Jurisprudence
+            </h2>
+
+            <p>
+                The case law examined in this research demonstrates that
+                Malaysian courts have developed substantial jurisprudence
+                concerning fundamental liberties.
+            </p>
+
+            <div class="finding-card">
+
+                <h3>
+                    Lee Kwan Woh v Public Prosecutor
+                </h3>
+
+                <p>
+                    <strong>Lee Kwan Woh v Public Prosecutor [2009] 5 MLJ 301</strong>
+                </p>
+
+                <p>
+                    The Federal Court adopted a broad approach to the
+                    interpretation of fundamental liberties under the Federal
+                    Constitution.
+                </p>
+
+                <p>
+                    The decision is particularly significant for the
+                    interpretation of Articles 5 and 8 and the constitutional
+                    protection of personal liberty and equality.
+                </p>
+
+                <p>
+                    The case demonstrates that Malaysian constitutional
+                    rights can be developed through domestic constitutional
+                    interpretation without treating an international treaty
+                    as automatically incorporated into Malaysian law.
+                </p>
+
+            </div>
+
+
+            <div class="finding-card">
+
+                <h3>
+                    Sivarasa Rasiah v Badan Peguam Malaysia & Anor
+                </h3>
+
+                <p>
+                    <strong>Sivarasa Rasiah v Badan Peguam Malaysia & Anor [2010] 2 MLJ 333</strong>
+                </p>
+
+                <p>
+                    The case is significant for the development of
+                    proportionality analysis in Malaysian constitutional law.
+                </p>
+
+                <p>
+                    The decision demonstrates that constitutional limitations
+                    on fundamental liberties may require substantive judicial
+                    examination rather than merely formal consideration of
+                    legislative authority.
+                </p>
+
+            </div>
+
+
+            <div class="finding-card">
+
+                <h3>
+                    Alma Nudo Atenza v Public Prosecutor & Another Appeal
+                </h3>
+
+                <p>
+                    <strong>
+                        Alma Nudo Atenza v Public Prosecutor & Another Appeal
+                        [2019] 3 MLRA 1
+                    </strong>
+                </p>
+
+                <p>
+                    The Federal Court further developed constitutional
+                    reasoning concerning Articles 5 and 8.
+                </p>
+
+                <p>
+                    Subsequent Malaysian case law has continued to refer to
+                    the proportionality approach associated with Sivarasa
+                    Rasiah and Alma Nudo Atenza.
+                </p>
+
+                <p>
+                    The continuing use of these authorities indicates that
+                    constitutional human rights analysis in Malaysia has
+                    developed substantially through domestic jurisprudence.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="section" id="finding-five">
+
+            <div class="section-label">
+                06 · Finding Five
+            </div>
+
+            <h2>
+                International Human Rights Norms and Domestic Constitutional Interpretation Must Be Distinguished
+            </h2>
+
+            <p>
+                The research reveals a more complex relationship between
+                international human rights law and Malaysian constitutional
+                interpretation.
+            </p>
+
+            <p>
+                The proposition that treaties are not automatically part of
+                Malaysian domestic law does not necessarily resolve every
+                question concerning the relevance of international human
+                rights norms to constitutional interpretation.
+            </p>
+
+            <p>
+                Malaysian case law contains discussion concerning the possible
+                relevance of international norms and human rights standards
+                in interpreting constitutional rights.
+            </p>
+
+            <div class="finding-card">
+
+                <h3>Key Distinction</h3>
+
+                <p>
+                    The use of international norms as interpretive material
+                    must not be confused with direct incorporation of treaty
+                    provisions into Malaysian domestic law.
+                </p>
+
+                <p>
+                    A court considering an international human rights norm as
+                    an interpretive reference is not necessarily applying that
+                    treaty as an independently enforceable domestic legal
+                    rule.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="section" id="finding-six">
+
+            <div class="section-label">
+                07 · Finding Six
+            </div>
+
+            <h2>
+                Bato Bagi Illustrates the Domestic Effect Issue
+            </h2>
+
+            <p>
+                <strong>
+                    Bato Bagi & Ors v Kerajaan Negeri Sarawak & Another Appeal
+                    [2011] 8 CLJ 766
+                </strong>
+                is an important authority for understanding the relationship
+                between international norms and Malaysian domestic law.
+            </p>
+
+            <p>
+                The case involved native customary rights and, among other
+                issues, arguments concerning international norms.
+            </p>
+
+            <p>
+                The judgment contains an important statement concerning the
+                domestic legal status of international treaties.
+            </p>
+
+            <p>
+                The case is therefore relevant to the proposition that
+                international treaties do not automatically form part of
+                Malaysian domestic law unless incorporated into domestic law.
+            </p>
+
+            <div class="distinction">
+
+                <div class="distinction-item">
+                    <span>International Level</span>
+                    <strong>International legal obligation</strong>
+                </div>
+
+                <div class="distinction-item">
+                    <span>Domestic Level</span>
+                    <strong>Domestic legal enforceability</strong>
+                </div>
+
+            </div>
+
+            <p>
+                Bato Bagi should not be read as meaning that international
+                human rights law has no relevance whatsoever to Malaysian
+                constitutional analysis.
+            </p>
+
+            <p>
+                Rather, it demonstrates the importance of distinguishing
+                international legal obligation from domestic legal
+                enforceability.
+            </p>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="section" id="finding-seven">
+
+            <div class="section-label">
+                08 · Finding Seven
+            </div>
+
+            <h2>
+                SUHAKAM Creates an Institutional Bridge Between Domestic and International Human Rights Standards
+            </h2>
+
+            <p>
+                The Human Rights Commission of Malaysia Act 1999 establishes
+                SUHAKAM as Malaysia's national human rights institution.
+            </p>
+
+            <p>
+                The Commission's statutory functions include:
+            </p>
+
+            <ul class="bullet-list">
+                <li>promoting awareness and education relating to human rights;</li>
+                <li>advising and assisting the Government in formulating legislation and procedures;</li>
+                <li>recommending measures to the Government;</li>
+                <li>recommending subscription to or accession to treaties and other international human rights instruments;</li>
+                <li>conducting research;</li>
+                <li>studying and verifying alleged human rights infringements; and</li>
+                <li>conducting other appropriate activities within its statutory mandate.</li>
+            </ul>
+
+            <p>
+                These functions are particularly relevant to the relationship
+                between Malaysian law and international human rights
+                standards.
+            </p>
+
+            <p>
+                SUHAKAM's published materials also demonstrate that the
+                Commission has undertaken compatibility studies examining
+                Malaysian law against international human rights instruments.
+            </p>
+
+            <p>
+                This indicates that the relationship between domestic law and
+                international human rights standards is not limited to
+                judicial proceedings. It also operates through institutional
+                research, policy advice, treaty engagement and human rights
+                monitoring.
+            </p>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="section" id="finding-eight">
+
+            <div class="section-label">
+                09 · Finding Eight
+            </div>
+
+            <h2>
+                Treaty-Body Engagement Provides a Separate International Review Mechanism
+            </h2>
+
+            <p>
+                Malaysia's interaction with United Nations human rights treaty
+                bodies provides another layer of analysis.
+            </p>
+
+            <p>
+                The OHCHR Treaty Body Database records Malaysia's reporting
+                cycles and documentation relating to the implementation of
+                human rights treaties.
+            </p>
+
+            <p>
+                These materials may include:
+            </p>
+
+            <ul class="bullet-list">
+                <li>State party reports;</li>
+                <li>replies to lists of issues;</li>
+                <li>information submitted by national human rights institutions;</li>
+                <li>information submitted by civil society organisations;</li>
+                <li>constructive dialogue materials; and</li>
+                <li>concluding observations.</li>
+            </ul>
+
+            <p>
+                These documents should not automatically be treated as
+                equivalent to Malaysian domestic legislation or judicial
+                decisions.
+            </p>
+
+            <p>
+                Their legal and institutional character is different.
+                Nevertheless, they provide important evidence concerning how
+                Malaysia's implementation of international human rights
+                obligations is examined at the international level.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="section" id="finding-nine">
+
+            <div class="section-label">
+                10 · Finding Nine
+            </div>
+
+            <h2>
+                Malaysia's Treaty Participation Is Selective
+            </h2>
+
+            <p>
+                The research confirms that Malaysia's participation in the
+                international human rights treaty system is selective rather
+                than comprehensive.
+            </p>
+
+            <p>
+                Malaysia is party to several core human rights conventions,
+                including:
+            </p>
+
+            <ul class="bullet-list">
+                <li>CRC;</li>
+                <li>CEDAW; and</li>
+                <li>CRPD.</li>
+            </ul>
+
+            <p>
+                At the same time, Malaysia has not become a State Party to
+                every major core UN human rights treaty.
+            </p>
+
+            <div class="finding-card">
+
+                <h3>Analytical Categories</h3>
+
+                <ul class="bullet-list">
+                    <li>rights recognised in the Federal Constitution;</li>
+                    <li>obligations arising from treaties to which Malaysia is a party;</li>
+                    <li>international standards contained in treaties to which Malaysia is not a party; and</li>
+                    <li>broader international human rights norms and declarations.</li>
+                </ul>
+
+                <p>
+                    These categories should not be treated as legally
+                    identical.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="section" id="finding-ten">
+
+            <div class="section-label">
+                11 · Finding Ten
+            </div>
+
+            <h2>
+                Reservations and Declarations Require Separate Examination
+            </h2>
+
+            <p>
+                Malaysia's treaty participation cannot be assessed solely by
+                asking whether Malaysia has ratified or acceded to a
+                particular convention.
+            </p>
+
+            <p>
+                The specific terms of participation must also be examined.
+            </p>
+
+            <ul class="bullet-list">
+                <li>reservations;</li>
+                <li>declarations;</li>
+                <li>interpretive positions;</li>
+                <li>reporting practice; and</li>
+                <li>subsequent withdrawals or modifications.</li>
+            </ul>
+
+            <p>
+                For example, SUHAKAM's published treaty-status material
+                records reservations associated with Malaysia's participation
+                in CEDAW, CRC and CRPD.
+            </p>
+
+            <p>
+                Accordingly, future research should examine the precise scope
+                of Malaysia's treaty commitments rather than relying only on
+                the label "State Party."
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="section" id="finding-eleven">
+
+            <div class="section-label">
+                12 · Finding Eleven
+            </div>
+
+            <h2>
+                International Human Rights Law Has Multiple Points of Interaction With Malaysian Law
+            </h2>
+
+            <p>
+                The research identifies at least five points of interaction:
+            </p>
+
+            <div class="finding-card">
+
+                <h3>01 · Constitutional Interpretation</h3>
+
+                <p>
+                    International human rights norms may arise as interpretive
+                    material in discussions concerning constitutional rights.
+                </p>
+
+                <h3>02 · Legislative Development</h3>
+
+                <p>
+                    International standards may inform discussions concerning
+                    the development or amendment of Malaysian legislation.
+                </p>
+
+                <h3>03 · Institutional Practice</h3>
+
+                <p>
+                    Institutions such as SUHAKAM may use international human
+                    rights standards in research, recommendations and policy
+                    engagement.
+                </p>
+
+                <h3>04 · International Reporting</h3>
+
+                <p>
+                    Malaysia's treaty-body reporting creates an international
+                    accountability and review process.
+                </p>
+
+                <h3>05 · Academic and Policy Analysis</h3>
+
+                <p>
+                    International standards provide a framework for comparing
+                    Malaysian law with broader international human rights
+                    standards.
+                </p>
+
+            </div>
+
+            <p>
+                These forms of interaction should not be collapsed into a
+                single concept of "incorporation."
+            </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section class="section" id="framework">
+
+            <div class="section-label">
+                13 · Preliminary Analytical Framework
+            </div>
+
+            <h2>
+                Preliminary Analytical Framework
+            </h2>
+
+            <p>
+                Based on the research conducted so far, the relationship
+                between Malaysian law and international human rights law can
+                be represented as follows:
+            </p>
+
+            <div class="diagram">
+
+                <div class="diagram-inner">
+
+                    <div class="diagram-node">
+                        International Human Rights Instruments
+                    </div>
+
+                    <div class="diagram-arrow">↓</div>
+
+                    <div class="diagram-node">
+                        Malaysia's Treaty Status
+                    </div>
+
+                    <div class="diagram-arrow">↓</div>
+
+                    <div class="diagram-node">
+                        International Obligations
+                    </div>
+
+                    <div class="diagram-arrow">↓</div>
+
+                    <div class="diagram-split">
+
+                        <div>
+                            <div class="diagram-node">
+                                Domestic Incorporation
+                            </div>
+                            <div class="diagram-arrow">↓</div>
+                            <div class="diagram-node">
+                                Malaysian Domestic Law / Legislation
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="diagram-node">
+                                International Review
+                            </div>
+                            <div class="diagram-arrow">↓</div>
+                            <div class="diagram-node">
+                                UN Treaty Bodies / International Review
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="diagram-arrow">↓</div>
+
+                    <div class="diagram-node">
+                        Malaysian Courts
+                    </div>
+
+                    <div class="diagram-arrow">↓</div>
+
+                    <div class="diagram-node">
+                        Constitutional Interpretation
+                    </div>
+
+                    <div class="diagram-arrow">↓</div>
+
+                    <div class="diagram-node">
+                        Fundamental Liberties
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section class="section" id="distinctions">
+
+            <div class="section-label">
+                14 · Key Legal Distinctions
+            </div>
+
+            <h2>
+                Key Legal Distinctions
+            </h2>
+
+            <p>
+                The research establishes several distinctions that should be
+                maintained throughout the project.
+            </p>
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Treaty ratification/accession</td>
+                            <td>Malaysia's international acceptance of treaty obligations</td>
+                        </tr>
+
+                        <tr>
+                            <td>Treaty incorporation</td>
+                            <td>Giving treaty obligations domestic legal effect through domestic law</td>
+                        </tr>
+
+                        <tr>
+                            <td>Constitutional right</td>
+                            <td>A right protected within the Federal Constitution</td>
+                        </tr>
+
+                        <tr>
+                            <td>International human rights norm</td>
+                            <td>A norm recognised within the international human rights system</td>
+                        </tr>
+
+                        <tr>
+                            <td>Treaty-body recommendation</td>
+                            <td>An international institutional assessment or recommendation</td>
+                        </tr>
+
+                        <tr>
+                            <td>Judicial interpretation</td>
+                            <td>A domestic court's interpretation of applicable Malaysian law</td>
+                        </tr>
+
+                        <tr>
+                            <td>SUHAKAM recommendation</td>
+                            <td>Institutional advice or recommendation within SUHAKAM's statutory mandate</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p>
+                These concepts may interact, but they are not legally
+                interchangeable.
+            </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section class="section" id="preliminary">
+
+            <div class="section-label">
+                15 · Preliminary Finding
+            </div>
+
+            <h2>
+                Preliminary Finding
+            </h2>
+
+            <p>
+                The research indicates that the relationship between Malaysian
+                domestic law and international human rights law is best
+                understood as an interaction between different legal and
+                institutional layers rather than as a simple question of
+                whether international human rights law "applies" in Malaysia.
+            </p>
+
+            <p>
+                The Federal Constitution remains central to domestic rights
+                protection. Malaysia's treaty participation creates
+                international obligations, but treaty participation and
+                domestic incorporation must be distinguished.
+            </p>
+
+            <p>
+                Malaysian courts have developed significant constitutional
+                rights jurisprudence through domestic constitutional
+                interpretation.
+            </p>
+
+            <p>
+                International human rights norms may also appear in legal and
+                institutional discussions, but their use must be distinguished
+                from automatic incorporation of treaty provisions into
+                domestic law.
+            </p>
+
+            <p>
+                SUHAKAM provides an institutional mechanism through which
+                international human rights standards can be studied, discussed
+                and connected to Malaysian legislation, policy and human
+                rights practice.
+            </p>
+
+            <p>
+                The United Nations treaty-body system provides an additional
+                international review mechanism through which Malaysia's
+                implementation of treaty obligations can be examined.
+            </p>
+
+            <div class="finding-card">
+
+                <p>
+                    Taken together, these elements demonstrate a layered
+                    relationship between domestic constitutional law,
+                    international human rights obligations, judicial
+                    interpretation and institutional human rights practice.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section class="section" id="limitations">
+
+            <div class="section-label">
+                16 · Research Limitations
+            </div>
+
+            <h2>
+                Research Limitations
+            </h2>
+
+            <p>
+                These findings are preliminary.
+            </p>
+
+            <p>
+                The research does not attempt to provide an exhaustive
+                analysis of:
+            </p>
+
+            <ul class="bullet-list">
+                <li>every Malaysian constitutional rights case;</li>
+                <li>every international human rights treaty relevant to Malaysia;</li>
+                <li>every reservation or declaration;</li>
+                <li>every SUHAKAM recommendation;</li>
+                <li>every UN treaty-body document;</li>
+                <li>customary international human rights law; or</li>
+                <li>every academic interpretation of the relationship between international and domestic law.</li>
+            </ul>
+
+            <p>
+                The analysis should therefore be expanded through additional
+                primary sources and case law before being presented as a
+                comprehensive legal conclusion.
+            </p>
+
+        </section>
+
+
+        <!-- 17 -->
+
+        <section class="section" id="questions">
+
+            <div class="section-label">
+                17 · Questions for Further Research
+            </div>
+
+            <h2>
+                Questions for Further Research
+            </h2>
+
+            <p>
+                The findings generate several questions for the next stage of
+                Research Project 01.
+            </p>
+
+
+            <div class="research-question">
+                <div class="question-number">Question 01</div>
+                <h3>
+                    To what extent have Malaysian courts used international
+                    human rights instruments as interpretive material when
+                    interpreting constitutional rights?
+                </h3>
+            </div>
+
+            <div class="research-question">
+                <div class="question-number">Question 02</div>
+                <h3>
+                    How has the Federal Court's constitutional jurisprudence
+                    developed after Lee Kwan Woh, Sivarasa Rasiah and Alma
+                    Nudo Atenza?
+                </h3>
+            </div>
+
+            <div class="research-question">
+                <div class="question-number">Question 03</div>
+                <h3>
+                    How does SUHAKAM use international human rights standards
+                    when advising the Malaysian Government?
+                </h3>
+            </div>
+
+            <div class="research-question">
+                <div class="question-number">Question 04</div>
+                <h3>
+                    What domestic legislation has been enacted specifically
+                    to implement Malaysia's obligations under CRC, CEDAW and
+                    CRPD?
+                </h3>
+            </div>
+
+            <div class="research-question">
+                <div class="question-number">Question 05</div>
+                <h3>
+                    How closely does Malaysian legislation correspond with the
+                    recommendations issued by UN treaty bodies?
+                </h3>
+            </div>
+
+            <div class="research-question">
+                <div class="question-number">Question 06</div>
+                <h3>
+                    What legal and institutional barriers affect the
+                    implementation of international human rights obligations
+                    in Malaysia?
+                </h3>
+            </div>
+
+            <div class="research-question">
+                <div class="question-number">Question 07</div>
+                <h3>
+                    How should international human rights norms be
+                    distinguished from binding treaty obligations in Malaysian
+                    legal analysis?
+                </h3>
+            </div>
+
+        </section>
+
+
+        <!-- 18 -->
+
+        <section class="section" id="integrity">
+
+            <div class="section-label">
+                18 · Research Integrity Statement
+            </div>
+
+            <h2>
+                Research Integrity Statement
+            </h2>
+
+            <p>
+                This research distinguishes between:
+            </p>
+
+            <ul class="bullet-list">
+                <li>established legal rules;</li>
+                <li>judicial reasoning;</li>
+                <li>international treaty obligations;</li>
+                <li>institutional positions;</li>
+                <li>academic interpretations;</li>
+                <li>empirical evidence; and</li>
+                <li>the researcher's own analysis.</li>
+            </ul>
+
+            <p>
+                Where legal authorities differ in their approach, the
+                differences should be identified rather than concealed.
+            </p>
+
+            <p>
+                International human rights standards should not be presented
+                as Malaysian domestic law unless an appropriate domestic legal
+                basis exists.
+            </p>
+
+            <p>
+                Likewise, the absence of domestic incorporation should not be
+                interpreted automatically as meaning that international human
+                rights obligations have no relevance to Malaysia's
+                international legal position or institutional practice.
+            </p>
+
+        </section>
+
+
+        <!-- 19 -->
+
+        <section class="section" id="sources">
+
+            <div class="section-label">
+                19 · Sources Supporting These Findings
+            </div>
+
+            <h2>
+                Sources Supporting These Findings
+            </h2>
+
+            <div class="source-box">
+
+                <ul class="bullet-list">
+
+                    <li>Federal Constitution of Malaysia;</li>
+
+                    <li>
+                        Human Rights Commission of Malaysia Act 1999
+                        [Act 597], including subsequent amendments;
+                    </li>
+
+                    <li>
+                        Bato Bagi & Ors v Kerajaan Negeri Sarawak &
+                        Another Appeal [2011] 8 CLJ 766;
+                    </li>
+
+                    <li>
+                        Lee Kwan Woh v Public Prosecutor
+                        [2009] 5 MLJ 301;
+                    </li>
+
+                    <li>
+                        Sivarasa Rasiah v Badan Peguam Malaysia & Anor
+                        [2010] 2 MLJ 333;
+                    </li>
+
+                    <li>
+                        Alma Nudo Atenza v Public Prosecutor & Another Appeal
+                        [2019] 3 MLRA 1;
+                    </li>
+
+                    <li>United Nations Treaty Body Database;</li>
+
+                    <li>Human Rights Commission of Malaysia (SUHAKAM) materials;</li>
+
+                    <li>relevant peer-reviewed academic literature.</li>
+
+                </ul>
+
+                <p>
+                    Primary sources should remain the preferred basis for
+                    future expansion of the research.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATUS -->
+
+        <section class="section" id="status">
+
+            <div class="section-label">
+                Research Status
+            </div>
+
+            <h2>
+                R01 · Current Status
+            </h2>
+
+            <div class="status-grid">
+
+                <div class="status-item">
+                    <span class="status-name">
+                        Research Project
+                    </span>
+                    <span class="status-state">
+                        R01
+                    </span>
+                </div>
+
+                <div class="status-item">
+                    <span class="status-name">
+                        Stage
+                    </span>
+                    <span class="status-state">
+                        Preliminary Findings
+                    </span>
+                </div>
+
+                <div class="status-item">
+                    <span class="status-name">
+                        Research Status
+                    </span>
+                    <span class="status-state">
+                        Ongoing
+                    </span>
+                </div>
+
+                <div class="status-item">
+                    <span class="status-name">
+                        Primary Source Collection
+                    </span>
+                    <span class="status-state">
+                        Completed Initial Stage
+                    </span>
+                </div>
+
+                <div class="status-item">
+                    <span class="status-name">
+                        Case Law Collection
+                    </span>
+                    <span class="status-state">
+                        Initial Stage Completed
+                    </span>
+                </div>
+
+                <div class="status-item">
+                    <span class="status-name">
+                        UN Treaty Body Materials
+                    </span>
+                    <span class="status-state">
+                        Initial Stage Completed
+                    </span>
+                </div>
+
+                <div class="status-item">
+                    <span class="status-name">
+                        Academic Literature
+                    </span>
+                    <span class="status-state">
+                        Initial Stage Completed
+                    </span>
+                </div>
+
+                <div class="status-item">
+                    <span class="status-name">
+                        Final Research Paper
+                    </span>
+                    <span class="status-state">
+                        Not Yet Drafted
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="closing-quote">
+
+            The purpose of legal research is not merely to identify what the
+            law says, but to establish which source says it, what legal
+            authority it carries, and how it should be understood within the
+            wider legal framework.
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+            <div class="footer-title">
+                R01 · Research Findings
+            </div>
+
+            <div>
+                Muhammad Fathi Duraini · Academic Research
+            </div>
+        </div>
+
+        <div>
+            <a href="../">
+                ← Back to Research Project 01
+            </a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
+```
