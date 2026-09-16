@@ -24,7 +24,7 @@ Malaysia generally follows a **dualist approach** to the domestic application of
 
 Under this approach, the conclusion or ratification of an international treaty does not by itself automatically make the treaty enforceable as domestic law.
 
-The Malaysian Judiciary has described the position as requiring treaties to be incorporated into domestic law before their provisions become domestically enforceable.
+The Malaysian courts have recognised that treaties do not generally become part of Malaysian domestic law unless they are incorporated through domestic legislation. This principle was affirmed in Bato Bagi & Ors v Kerajaan Negeri Sarawak & Another Appeal [2011] 8 CLJ 766.
 
 This creates an important distinction between:
 
@@ -68,7 +68,7 @@ These questions must be answered separately.
 
 The distinction between international obligation and domestic enforceability is particularly important for Malaysia.
 
-The Malaysian Judiciary has discussed the position that treaty provisions become domestically enforceable where they have been incorporated through legislation.
+Malaysian courts have recognised that the domestic legal effect of treaty provisions depends on their incorporation through domestic legislation
 
 Accordingly, research should avoid statements such as:
 
