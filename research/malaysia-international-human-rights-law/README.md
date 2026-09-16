@@ -294,7 +294,8 @@ The project follows several principles:
 | SUHAKAM Legal Framework | Completed |
 | CRC | Completed |
 | CEDAW | Completed |
-| CRPD | Completed — Treaty Framework || UDHR | Completed |
+| CRPD | Completed — Treaty Framework |
+| UDHR | Completed |
 | ICCPR | Completed |
 | ICESCR | Completed |
 | Malaysian Case Law | Initial Collection |
