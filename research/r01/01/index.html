@@ -4,23 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Federal Constitution | R01</title>
+<title>Federal Constitution | R01 · 01</title>
 
 <meta name="description"
-content="Research material on the Federal Constitution of Malaysia and its relationship with fundamental liberties and international human rights law.">
+content="Research Material 01 — Federal Constitution of Malaysia. A digital legal research interface examining constitutional supremacy, fundamental liberties and the relationship between domestic constitutional law and international human rights law.">
 
 <style>
 :root{
-    --bg:#f5f7fa;
-    --surface:#ffffff;
+    --paper:#f4f1eb;
+    --paper-2:#ebe7df;
+    --white:#fffdf9;
     --ink:#17202a;
-    --muted:#68727d;
-    --line:#dfe4e8;
-    --soft:#eef2f5;
-    --accent:#1f3a5f;
-    --accent2:#315b85;
-    --max:1120px;
-    --shadow:0 18px 50px rgba(20,35,50,.08);
+    --muted:#68727c;
+    --line:#d8d4cc;
+    --navy:#152c43;
+    --navy-2:#234563;
+    --gold:#a27b3b;
+    --gold-soft:#eee2ca;
+    --shadow:0 20px 60px rgba(18,31,43,.09);
+    --max:1180px;
 }
 
 *{
@@ -34,9 +36,9 @@ html{
 }
 
 body{
-    font-family:Inter,Segoe UI,Arial,sans-serif;
-    background:var(--bg);
+    background:var(--paper);
     color:var(--ink);
+    font-family:Inter,Segoe UI,Arial,sans-serif;
     line-height:1.75;
 }
 
@@ -46,354 +48,818 @@ a{
 }
 
 .container{
-    width:min(var(--max),calc(100% - 40px));
+    width:min(var(--max),calc(100% - 44px));
     margin:auto;
 }
 
-/* NAV */
+/* =========================
+   NAVIGATION
+========================= */
 
-nav{
+.nav{
     position:sticky;
     top:0;
-    z-index:50;
-    background:rgba(255,255,255,.94);
-    backdrop-filter:blur(14px);
-    border-bottom:1px solid var(--line);
+    z-index:100;
+    background:rgba(244,241,235,.88);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(216,212,204,.8);
 }
 
 .nav-inner{
-    height:70px;
+    height:72px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-}
-
-.brand{
-    font-weight:800;
-    letter-spacing:.12em;
-    font-size:14px;
-}
-
-.nav-links{
-    display:flex;
-    gap:24px;
+    gap:12px;
     font-size:13px;
+    font-weight:900;
+    letter-spacing:.13em;
+}
+
+.logo-mark{
+    width:31px;
+    height:31px;
+    border:1px solid var(--navy);
+    display:grid;
+    place-items:center;
+    font-size:10px;
+    letter-spacing:0;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    font-size:12px;
     color:var(--muted);
 }
 
-.nav-links a:hover{
-    color:var(--accent);
+.nav-right a:hover{
+    color:var(--navy);
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
-    padding:95px 0 70px;
+    position:relative;
+    overflow:hidden;
+    padding:105px 0 90px;
     background:
-        radial-gradient(circle at 85% 20%,rgba(49,91,133,.10),transparent 30%),
-        linear-gradient(180deg,#fff 0%,#f5f7fa 100%);
+        linear-gradient(135deg,rgba(255,253,249,.98),rgba(235,231,223,.94));
+    border-bottom:1px solid var(--line);
 }
 
-.eyebrow{
-    display:inline-flex;
+.hero::before{
+    content:"01";
+    position:absolute;
+    right:-10px;
+    top:-45px;
+    font-size:280px;
+    line-height:1;
+    font-weight:900;
+    color:rgba(21,44,67,.035);
+    pointer-events:none;
+}
+
+.hero-grid{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1.5fr .7fr;
+    gap:70px;
+    align-items:end;
+}
+
+.kicker{
+    display:flex;
     align-items:center;
-    gap:10px;
-    font-size:12px;
-    font-weight:800;
+    gap:12px;
+    color:var(--gold);
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+.kicker::before{
+    content:"";
+    width:38px;
+    height:1px;
+    background:var(--gold);
+}
+
+.hero h1{
+    max-width:850px;
+    font-family:Georgia,serif;
+    font-weight:400;
+    font-size:clamp(58px,8vw,108px);
+    line-height:.93;
+    letter-spacing:-.055em;
+    margin-bottom:30px;
+}
+
+.hero-subtitle{
+    max-width:730px;
+    color:#56616c;
+    font-size:19px;
+}
+
+.hero-meta{
+    border-left:1px solid var(--line);
+    padding-left:28px;
+}
+
+.meta-label{
+    font-size:10px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:.15em;
+    color:var(--gold);
+    margin-bottom:8px;
+}
+
+.meta-value{
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+/* =========================
+   RESEARCH STRIP
+========================= */
+
+.research-strip{
+    background:var(--navy);
+    color:#fff;
+}
+
+.research-strip-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.research-cell{
+    padding:24px 20px;
+    border-right:1px solid rgba(255,255,255,.13);
+}
+
+.research-cell:last-child{
+    border-right:none;
+}
+
+.research-cell small{
+    display:block;
+    color:#9fb0bf;
+    font-size:9px;
+    font-weight:900;
     letter-spacing:.16em;
     text-transform:uppercase;
-    color:var(--accent);
-    margin-bottom:22px;
+    margin-bottom:7px;
 }
 
-.eyebrow::before{
-    content:"";
-    width:28px;
-    height:1px;
-    background:var(--accent);
+.research-cell strong{
+    font-size:13px;
+    font-weight:600;
 }
 
-h1{
-    max-width:900px;
-    font-size:clamp(42px,6vw,76px);
-    line-height:1.03;
-    letter-spacing:-.045em;
-    margin-bottom:28px;
-}
-
-.hero p{
-    max-width:760px;
-    font-size:19px;
-    color:var(--muted);
-}
-
-.meta{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:32px;
-}
-
-.tag{
-    padding:8px 13px;
-    border:1px solid var(--line);
-    background:#fff;
-    border-radius:999px;
-    font-size:12px;
-    font-weight:700;
-    color:#52606d;
-}
-
-/* MAIN */
+/* =========================
+   MAIN
+========================= */
 
 main{
-    padding:55px 0 100px;
+    padding:75px 0 110px;
 }
 
-.layout{
+.main-grid{
     display:grid;
-    grid-template-columns:260px 1fr;
-    gap:55px;
-    align-items:start;
+    grid-template-columns:220px 1fr;
+    gap:65px;
 }
 
-/* SIDEBAR */
+/* =========================
+   SIDE INDEX
+========================= */
 
-.sidebar{
+.index{
     position:sticky;
-    top:95px;
+    top:100px;
+    align-self:start;
 }
 
-.sidebar-title{
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:.14em;
+.index-label{
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.17em;
     text-transform:uppercase;
-    color:var(--muted);
-    margin-bottom:15px;
+    color:var(--gold);
+    margin-bottom:16px;
 }
 
-.sidebar a{
+.index a{
     display:block;
     padding:8px 0;
-    font-size:13px;
-    color:#64707b;
-    border-bottom:1px solid transparent;
+    font-size:12px;
+    color:#69737c;
+    border-left:1px solid transparent;
+    padding-left:12px;
 }
 
-.sidebar a:hover{
-    color:var(--accent);
+.index a:hover{
+    color:var(--navy);
+    border-left-color:var(--gold);
 }
 
-/* CONTENT */
+/* =========================
+   CONTENT
+========================= */
 
 .content{
     min-width:0;
 }
 
 .section{
-    background:var(--surface);
+    margin-bottom:30px;
+}
+
+.section-header{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    margin-bottom:28px;
+}
+
+.section-no{
+    flex:none;
+    color:var(--gold);
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:.13em;
+    padding-top:7px;
+}
+
+.section h2{
+    font-family:Georgia,serif;
+    font-weight:400;
+    font-size:39px;
+    line-height:1.12;
+    letter-spacing:-.035em;
+}
+
+.prose{
+    background:var(--white);
     border:1px solid var(--line);
-    border-radius:22px;
     padding:38px;
-    margin-bottom:24px;
     box-shadow:var(--shadow);
 }
 
-.section-number{
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:.15em;
-    color:var(--accent);
-    margin-bottom:10px;
+.prose p{
+    max-width:800px;
+    margin-bottom:18px;
 }
 
-h2{
-    font-size:30px;
-    line-height:1.2;
-    letter-spacing:-.025em;
-    margin-bottom:20px;
+.prose p:last-child{
+    margin-bottom:0;
 }
 
-h3{
-    font-size:19px;
-    margin:28px 0 10px;
+/* =========================
+   RESEARCH QUESTION
+========================= */
+
+.question{
+    position:relative;
+    background:var(--navy);
+    color:#fff;
+    padding:48px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
 }
 
-p{
-    margin-bottom:16px;
+.question::after{
+    content:"?";
+    position:absolute;
+    right:25px;
+    bottom:-55px;
+    font-family:Georgia,serif;
+    font-size:220px;
+    color:rgba(255,255,255,.035);
 }
 
-ul{
-    padding-left:22px;
-    margin:15px 0;
-}
-
-li{
-    margin-bottom:8px;
-}
-
-strong{
-    color:#18222d;
-}
-
-/* CALLOUT */
-
-.callout{
-    margin:25px 0;
-    padding:23px 25px;
-    background:var(--soft);
-    border-left:4px solid var(--accent);
-    border-radius:12px;
-}
-
-.callout-title{
-    font-size:12px;
+.question-label{
+    color:#c9a66a;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.18em;
     text-transform:uppercase;
-    letter-spacing:.12em;
-    font-weight:800;
-    color:var(--accent);
-    margin-bottom:8px;
+    margin-bottom:18px;
 }
 
-/* ARTICLE GRID */
+.question h2{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+    font-family:Georgia,serif;
+    font-weight:400;
+    font-size:35px;
+    line-height:1.25;
+}
 
-.cards{
+/* =========================
+   ARCHITECTURE
+========================= */
+
+.architecture{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+}
+
+.arch-node{
+    position:relative;
+    min-height:145px;
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:22px 17px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.arch-node::after{
+    content:"→";
+    position:absolute;
+    right:-12px;
+    top:50%;
+    transform:translateY(-50%);
+    color:var(--gold);
+    font-weight:900;
+    z-index:2;
+}
+
+.arch-node:last-child::after{
+    display:none;
+}
+
+.arch-number{
+    font-size:10px;
+    color:var(--gold);
+    font-weight:900;
+}
+
+.arch-title{
+    font-size:14px;
+    font-weight:800;
+    line-height:1.35;
+}
+
+.arch-desc{
+    font-size:11px;
+    color:var(--muted);
+    line-height:1.5;
+}
+
+/* =========================
+   LEGAL PROVISIONS
+========================= */
+
+.provisions{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:16px;
-    margin-top:22px;
+    gap:14px;
 }
 
-.card{
-    padding:22px;
+.provision{
+    background:var(--white);
     border:1px solid var(--line);
-    border-radius:16px;
-    background:#fafbfc;
+    padding:27px;
+    transition:.25s ease;
 }
 
-.card strong{
-    display:block;
+.provision:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow);
+    border-color:#c8b99e;
+}
+
+.article{
+    color:var(--gold);
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.provision h3{
+    font-family:Georgia,serif;
+    font-size:24px;
+    font-weight:400;
+    margin-bottom:8px;
+}
+
+.provision p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* =========================
+   DISTINCTION
+========================= */
+
+.distinction{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+}
+
+.distinction-item{
+    background:var(--white);
+    padding:32px;
+}
+
+.distinction-item:first-child{
+    background:#f8f5ef;
+}
+
+.distinction-label{
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:12px;
+}
+
+.distinction-item h3{
+    font-family:Georgia,serif;
+    font-size:25px;
+    font-weight:400;
+    margin-bottom:12px;
+}
+
+.distinction-item p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* =========================
+   CASES
+========================= */
+
+.cases{
+    display:grid;
+    gap:12px;
+}
+
+.case{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:25px;
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:25px;
+}
+
+.case-year{
+    color:var(--gold);
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:.12em;
+}
+
+.case h3{
+    font-family:Georgia,serif;
+    font-size:20px;
+    font-weight:400;
     margin-bottom:7px;
 }
 
-.card span{
-    font-size:14px;
+.case p{
+    font-size:13px;
     color:var(--muted);
 }
 
-/* TABLE */
+/* =========================
+   FINDING
+========================= */
 
-.table-wrap{
-    overflow-x:auto;
-    margin-top:22px;
+.finding{
+    border-top:3px solid var(--gold);
+    background:var(--white);
+    padding:40px;
+    box-shadow:var(--shadow);
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    font-size:14px;
+.finding-label{
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.17em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:17px;
 }
 
-th,td{
-    padding:15px;
+.finding p{
+    font-family:Georgia,serif;
+    font-size:25px;
+    line-height:1.45;
+    max-width:850px;
+}
+
+/* =========================
+   SOURCES
+========================= */
+
+.sources{
+    background:var(--white);
     border:1px solid var(--line);
-    text-align:left;
-    vertical-align:top;
 }
-
-th{
-    background:var(--soft);
-    font-weight:800;
-}
-
-/* SOURCE */
 
 .source{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    padding:18px 0;
+    display:grid;
+    grid-template-columns:35px 1fr auto;
+    gap:15px;
+    padding:22px 25px;
     border-bottom:1px solid var(--line);
+    align-items:start;
 }
 
 .source:last-child{
     border-bottom:none;
 }
 
+.source-number{
+    color:var(--gold);
+    font-size:11px;
+    font-weight:900;
+}
+
 .source-title{
+    font-size:14px;
     font-weight:700;
 }
 
 .source-type{
+    color:var(--muted);
+    font-size:11px;
+    margin-top:3px;
+}
+
+.source-link{
+    color:var(--gold);
+    font-size:11px;
+    font-weight:800;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status{
+    display:flex;
+    align-items:center;
+    gap:10px;
     font-size:12px;
     color:var(--muted);
 }
 
-/* FOOTER */
+.status-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#788a63;
+}
+
+/* =========================
+   NAVIGATION BOTTOM
+========================= */
+
+.material-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-top:55px;
+}
+
+.material-nav a{
+    background:var(--navy);
+    color:#fff;
+    padding:25px;
+    transition:.25s ease;
+}
+
+.material-nav a:hover{
+    background:var(--navy-2);
+    transform:translateY(-2px);
+}
+
+.material-nav small{
+    display:block;
+    color:#aebdca;
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+
+.material-nav strong{
+    font-family:Georgia,serif;
+    font-weight:400;
+    font-size:20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-    border-top:1px solid var(--line);
-    padding:35px 0;
-    background:#fff;
+    background:#101e2b;
+    color:#dce3e9;
+    padding:42px 0;
 }
 
 .footer-inner{
     display:flex;
     justify-content:space-between;
-    gap:20px;
-    color:var(--muted);
-    font-size:13px;
+    align-items:center;
+    gap:25px;
+}
+
+.footer-brand{
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.14em;
 }
 
 .footer-links{
     display:flex;
-    gap:20px;
+    gap:22px;
+    font-size:11px;
+    color:#9cabb7;
 }
 
 .footer-links a:hover{
-    color:var(--accent);
+    color:#fff;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 
-@media(max-width:850px){
+@media(max-width:950px){
 
-    .nav-links{
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .hero-meta{
+        border-left:none;
+        border-top:1px solid var(--line);
+        padding-left:0;
+        padding-top:25px;
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+    }
+
+    .meta-value{
+        margin-bottom:0;
+    }
+
+    .main-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .index{
+        position:static;
+        display:flex;
+        flex-wrap:wrap;
+        gap:4px 15px;
+    }
+
+    .index-label{
+        width:100%;
+    }
+
+    .index a{
+        padding-left:0;
+        border-left:none;
+    }
+
+    .architecture{
+        grid-template-columns:1fr;
+    }
+
+    .arch-node{
+        min-height:auto;
+    }
+
+    .arch-node::after{
+        content:"↓";
+        right:auto;
+        top:auto;
+        bottom:-15px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .arch-node:last-child::after{
+        display:none;
+    }
+}
+
+@media(max-width:650px){
+
+    .container{
+        width:min(var(--max),calc(100% - 28px));
+    }
+
+    .nav-right{
         display:none;
     }
 
-    .layout{
+    .hero{
+        padding:70px 0 60px;
+    }
+
+    .hero h1{
+        font-size:58px;
+    }
+
+    .hero-subtitle{
+        font-size:16px;
+    }
+
+    .hero-meta{
         grid-template-columns:1fr;
-        gap:25px;
     }
 
-    .sidebar{
-        position:static;
-        padding:20px;
-        background:#fff;
-        border:1px solid var(--line);
-        border-radius:16px;
+    .research-strip-grid{
+        grid-template-columns:1fr 1fr;
     }
 
-    .cards{
-        grid-template-columns:1fr;
+    .research-cell{
+        border-bottom:1px solid rgba(255,255,255,.13);
     }
 
-    .section{
+    main{
+        padding-top:50px;
+    }
+
+    .prose,
+    .question,
+    .finding{
         padding:27px;
     }
 
-    h1{
-        font-size:46px;
+    .section h2{
+        font-size:31px;
     }
 
-    .hero{
-        padding:65px 0 50px;
+    .question h2{
+        font-size:27px;
+    }
+
+    .provisions,
+    .distinction{
+        grid-template-columns:1fr;
+    }
+
+    .case{
+        grid-template-columns:1fr;
+        gap:8px;
+    }
+
+    .source{
+        grid-template-columns:25px 1fr;
+    }
+
+    .source-link{
+        display:none;
+    }
+
+    .material-nav{
+        grid-template-columns:1fr;
     }
 
     .footer-inner{
         flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-links{
+        flex-wrap:wrap;
     }
 }
 </style>
@@ -401,504 +867,707 @@ footer{
 
 <body>
 
-<nav>
-    <div class="container nav-inner">
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-        <a class="brand" href="../">FATHI / R01</a>
+<nav class="nav">
 
-        <div class="nav-links">
-            <a href="../">Research Project</a>
-            <a href="../../">Portfolio</a>
-            <a href="#sources">Sources</a>
-        </div>
+<div class="container nav-inner">
 
-    </div>
+<a class="logo" href="../">
+    <span class="logo-mark">R01</span>
+    FATHI RESEARCH
+</a>
+
+<div class="nav-right">
+    <a href="../">Research Project</a>
+    <a href="../../">Portfolio</a>
+    <a href="#sources">Sources</a>
+</div>
+
+</div>
+
 </nav>
 
 
+<!-- =========================
+     HERO
+========================= -->
+
 <header class="hero">
-    <div class="container">
 
-        <div class="eyebrow">
-            Research Material 01
-        </div>
+<div class="container hero-grid">
 
-        <h1>
-            Federal Constitution
-        </h1>
+<div>
 
-        <p>
-            The constitutional framework governing fundamental liberties,
-            rights protection and the domestic legal structure within which
-            international human rights standards may interact with Malaysian law.
-        </p>
+<div class="kicker">
+    Research Material 01
+</div>
 
-        <div class="meta">
-            <span class="tag">Malaysia</span>
-            <span class="tag">Constitutional Law</span>
-            <span class="tag">Fundamental Liberties</span>
-            <span class="tag">Human Rights</span>
-            <span class="tag">R01</span>
-        </div>
+<h1>
+    Federal<br>
+    Constitution
+</h1>
 
-    </div>
+<p class="hero-subtitle">
+    The constitutional foundation for analysing fundamental liberties,
+    domestic rights protection and the legal relationship between
+    Malaysian law and international human rights standards.
+</p>
+
+</div>
+
+
+<div class="hero-meta">
+
+<div>
+<div class="meta-label">Jurisdiction</div>
+<div class="meta-value">Malaysia</div>
+</div>
+
+<div>
+<div class="meta-label">Field</div>
+<div class="meta-value">Constitutional Law</div>
+</div>
+
+<div>
+<div class="meta-label">Status</div>
+<div class="meta-value">
+    <span class="status">
+        <span class="status-dot"></span>
+        Research Archive
+    </span>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </header>
 
 
+<!-- =========================
+     RESEARCH STRIP
+========================= -->
+
+<section class="research-strip">
+
+<div class="container research-strip-grid">
+
+<div class="research-cell">
+<small>Primary Authority</small>
+<strong>Federal Constitution</strong>
+</div>
+
+<div class="research-cell">
+<small>Core Area</small>
+<strong>Fundamental Liberties</strong>
+</div>
+
+<div class="research-cell">
+<small>Research Lens</small>
+<strong>Domestic Human Rights Law</strong>
+</div>
+
+<div class="research-cell">
+<small>Project</small>
+<strong>R01 · Malaysia & International Human Rights Law</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
 <main>
-<div class="container">
 
-<div class="layout">
+<div class="container main-grid">
 
-<aside class="sidebar">
 
-    <div class="sidebar-title">
-        Contents
-    </div>
+<!-- SIDE INDEX -->
 
-    <a href="#purpose">01 · Research Purpose</a>
-    <a href="#constitutional">02 · Constitutional Framework</a>
-    <a href="#liberties">03 · Fundamental Liberties</a>
-    <a href="#rights">04 · Selected Rights</a>
-    <a href="#international">05 · International Law</a>
-    <a href="#interpretation">06 · Constitutional Interpretation</a>
-    <a href="#research">07 · Research Relevance</a>
-    <a href="#sources">08 · Sources</a>
+<aside class="index">
+
+<div class="index-label">
+On this page
+</div>
+
+<a href="#purpose">01 · Purpose</a>
+<a href="#question">02 · Research Question</a>
+<a href="#architecture">03 · Legal Architecture</a>
+<a href="#liberties">04 · Fundamental Liberties</a>
+<a href="#international">05 · International Law</a>
+<a href="#jurisprudence">06 · Jurisprudence</a>
+<a href="#finding">07 · Preliminary Finding</a>
+<a href="#sources">08 · Sources</a>
 
 </aside>
 
 
+<!-- CONTENT -->
+
 <section class="content">
 
 
-<div class="section" id="purpose">
+<!-- PURPOSE -->
 
-<div class="section-number">01</div>
+<section class="section" id="purpose">
+
+<div class="section-header">
+
+<div class="section-no">01</div>
 
 <h2>Research Purpose</h2>
 
+</div>
+
+<div class="prose">
+
 <p>
-The Federal Constitution is the central domestic legal framework for
-examining the protection of fundamental liberties in Malaysia.
+The Federal Constitution is the principal domestic legal framework
+for examining the protection of fundamental liberties in Malaysia.
 </p>
 
 <p>
-For this research project, the Constitution is examined as the principal
-domestic reference point for analysing the relationship between Malaysian
-law and international human rights standards.
-</p>
-
-<div class="callout">
-
-<div class="callout-title">
-Research Focus
-</div>
-
-The key issue is not whether international human rights instruments
-automatically become Malaysian law, but how constitutional rights,
-domestic legislation, judicial interpretation and international standards
-interact within the Malaysian legal system.
-
-</div>
-
-</div>
-
-
-<div class="section" id="constitutional">
-
-<div class="section-number">02</div>
-
-<h2>Constitutional Framework</h2>
-
-<p>
-The Federal Constitution is the supreme law of Malaysia. Article 4(1)
-provides that the Constitution is the supreme law of the Federation and
-that laws inconsistent with it are, to the extent of the inconsistency,
-void.
+Within R01, the Constitution provides the domestic baseline against
+which legislation, judicial decisions, institutional practice and
+international human rights standards can be examined.
 </p>
 
 <p>
-This establishes the constitutional framework within which legislation,
-executive action and judicial interpretation operate.
-</p>
-
-<div class="cards">
-
-<div class="card">
-<strong>Article 4</strong>
-<span>
-Constitutional supremacy and the validity of laws inconsistent with
-the Constitution.
-</span>
-</div>
-
-<div class="card">
-<strong>Part II</strong>
-<span>
-Fundamental liberties and constitutional protection of specified rights.
-</span>
-</div>
-
-<div class="card">
-<strong>Article 5</strong>
-<span>
-Protection of life and personal liberty subject to constitutional
-and legal conditions.
-</span>
-</div>
-
-<div class="card">
-<strong>Article 8</strong>
-<span>
-Equality before the law and equal protection of the law, subject to
-the constitutional text and recognised qualifications.
-</span>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="section" id="liberties">
-
-<div class="section-number">03</div>
-
-<h2>Fundamental Liberties</h2>
-
-<p>
-Part II of the Federal Constitution contains provisions concerning
-fundamental liberties.
-</p>
-
-<p>
-These provisions provide the principal constitutional framework for
-rights-based analysis in Malaysian domestic law.
-</p>
-
-<div class="table-wrap">
-
-<table>
-
-<thead>
-<tr>
-<th>Provision</th>
-<th>Subject</th>
-<th>Research Relevance</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>Article 5</td>
-<td>Life and personal liberty</td>
-<td>
-Central to analysis concerning detention, procedural fairness and
-personal liberty.
-</td>
-</tr>
-
-<tr>
-<td>Article 6</td>
-<td>Slavery and forced labour</td>
-<td>
-Relevant to protection against slavery and forced labour.
-</td>
-</tr>
-
-<tr>
-<td>Article 7</td>
-<td>Protection against retrospective criminal laws and repeated trials</td>
-<td>
-Relevant to legality and procedural safeguards.
-</td>
-</tr>
-
-<tr>
-<td>Article 8</td>
-<td>Equality</td>
-<td>
-Relevant to discrimination, equal protection and constitutional
-classification.
-</td>
-</tr>
-
-<tr>
-<td>Article 9</td>
-<td>Movement</td>
-<td>
-Relevant to constitutional analysis concerning movement and restrictions.
-</td>
-</tr>
-
-<tr>
-<td>Articles 10–13</td>
-<td>Other fundamental liberties</td>
-<td>
-Cover specified freedoms, religious liberty, property and related
-constitutional protections.
-</td>
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-
-<div class="section" id="rights">
-
-<div class="section-number">04</div>
-
-<h2>Selected Constitutional Rights</h2>
-
-<h3>Article 5 · Life and Personal Liberty</h3>
-
-<p>
-Article 5 is an important constitutional provision for examining the
-protection of personal liberty and the legal requirements surrounding
-deprivation of liberty.
-</p>
-
-<h3>Article 8 · Equality</h3>
-
-<p>
-Article 8 establishes equality before the law and equal protection
-of the law. Malaysian courts have developed constitutional jurisprudence
-concerning the scope and application of this guarantee.
-</p>
-
-<h3>Article 10 · Freedom of Speech, Assembly and Association</h3>
-
-<p>
-Article 10 provides constitutional protection for specified freedoms,
-while also recognising that Parliament may impose restrictions within
-the constitutional framework.
-</p>
-
-<h3>Article 12 · Rights in Respect of Education</h3>
-
-<p>
-Article 12 contains constitutional provisions concerning rights relating
-to education and discrimination in educational contexts.
-</p>
-
-<h3>Article 13 · Rights to Property</h3>
-
-<p>
-Article 13 provides constitutional protection concerning deprivation
-of property, subject to the conditions established by the Constitution.
+The research therefore treats constitutional law and international
+human rights law as related but legally distinct fields of analysis.
 </p>
 
 </div>
 
-
-<div class="section" id="international">
-
-<div class="section-number">05</div>
-
-<h2>Relationship with International Human Rights Law</h2>
-
-<p>
-The Federal Constitution must be distinguished from international human
-rights treaties. The two operate within different legal frameworks.
-</p>
-
-<p>
-Malaysia's participation in an international treaty does not, by itself,
-necessarily transform the treaty into directly enforceable domestic law.
-The domestic legal effect of treaty obligations depends on the Malaysian
-constitutional and legislative framework.
-</p>
-
-<div class="callout">
-
-<div class="callout-title">
-Key Legal Distinction
-</div>
-
-International human rights obligations and domestic constitutional
-rights are related but legally distinct sources of norms.
-
-</div>
-
-<p>
-This distinction is particularly important when analysing instruments
-such as the Convention on the Rights of the Child, CEDAW and CRPD,
-as well as broader international human rights standards.
-</p>
-
-</div>
+</section>
 
 
-<div class="section" id="interpretation">
+<!-- QUESTION -->
 
-<div class="section-number">06</div>
+<section class="section" id="question">
 
-<h2>Constitutional Interpretation</h2>
+<div class="question">
 
-<p>
-Malaysian courts have developed jurisprudence concerning the interpretation
-of fundamental liberties. Judicial decisions therefore form an important
-part of this research project.
-</p>
-
-<p>
-Cases such as <strong>Lee Kwan Woh v Public Prosecutor</strong>,
-<strong>Sivarasa Rasiah v Badan Peguam Malaysia & Anor</strong> and
-<strong>Alma Nudo Atenza v Public Prosecutor</strong> are examined
-elsewhere in R01 as part of the case-law component.
-</p>
-
-<p>
-The research does not assume that a Malaysian court has incorporated an
-international treaty merely because an international human rights principle
-resembles a constitutional right. The precise reasoning of the court,
-the domestic legal provision involved and the status of any international
-instrument must be examined separately.
-</p>
-
-</div>
-
-
-<div class="section" id="research">
-
-<div class="section-number">07</div>
-
-<h2>Research Relevance</h2>
-
-<p>
-The Federal Constitution provides the domestic constitutional baseline
-for the wider research question:
-</p>
-
-<div class="callout">
-
-<div class="callout-title">
+<div class="question-label">
 Central Research Question
 </div>
 
+<h2>
 How does international human rights law interact with the Malaysian
 domestic legal system, particularly where constitutional rights,
-legislation, judicial interpretation and international obligations
-intersect?
+legislation, judicial interpretation and international obligations intersect?
+</h2>
 
 </div>
 
-<div class="cards">
+</section>
 
-<div class="card">
-<strong>Domestic Law</strong>
-<span>
-Constitutional provisions and legislation provide the primary domestic
-legal framework.
-</span>
-</div>
 
-<div class="card">
-<strong>Judicial Interpretation</strong>
-<span>
-Courts interpret constitutional provisions and determine the legal
-effect of relevant domestic rules.
-</span>
-</div>
+<!-- ARCHITECTURE -->
 
-<div class="card">
-<strong>International Standards</strong>
-<span>
-Treaties, declarations and international mechanisms provide additional
-normative and legal reference points.
-</span>
-</div>
+<section class="section" id="architecture">
 
-<div class="card">
-<strong>Institutional Practice</strong>
-<span>
-Institutions such as SUHAKAM contribute to Malaysia's human rights
-framework and international engagement.
-</span>
-</div>
+<div class="section-header">
+
+<div class="section-no">03</div>
+
+<h2>Constitutional Architecture</h2>
 
 </div>
 
+<p style="margin-bottom:25px;color:#68727c;">
+The research begins with the domestic constitutional framework before
+examining its interaction with international human rights standards.
+</p>
+
+<div class="architecture">
+
+<div class="arch-node">
+<div class="arch-number">01</div>
+<div class="arch-title">Federal Constitution</div>
+<div class="arch-desc">
+Supreme domestic legal framework.
+</div>
+</div>
+
+<div class="arch-node">
+<div class="arch-number">02</div>
+<div class="arch-title">Fundamental Liberties</div>
+<div class="arch-desc">
+Constitutional protection of specified rights.
+</div>
+</div>
+
+<div class="arch-node">
+<div class="arch-number">03</div>
+<div class="arch-title">Legislation</div>
+<div class="arch-desc">
+Statutory rules operating within the constitutional framework.
+</div>
+</div>
+
+<div class="arch-node">
+<div class="arch-number">04</div>
+<div class="arch-title">Judicial Interpretation</div>
+<div class="arch-desc">
+Courts interpret and apply constitutional provisions.
+</div>
+</div>
+
+<div class="arch-node">
+<div class="arch-number">05</div>
+<div class="arch-title">International Standards</div>
+<div class="arch-desc">
+Treaties and international human rights norms.
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LIBERTIES -->
+
+<section class="section" id="liberties">
+
+<div class="section-header">
+
+<div class="section-no">04</div>
+
+<h2>Fundamental Liberties</h2>
+
+</div>
+
+<div class="provisions">
+
+<article class="provision">
+
+<div class="article">
+Article 5
+</div>
+
+<h3>Life & Personal Liberty</h3>
+
+<p>
+Protection concerning life and personal liberty, subject to the
+constitutional and legal framework governing deprivation of liberty.
+</p>
+
+</article>
+
+
+<article class="provision">
+
+<div class="article">
+Article 6
+</div>
+
+<h3>Slavery & Forced Labour</h3>
+
+<p>
+Constitutional protection against slavery and forced labour, subject
+to the provisions expressly recognised by the Constitution.
+</p>
+
+</article>
+
+
+<article class="provision">
+
+<div class="article">
+Article 7
+</div>
+
+<h3>Criminal Justice Safeguards</h3>
+
+<p>
+Protection concerning retrospective criminal laws and repeated trials.
+</p>
+
+</article>
+
+
+<article class="provision">
+
+<div class="article">
+Article 8
+</div>
+
+<h3>Equality</h3>
+
+<p>
+Equality before the law and equal protection of the law within the
+constitutional framework.
+</p>
+
+</article>
+
+
+<article class="provision">
+
+<div class="article">
+Article 9
+</div>
+
+<h3>Movement</h3>
+
+<p>
+Constitutional provisions concerning freedom of movement and its
+permissible restrictions.
+</p>
+
+</article>
+
+
+<article class="provision">
+
+<div class="article">
+Articles 10–13
+</div>
+
+<h3>Other Liberties</h3>
+
+<p>
+Specified freedoms, religious liberty, educational rights and property
+rights within the constitutional framework.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- INTERNATIONAL LAW -->
+
+<section class="section" id="international">
+
+<div class="section-header">
+
+<div class="section-no">05</div>
+
+<h2>Domestic Constitution & International Law</h2>
+
+</div>
+
+<div class="distinction">
+
+<div class="distinction-item">
+
+<div class="distinction-label">
+Domestic Framework
+</div>
+
+<h3>Constitutional Rights</h3>
+
+<p>
+Rights recognised and protected under Malaysian constitutional law,
+together with the legislation and judicial decisions that operate
+within that framework.
+</p>
+
 </div>
 
 
-<div class="section" id="sources">
+<div class="distinction-item">
 
-<div class="section-number">08</div>
+<div class="distinction-label">
+International Framework
+</div>
 
-<h2>Sources</h2>
+<h3>Human Rights Standards</h3>
+
+<p>
+International treaties, declarations, treaty-body materials and other
+international standards relevant to the protection of human rights.
+</p>
+
+</div>
+
+</div>
+
+<div class="prose" style="margin-top:1px;box-shadow:none;">
+
+<p>
+The distinction matters because Malaysia's participation in an
+international treaty and the treaty's domestic legal effect are
+separate legal questions.
+</p>
+
+<p>
+International obligations should therefore not automatically be
+described as directly enforceable domestic law without examining
+the relevant constitutional, statutory and judicial framework.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- JURISPRUDENCE -->
+
+<section class="section" id="jurisprudence">
+
+<div class="section-header">
+
+<div class="section-no">06</div>
+
+<h2>Selected Jurisprudence</h2>
+
+</div>
+
+<div class="cases">
+
+<article class="case">
+
+<div class="case-year">
+2009 · FEDERAL COURT
+</div>
+
+<div>
+
+<h3>
+Lee Kwan Woh v Public Prosecutor
+</h3>
+
+<p>
+Relevant to the interpretation of constitutional protections,
+particularly Article 5 and Article 8, and the judicial approach to
+fundamental liberties.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="case">
+
+<div class="case-year">
+2010 · FEDERAL COURT
+</div>
+
+<div>
+
+<h3>
+Sivarasa Rasiah v Badan Peguam Malaysia & Anor
+</h3>
+
+<p>
+Relevant to constitutional rights analysis and the judicial treatment
+of restrictions on fundamental liberties.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="case">
+
+<div class="case-year">
+2019 · FEDERAL COURT
+</div>
+
+<div>
+
+<h3>
+Alma Nudo Atenza v Public Prosecutor
+</h3>
+
+<p>
+Relevant to constitutional interpretation and the scope of
+fundamental liberties within Malaysian law.
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- FINDING -->
+
+<section class="section" id="finding">
+
+<div class="finding">
+
+<div class="finding-label">
+Preliminary Research Finding
+</div>
+
+<p>
+The Federal Constitution provides the principal domestic framework
+through which fundamental liberties are legally protected in Malaysia.
+International human rights standards may provide an important
+comparative and interpretive reference, but their precise domestic
+legal effect must be analysed separately from the constitutional
+rights themselves.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SOURCES -->
+
+<section class="section" id="sources">
+
+<div class="section-header">
+
+<div class="section-no">08</div>
+
+<h2>Source Architecture</h2>
+
+</div>
+
+<div class="sources">
 
 <div class="source">
+
+<div class="source-number">01</div>
 
 <div>
 <div class="source-title">
 Federal Constitution of Malaysia
 </div>
 <div class="source-type">
-Primary constitutional source
+Primary constitutional authority
 </div>
 </div>
 
+<a class="source-link"
+href="https://www.kehakiman.gov.my/"
+target="_blank">
+PRIMARY
+</a>
+
 </div>
+
 
 <div class="source">
 
+<div class="source-number">02</div>
+
 <div>
 <div class="source-title">
-Federal Constitution · Part II
+Malaysian Judiciary · Judicial Materials
 </div>
 <div class="source-type">
-Fundamental liberties
+Primary institutional and judicial materials
 </div>
 </div>
 
+<a class="source-link"
+href="https://www.kehakiman.gov.my/"
+target="_blank">
+JUDICIARY
+</a>
+
 </div>
+
 
 <div class="source">
 
-<div>
-<div class="source-title">
-Malaysian Judiciary · Constitutional Jurisprudence
-</div>
-<div class="source-type">
-Judicial materials and reported decisions
-</div>
-</div>
-
-</div>
-
-<div class="source">
+<div class="source-number">03</div>
 
 <div>
 <div class="source-title">
-R01 · Malaysian International Human Rights Law
+R01 · Source Archive
 </div>
 <div class="source-type">
-Research project source archive
+Research project's consolidated source record
 </div>
 </div>
 
-</div>
+<a class="source-link"
+href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/tree/main/research/malaysia-international-human-rights-law"
+target="_blank">
+ARCHIVE
+</a>
 
 </div>
 
+</div>
 
-<div class="callout">
+</section>
 
-<div class="callout-title">
+
+<!-- INTEGRITY -->
+
+<section class="section">
+
+<div class="prose">
+
+<div class="article">
 Research Integrity
 </div>
 
-This page presents the constitutional framework used in the research.
-Specific legal propositions should be read together with the relevant
-primary legal sources, judicial decisions and supporting academic
-literature contained in the wider R01 research archive.
+<p>
+This page is a presentation layer for Research Material 01.
+The underlying research record, sources and supporting materials
+remain available within the R01 source archive.
+</p>
+
+<p>
+Legal propositions are presented with attention to the distinction
+between primary legal authority, institutional material, academic
+interpretation and the researcher's own analysis.
+</p>
+
+<div class="status" style="margin-top:22px;">
+<span class="status-dot"></span>
+Research material · continuously developing
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MATERIAL NAVIGATION -->
+
+<div class="material-nav">
+
+<a href="../">
+
+<small>
+← Previous / Research Project
+</small>
+
+<strong>
+R01 · Malaysia & International Human Rights Law
+</strong>
+
+</a>
+
+
+<a href="../02/">
+
+<small>
+Next Research Material →
+</small>
+
+<strong>
+02 · Human Rights Commission Act
+</strong>
+
+</a>
 
 </div>
 
@@ -906,23 +1575,34 @@ literature contained in the wider R01 research archive.
 </section>
 
 </div>
-</div>
+
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
 <div class="container footer-inner">
 
-<div>
-© 2026 Muhammad Fathi Duraini · R01 Research Project
+<div class="footer-brand">
+FATHI RESEARCH · R01
 </div>
 
 <div class="footer-links">
 
-<a href="../">Back to R01</a>
+<a href="../">
+Back to R01
+</a>
 
-<a href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/01-federal-constitution.md">
+<a href="../../">
+Portfolio
+</a>
+
+<a href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/01-federal-constitution.md"
+target="_blank">
 View Source
 </a>
 
