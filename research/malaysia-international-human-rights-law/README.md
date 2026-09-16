@@ -55,7 +55,7 @@ The project is Malaysia-focused while placing domestic developments within the w
 
 # 04 · RESEARCH MATERIALS
 
-## Primary Legal Sources
+## Primary Legal and International Sources
 
 - Federal Constitution of Malaysia
 - Human Rights Commission of Malaysia Act 1999 (Act 597)
@@ -144,11 +144,11 @@ Selected Malaysian cases concerning:
 The research uses the following analytical structure:
 
 ```text
-INTERNATIONAL STANDARD
+INTERNATIONAL STANDARD / INSTRUMENT
         ↓
-TREATY STATUS
+LEGAL / NORMATIVE STATUS
         ↓
-MALAYSIA'S INTERNATIONAL OBLIGATION
+MALAYSIA'S INTERNATIONAL POSITION
         ↓
 DOMESTIC LEGAL FRAMEWORK
         ↓
@@ -294,8 +294,7 @@ The project follows several principles:
 | SUHAKAM Legal Framework | Completed |
 | CRC | Completed |
 | CEDAW | Completed |
-| CRPD | Completed |
-| UDHR | Completed |
+| CRPD | Completed — Treaty Framework || UDHR | Completed |
 | ICCPR | Completed |
 | ICESCR | Completed |
 | Malaysian Case Law | Initial Collection |
