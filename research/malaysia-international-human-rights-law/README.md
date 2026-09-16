@@ -1,199 +1,362 @@
-# Malaysia and International Human Rights Law
+# Research Project 01
+## Malaysia and International Human Rights Law
 
-### Examining the Relationship Between Domestic Law and International Human Rights Standards
-
-**Research Project 01**
-
----
-
-## RESEARCH OVERVIEW
-
-This research examines the relationship between **Malaysian domestic law and international human rights standards**, with particular attention to the legal and institutional framework through which international human rights norms interact with Malaysia.
-
-Malaysia is party to several core international human rights treaties, including the **Convention on the Rights of the Child (CRC), Convention on the Elimination of All Forms of Discrimination against Women (CEDAW), and Convention on the Rights of Persons with Disabilities (CRPD)**. Malaysia has not acceded to several other core human rights treaties, including the ICCPR and ICESCR.
-
-SUHAKAM has previously undertaken research examining the compatibility of Malaysian law with several international human rights instruments. This provides an important institutional and methodological reference point for understanding the relationship between international standards and domestic law.
-
-This project seeks to study the issue from an undergraduate academic perspective using primary legal materials, official documents and scholarly literature.
+> **A legal and academic research project examining the relationship between international human rights law, Malaysian domestic law, institutional practice and human rights protection in Malaysia.**
 
 ---
 
-# RESEARCH QUESTION
+## 01 · RESEARCH QUESTION
 
-### Primary Question
+This research examines:
 
-**How does Malaysian domestic law relate to international human rights standards, and what legal and institutional considerations arise from this relationship?**
+> **How does international human rights law interact with Malaysia's domestic legal framework, and what are the implications for human rights protection and development in Malaysia?**
 
-### Supporting Questions
+The research focuses on the relationship between:
 
-1. What international human rights instruments are relevant to Malaysia?
-2. What is the legal position of international treaties within the Malaysian legal system?
-3. How are human rights protected through the Federal Constitution and domestic legislation?
-4. What mechanisms exist for assessing compatibility between domestic law and international human rights standards?
-5. What institutional role does SUHAKAM play in promoting alignment between Malaysian law and international human rights standards?
+**International Human Rights Standards → Treaty Obligations → Malaysian Law → Institutions → Implementation → Human Rights Outcomes**
 
 ---
 
-# RESEARCH OBJECTIVES
+# 02 · RESEARCH OBJECTIVES
 
-### Objective 1
+### Objective 01
+Identify the international human rights instruments relevant to Malaysia.
 
-To examine the relationship between international human rights standards and Malaysian domestic law.
+### Objective 02
+Examine Malaysia's treaty status and obligations under relevant international instruments.
 
-### Objective 2
+### Objective 03
+Analyse the relationship between international human rights law and Malaysian domestic law.
 
-To identify relevant constitutional, legislative and institutional frameworks governing human rights protection in Malaysia.
+### Objective 04
+Examine the role of Malaysian institutions, particularly SUHAKAM, in promoting and protecting human rights.
 
-### Objective 3
-
-To analyse selected areas of interaction between Malaysian law and international human rights standards.
-
-### Objective 4
-
-To examine the role of institutions, particularly SUHAKAM, in promoting human rights protection and engagement with international human rights mechanisms.
-
-### Objective 5
-
-To identify areas for further academic and policy research.
+### Objective 05
+Identify selected legal, institutional and implementation issues relevant to human rights protection in Malaysia.
 
 ---
 
-# SCOPE OF RESEARCH
+# 03 · RESEARCH SCOPE
 
-The research will focus on:
+The research currently covers:
 
-* International human rights law
-* Malaysian constitutional and domestic law
-* International human rights treaties
-* The relationship between international and domestic legal frameworks
-* Institutional mechanisms for human rights protection
-* SUHAKAM and its statutory functions
-* Selected human rights issues relevant to Malaysia
+- International Human Rights Law
+- Malaysian Constitutional Law
+- International Human Rights Treaties
+- Treaty Implementation
+- Human Rights Institutions
+- Malaysian Human Rights Case Law
+- UN Human Rights Mechanisms
+- Human Rights & Development
 
-The research will not attempt to provide a comprehensive assessment of every Malaysian law or every international human rights instrument.
-
----
-
-# METHODOLOGY
-
-This study will adopt a **qualitative legal and documentary research approach**.
-
-### Primary Sources
-
-The research will prioritise:
-
-* Federal Constitution of Malaysia
-* Malaysian legislation
-* International treaties and conventions
-* United Nations documents
-* International court and tribunal materials where relevant
-* Official Malaysian government documents
-* Official SUHAKAM publications
-
-### Secondary Sources
-
-Supporting materials may include:
-
-* Peer-reviewed academic articles
-* Academic books
-* Legal commentaries
-* Research reports
-* Scholarly analysis
+The project is Malaysia-focused while placing domestic developments within the wider international human rights framework.
 
 ---
 
-# ANALYTICAL FRAMEWORK
+# 04 · RESEARCH MATERIALS
 
-The research will examine the relationship through four dimensions:
+## Primary Legal Sources
 
-### 01 · International Standards
+- Federal Constitution of Malaysia
+- Human Rights Commission of Malaysia Act 1999 (Act 597)
+- Convention on the Rights of the Child (CRC)
+- Convention on the Elimination of All Forms of Discrimination against Women (CEDAW)
+- Convention on the Rights of Persons with Disabilities (CRPD)
+- Universal Declaration of Human Rights (UDHR)
+- International Covenant on Civil and Political Rights (ICCPR)
+- International Covenant on Economic, Social and Cultural Rights (ICESCR)
 
-What rights and obligations are established by relevant international instruments?
+## Case Law
 
-### 02 · Domestic Legal Framework
+Selected Malaysian cases concerning:
 
-How are relevant rights recognised or protected under Malaysian law?
+- Fundamental liberties
+- Constitutional interpretation
+- International law
+- Human rights
+- Judicial reasoning
 
-### 03 · Institutional Framework
+## UN Materials
 
-Which institutions are responsible for promoting, protecting or implementing human rights?
+- UN Treaty Body materials
+- Universal Periodic Review materials
+- State reports
+- Lists of issues
+- Replies to lists of issues
+- Concluding observations
+- Follow-up information
 
-### 04 · Areas of Compatibility and Difference
+## Institutional Materials
 
-Where do domestic legal frameworks correspond with, differ from, or raise questions in relation to international standards?
+- SUHAKAM reports
+- SUHAKAM recommendations
+- SUHAKAM submissions
+- Government documents
+- Relevant institutional publications
 
----
+## Academic Literature
 
-# KEY PRIMARY SOURCES
-
-The initial source base will include:
-
-* Federal Constitution of Malaysia
-* Human Rights Commission of Malaysia Act 1999 [Act 597], including the 2024 amendment
-* Convention on the Rights of the Child
-* Convention on the Elimination of All Forms of Discrimination against Women
-* Convention on the Rights of Persons with Disabilities
-* Relevant United Nations human rights documents
-* Relevant SUHAKAM publications
-
-SUHAKAM states that its statutory functions include advising and assisting the Government in formulating legislation and procedures, recommending accession to international human rights treaties and conducting research concerning human rights.
-
----
-
-# EXPECTED OUTPUT
-
-The completed research project is intended to produce:
-
-**Research Paper**
-A structured academic paper presenting the research question, literature review, legal framework, analysis, findings and conclusion.
-
-**Source Archive**
-A record of primary and secondary sources consulted during the research.
-
-**Research Notes**
-Working notes documenting key legal provisions, cases, institutional materials and academic arguments.
-
-**Potential Policy Brief**
-A shorter policy-oriented version may be developed after completion of the research.
+- Peer-reviewed journal articles
+- Academic books
+- Legal scholarship
+- University research publications
+- Scholarly analysis of Malaysian and international human rights law
 
 ---
 
-# RESEARCH STATUS
+# 05 · RESEARCH FILES
 
-| Component           | Status        |
-| ------------------- | ------------- |
-| Research Topic      | Completed     |
-| Research Question   | Completed     |
-| Research Objectives | Completed     |
-| Scope               | Completed     |
-| Methodology         | Completed     |
-| Source Collection   | In Progress   |
-| Literature Review   | Not Started   |
-| Legal Analysis      | Not Started   |
-| Research Paper      | Not Started   |
-| Policy Brief        | Future Output |
+### Legal & Constitutional Framework
+
+- `01-federal-constitution.md`
+- `02-human-rights-commission-act-1999.md`
+
+### International Human Rights Instruments
+
+- `03-convention-on-the-rights-of-the-child.md`
+- `04-convention-on-the-elimination-of-all-forms-of-discrimination-against-women.md`
+- `05-convention-on-the-rights-of-persons-with-disabilities.md`
+- `06-universal-declaration-of-human-rights.md`
+- `07-international-covenant-on-civil-and-political-rights.md`
+- `08-international-covenant-on-economic-social-and-cultural-rights.md`
+
+### Malaysian Case Law
+
+- `09-malaysian-human-rights-case-law.md`
+
+### Legal Analysis
+
+- `10-legal-analysis-malaysia-and-international-human-rights-law.md`
+
+### Academic Literature
+
+- `11-academic-literature.md`
+
+### UN Treaty Body Materials
+
+- `12-un-treaty-body-materials-malaysia.md`
+- `13-crpd-treaty-body-materials-malaysia.md`
 
 ---
 
-# IMPORTANT NOTE
+# 06 · ANALYTICAL FRAMEWORK
 
-This is an **independent undergraduate research project** developed as part of an academic portfolio.
+The research uses the following analytical structure:
 
-It does not represent the position of SUHAKAM, the Government of Malaysia, the United Nations or any other institution.
+```text
+INTERNATIONAL STANDARD
+        ↓
+TREATY STATUS
+        ↓
+MALAYSIA'S INTERNATIONAL OBLIGATION
+        ↓
+DOMESTIC LEGAL FRAMEWORK
+        ↓
+INSTITUTIONAL PRACTICE
+        ↓
+JUDICIAL / ADMINISTRATIVE PRACTICE
+        ↓
+IMPLEMENTATION
+        ↓
+IDENTIFIED ISSUES
+        ↓
+POLICY IMPLICATIONS
+```
+---
 
-The analysis and conclusions will represent the author's academic work and will be developed on the basis of identified sources.
+# 07 · KEY LEGAL DISTINCTIONS
+
+The research distinguishes between:
+
+| Category | Function |
+|---|---|
+| Treaty | Creates international legal obligations for States Parties |
+| Declaration | Establishes an international normative standard |
+| Domestic legislation | Creates legal rules within Malaysia's domestic legal system |
+| Constitution | Establishes Malaysia's supreme domestic legal framework |
+| Treaty-body recommendation | Provides international assessment and recommendations |
+| Institutional recommendation | Represents the position of the relevant institution |
+| Academic interpretation | Scholarly analysis of legal or policy questions |
+| Researcher's analysis | Independent analysis developed from the evidence |
+
+These distinctions are maintained throughout the research process.
 
 ---
 
-## RESEARCH PRINCIPLE
+# 08 · MALAYSIA'S TREATY POSITION
 
-> **Understand the law first. Examine the evidence carefully. Distinguish legal rules from interpretation. Then develop the argument.**
+A central part of the research is determining:
+
+1. Whether Malaysia has signed the instrument.
+2. Whether Malaysia has ratified or acceded to it.
+3. When the instrument entered into force for Malaysia.
+4. Whether Malaysia has entered reservations or declarations.
+5. Whether relevant obligations have been incorporated into domestic law.
+6. How Malaysian institutions and courts have addressed the relevant standards.
+
+Treaty status will be verified against official United Nations treaty records before being relied upon in the final research paper.
 
 ---
 
-### Source References
+# 09 · SUHAKAM DIMENSION
 
-* SUHAKAM, *International Human Rights Treaties*
-* SUHAKAM, *International Human Rights Mechanisms*
-* SUHAKAM, *Our Work*
-* OHCHR, *Treaty Body Database: Malaysia*
+SUHAKAM is examined as a national human rights institution within Malaysia's domestic human rights framework.
+
+Areas for further research include:
+
+- Statutory mandate
+- Human rights inquiries
+- Recommendations
+- Annual reports
+- Human rights education
+- International human rights mechanisms
+- Treaty-related engagement
+- Human rights complaints
+- Institutional monitoring
+
+The research will rely on documented institutional material rather than assuming SUHAKAM's position on any issue.
+
+---
+
+# 10 · HUMAN RIGHTS & DEVELOPMENT
+
+The research also considers the relationship between human rights protection and development.
+
+A working analytical framework is:
+
+```text
+HUMAN RIGHTS
+      ↓
+EQUALITY & NON-DISCRIMINATION
+      ↓
+ACCESS TO SERVICES
+      ↓
+PARTICIPATION
+      ↓
+SOCIAL & ECONOMIC OPPORTUNITY
+      ↓
+INCLUSIVE DEVELOPMENT
+```
+
+# 11 · RESEARCH METHODOLOGY
+
+The project follows an evidence-based qualitative research approach.
+
+### Step 01 — Identify
+
+Define the legal or policy issue.
+
+### Step 02 — Collect
+
+Gather primary legal sources, institutional documents, academic literature and relevant evidence.
+
+### Step 03 — Verify
+
+Check the authority, date, legal status and reliability of each source.
+
+### Step 04 — Analyse
+
+Apply relevant legal, theoretical and policy frameworks.
+
+### Step 05 — Compare
+
+Where appropriate, compare international standards with Malaysian domestic law and institutional practice.
+
+### Step 06 — Identify Gaps
+
+Determine areas requiring further legal, institutional or policy analysis.
+
+### Step 07 — Communicate
+
+Present findings through academic research and policy-oriented outputs.
+
+**Identify → Collect → Verify → Analyse → Compare → Identify Gaps → Communicate**
+
+# 12 · RESEARCH INTEGRITY
+
+The project follows several principles:
+
+- Primary sources are prioritised.
+- Legal status is verified before making legal claims.
+- International standards are not automatically treated as domestic law.
+- Treaty-body recommendations are distinguished from binding treaty obligations.
+- Institutional positions are attributed to the relevant institution.
+- Academic interpretations are distinguished from established legal rules.
+- Competing interpretations are considered where relevant.
+- Claims are supported by identifiable evidence.
+- Conclusions will be developed from the evidence rather than predetermined.
+
+# 13 · CURRENT RESEARCH STATUS
+
+| Component | Status |
+|---|---|
+| Constitutional Framework | Completed |
+| SUHAKAM Legal Framework | Completed |
+| CRC | Completed |
+| CEDAW | Completed |
+| CRPD | Completed |
+| UDHR | Completed |
+| ICCPR | Completed |
+| ICESCR | Completed |
+| Malaysian Case Law | Initial Collection |
+| Legal Analysis | Preliminary |
+| Academic Literature | Initial Collection |
+| UN Treaty Body Materials | Initial Collection |
+| CRPD Treaty Body Materials | Initial Framework |
+| Domestic Implementation Analysis | Pending |
+| Detailed Case Studies | Pending |
+| Final Research Paper | Pending |
+
+# 14 · NEXT RESEARCH STAGE
+
+The next stage will move from **source collection** towards **focused legal analysis**.
+
+Priority areas:
+
+### 01
+Verify and expand relevant UN treaty-body materials.
+
+### 02
+Identify additional Malaysian case law.
+
+### 03
+Examine domestic implementation of selected international human rights standards.
+
+### 04
+Review relevant SUHAKAM materials.
+
+### 05
+Select one or more focused Malaysian case studies.
+
+### 06
+Develop a final research question and thesis based on the evidence collected.
+
+# 15 · POTENTIAL OUTPUTS
+
+The research may eventually produce:
+
+- Academic research paper
+- Legal research memorandum
+- Policy brief
+- Case study
+- Literature review
+- Comparative legal analysis
+- Human rights policy analysis
+
+The final output will be determined after the evidence and research question have been sufficiently developed.
+
+# SOURCE ARCHIVE
+
+For the full source collection and research integrity framework:
+
+**See:** `SOURCES.md`
+
+---
+
+> **The purpose of this project is not simply to collect human rights materials, but to understand how international standards interact with law, institutions and implementation in Malaysia.**
+
+---
+
+<p align="center">
+  <sub>Research Project 01 · Malaysia and International Human Rights Law</sub>
+</p>         CUBA KAU CHECK SENDIRI
