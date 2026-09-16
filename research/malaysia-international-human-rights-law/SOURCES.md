@@ -8,7 +8,7 @@ The source archive will be updated throughout the research process. Sources are 
 
 ---
 
-# 01 · PRIMARY LEGAL SOURCES
+# 01 · DOMESTIC LEGAL SOURCES
 
 ## Federal Constitution of Malaysia
 
@@ -62,6 +62,19 @@ The source archive will be updated throughout the research process. Sources are 
 **Source:** United Nations Treaty Collection / OHCHR
 
 ---
+## Universal Declaration of Human Rights (UDHR)
+
+**Instrument Type:** Declaration
+
+**Adopted:** 1948
+**Relevance:** Provides a foundational international human rights standard and reference point for the development and interpretation of international human rights norms.
+
+**Malaysia:** UN Member State
+
+**Source:** United Nations / OHCHR
+
+---
+
 
 ## International Covenant on Civil and Political Rights (ICCPR)
 
@@ -94,6 +107,30 @@ The source archive will be updated throughout the research process. Sources are 
 **Purpose:** To verify treaty status, reporting information and relevant human rights documentation concerning Malaysia.
 
 **Use in research:** Treaty status, State reporting and international human rights mechanisms.
+
+---
+
+## CRC Treaty Body Materials — Malaysia
+
+**Institution:** United Nations Committee on the Rights of the Child
+
+**Relevance:** Records the Committee's review of Malaysia's implementation of the Convention on the Rights of the Child.
+
+**Key materials:** Malaysia's replies to the List of Issues and the Committee's concluding observations following the examination of Malaysia's combined second to fourth periodic reports in 2026.
+
+**Source:** OHCHR Treaty Body Database
+
+---
+
+## CRPD Treaty Body Materials — Malaysia
+
+**Institution:** United Nations Committee on the Rights of Persons with Disabilities
+
+**Relevance:** Records treaty-body materials concerning Malaysia's implementation of the Convention on the Rights of Persons with Disabilities.
+
+**Research status:** Malaysia's initial State party report and the subsequent review process will be monitored through the OHCHR Treaty Body Database.
+
+**Source:** OHCHR Treaty Body Database
 
 ---
 
@@ -141,7 +178,7 @@ The source archive will be updated throughout the research process. Sources are 
 
 # 05 · ACADEMIC LITERATURE
 
-Academic literature will be added after systematic literature searching.
+Academic literature has been initially identified and will be expanded through systematic literature searching.
 
 ### Planned categories
 
@@ -167,7 +204,7 @@ Priority will be given to:
 
 # 06 · CASE LAW
 
-Relevant Malaysian and international judicial decisions will be identified during the legal research stage.
+Relevant Malaysian and international judicial decisions will be identified and expanded during the legal research stage.
 
 ### Malaysian Courts
 
@@ -244,8 +281,8 @@ Claims will be distinguished from:
 
 **Source Collection:** In Progress
 **Primary Sources:** Initial collection completed
-**Academic Literature:** To be developed
-**Case Law:** To be identified
+**Academic Literature:** Initial collection completed
+**Case Law:** Initial collection completed
 **Research Paper:** Not yet drafted
 
 ---
