@@ -4,23 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>12 · UN Treaty Body Materials | Malaysia & International Human Rights Law</title>
+<title>13 · CRPD Treaty Body Materials | Malaysia & International Human Rights Law</title>
 
 <meta name="description"
-content="UN Treaty Body Materials concerning Malaysia for Research Project 01: Malaysia and International Human Rights Law by Muhammad Fathi Duraini.">
+content="CRPD Treaty Body Materials concerning Malaysia for Research Project 01: Malaysia and International Human Rights Law by Muhammad Fathi Duraini.">
 
 <style>
 :root{
-    --ink:#17222d;
-    --muted:#66727d;
-    --paper:#f3f5f4;
+    --ink:#18242d;
+    --muted:#65727b;
+    --paper:#f4f5f2;
     --white:#ffffff;
-    --line:#d9dfdf;
-    --navy:#172c3d;
-    --blue:#356b82;
-    --blue-soft:#dce9ed;
+    --line:#d9dedb;
+    --dark:#20342f;
+    --green:#416b60;
+    --green-soft:#dce8e3;
     --gold:#ad8750;
-    --green:#53756c;
+    --cream:#f8f5ed;
 }
 
 *{
@@ -50,13 +50,13 @@ a{
     margin:auto;
 }
 
-/* NAV */
+/* NAVIGATION */
 
 nav{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(243,245,244,.94);
+    background:rgba(244,245,242,.94);
     backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line);
 }
@@ -71,8 +71,8 @@ nav{
 
 .brand{
     font-family:Georgia,serif;
-    font-weight:bold;
     font-size:17px;
+    font-weight:bold;
 }
 
 .nav-links{
@@ -83,16 +83,17 @@ nav{
 }
 
 .nav-links a:hover{
-    color:var(--blue);
+    color:var(--green);
 }
 
 /* HERO */
 
 .hero{
     padding:95px 0 75px;
-    background:
-        linear-gradient(135deg,#f7f9f8 0%,#e5edef 100%);
     border-bottom:1px solid var(--line);
+    background:
+        radial-gradient(circle at 85% 18%,rgba(65,107,96,.13),transparent 30%),
+        linear-gradient(135deg,#f8faf8 0%,#e7eeea 100%);
 }
 
 .eyebrow{
@@ -100,7 +101,7 @@ nav{
     letter-spacing:3px;
     font-size:10px;
     font-weight:bold;
-    color:var(--blue);
+    color:var(--green);
     margin-bottom:20px;
 }
 
@@ -114,15 +115,15 @@ nav{
 }
 
 .hero h1 span{
-    color:var(--blue);
+    color:var(--green);
 }
 
 .hero-intro{
     margin-top:28px;
-    max-width:790px;
+    max-width:800px;
     font-family:Georgia,serif;
     font-size:19px;
-    color:#56636d;
+    color:#56635f;
 }
 
 .hero-meta{
@@ -134,16 +135,16 @@ nav{
 
 .meta{
     padding:9px 13px;
-    background:rgba(255,255,255,.7);
+    background:rgba(255,255,255,.72);
     border:1px solid var(--line);
     font-size:11px;
-    color:#5d6871;
+    color:#5d6965;
 }
 
 /* STRIP */
 
 .research-strip{
-    background:var(--navy);
+    background:var(--dark);
     color:white;
 }
 
@@ -201,11 +202,11 @@ nav{
     display:block;
     padding:8px 0;
     font-size:12px;
-    color:#68747c;
+    color:#68746f;
 }
 
 .side a:hover{
-    color:var(--blue);
+    color:var(--green);
 }
 
 .side-box{
@@ -241,50 +242,105 @@ h2{
 
 .lead{
     margin-top:20px;
-    max-width:800px;
-    color:#56636c;
+    max-width:810px;
+    color:#56635f;
     font-size:16px;
 }
 
-/* DOCUMENT CARDS */
+/* PRINCIPLES */
 
-.documents{
+.principles{
     margin-top:35px;
     display:grid;
-    gap:18px;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
 }
 
-.document{
+.principle{
     background:var(--white);
     border:1px solid var(--line);
-    padding:28px;
-    position:relative;
-    overflow:hidden;
+    padding:27px;
 }
 
-.document::after{
-    content:"";
-    position:absolute;
-    right:-35px;
-    top:-35px;
-    width:110px;
-    height:110px;
+.principle-number{
+    font-family:Georgia,serif;
+    font-size:30px;
+    color:var(--green);
+}
+
+.principle h3{
+    margin-top:9px;
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:19px;
+}
+
+.principle p{
+    margin-top:9px;
+    font-size:13px;
+    color:var(--muted);
+}
+
+/* STATUS */
+
+.status-panel{
+    margin-top:35px;
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:35px;
+    display:grid;
+    grid-template-columns:160px 1fr;
+    gap:30px;
+}
+
+.status-mark{
+    width:125px;
+    height:125px;
     border-radius:50%;
-    background:var(--blue-soft);
+    background:var(--green-soft);
+    border:1px solid #bfd2ca;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-family:Georgia,serif;
+    color:var(--green);
+    font-size:15px;
+    padding:20px;
 }
 
-.document-header{
+.status-content h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    font-weight:normal;
+}
+
+.status-content p{
+    margin-top:12px;
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* DOCUMENT */
+
+.document{
+    margin-top:35px;
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:32px;
+}
+
+.document-top{
     display:flex;
     justify-content:space-between;
+    align-items:flex-start;
     gap:20px;
-    position:relative;
-    z-index:1;
 }
 
 .document-number{
     font-family:Georgia,serif;
-    font-size:27px;
-    color:var(--blue);
+    font-size:30px;
+    color:var(--green);
 }
 
 .document-type{
@@ -292,117 +348,101 @@ h2{
     letter-spacing:1.8px;
     font-size:9px;
     color:var(--muted);
-    padding-top:7px;
+    padding-top:8px;
 }
 
 .document-code{
-    margin-top:12px;
+    margin-top:16px;
     font-family:"Courier New",monospace;
     font-size:14px;
-    color:var(--navy);
     font-weight:bold;
+    color:var(--dark);
 }
 
 .document-title{
-    margin-top:7px;
+    margin-top:8px;
     font-family:Georgia,serif;
-    font-size:21px;
+    font-size:23px;
     line-height:1.35;
 }
 
-.document-date{
-    margin-top:11px;
-    font-size:12px;
-    color:var(--muted);
-}
-
-.document-description{
+.document-note{
     margin-top:20px;
+    border-top:1px solid var(--line);
     padding-top:18px;
-    border-top:1px solid #e3e7e7;
-    color:#59656d;
+    color:var(--muted);
     font-size:13px;
-    max-width:760px;
 }
 
-/* TIMELINE */
+/* REVIEW ROADMAP */
 
-.timeline{
-    margin-top:35px;
-    border-left:2px solid var(--blue-soft);
-    padding-left:30px;
+.roadmap{
+    margin-top:38px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    border:1px solid var(--line);
+    background:var(--white);
 }
 
-.timeline-item{
+.roadmap-item{
+    padding:26px;
+    border-right:1px solid var(--line);
     position:relative;
-    margin-bottom:35px;
 }
 
-.timeline-item::before{
-    content:"";
-    position:absolute;
-    width:11px;
-    height:11px;
-    background:var(--blue);
-    border:3px solid var(--paper);
-    border-radius:50%;
-    left:-37px;
-    top:6px;
+.roadmap-item:last-child{
+    border-right:0;
 }
 
-.timeline-date{
+.roadmap-number{
     font-size:10px;
-    text-transform:uppercase;
     letter-spacing:2px;
-    color:var(--blue);
+    color:var(--green);
     font-weight:bold;
 }
 
-.timeline-title{
-    margin-top:5px;
+.roadmap h3{
+    margin-top:10px;
     font-family:Georgia,serif;
-    font-size:19px;
+    font-size:17px;
+    font-weight:normal;
 }
 
-.timeline-text{
+.roadmap p{
     margin-top:8px;
     color:var(--muted);
-    font-size:13px;
+    font-size:12px;
 }
 
-/* ANALYTICAL GRID */
+/* ANALYSIS */
 
-.analysis-grid{
-    margin-top:30px;
+.analysis{
+    margin-top:35px;
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
+    gap:15px;
 }
 
-.analysis-card{
-    padding:25px;
+.analysis-row{
+    display:grid;
+    grid-template-columns:190px 1fr;
     background:var(--white);
     border:1px solid var(--line);
 }
 
 .analysis-label{
+    padding:22px;
+    background:#edf3ef;
     text-transform:uppercase;
-    letter-spacing:1.7px;
-    color:var(--gold);
+    letter-spacing:1.5px;
     font-size:9px;
     font-weight:bold;
+    color:var(--green);
 }
 
-.analysis-card h3{
-    margin-top:8px;
-    font-family:Georgia,serif;
-    font-size:18px;
-    font-weight:normal;
-}
-
-.analysis-card p{
-    margin-top:10px;
-    color:var(--muted);
+.analysis-text{
+    padding:22px;
+    color:#596660;
     font-size:13px;
 }
 
@@ -410,42 +450,65 @@ h2{
 
 .finding{
     margin-top:30px;
-    padding:35px;
-    background:var(--navy);
+    padding:37px;
+    background:var(--dark);
     color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.finding::after{
+    content:"CRPD";
+    position:absolute;
+    right:-20px;
+    bottom:-35px;
+    font-family:Georgia,serif;
+    font-size:120px;
+    color:rgba(255,255,255,.05);
 }
 
 .finding h3{
     font-family:Georgia,serif;
     font-size:25px;
     font-weight:normal;
+    position:relative;
+    z-index:1;
 }
 
 .finding p{
     margin-top:16px;
-    color:#dce3e6;
     max-width:800px;
+    color:#dbe3df;
     font-size:14px;
+    position:relative;
+    z-index:1;
 }
 
-/* CAUTION */
+/* MONITORING */
 
-.caution{
+.monitor{
     margin-top:30px;
-    border:1px solid #d7c9ad;
-    background:#faf7f0;
-    padding:27px;
+    background:var(--cream);
+    border:1px solid #ded5c3;
+    padding:30px;
 }
 
-.caution-title{
+.monitor-title{
     text-transform:uppercase;
     letter-spacing:2px;
+    color:#806a45;
     font-size:9px;
-    color:#80673d;
     font-weight:bold;
 }
 
-.caution p{
+.monitor h3{
+    margin-top:8px;
+    font-family:Georgia,serif;
+    font-size:21px;
+    font-weight:normal;
+}
+
+.monitor p{
     margin-top:11px;
     color:#655f55;
     font-size:13px;
@@ -462,8 +525,8 @@ h2{
 
 .source-box h3{
     font-family:Georgia,serif;
-    font-weight:normal;
     font-size:21px;
+    font-weight:normal;
 }
 
 .source-box p{
@@ -481,7 +544,7 @@ h2{
 
 .source-links a{
     padding:10px 14px;
-    background:var(--navy);
+    background:var(--dark);
     color:white;
     font-size:11px;
 }
@@ -491,10 +554,10 @@ h2{
 .integrity{
     border-left:3px solid var(--gold);
     padding-left:25px;
-    color:#59646d;
+    color:#59655f;
 }
 
-/* NAV */
+/* NAVIGATION */
 
 .page-nav{
     display:grid;
@@ -510,7 +573,7 @@ h2{
 }
 
 .page-nav a:hover{
-    border-color:var(--blue);
+    border-color:var(--green);
 }
 
 .page-nav small{
@@ -572,8 +635,32 @@ footer{
         top:auto;
     }
 
-    .analysis-grid{
+    .principles{
         grid-template-columns:1fr;
+    }
+
+    .roadmap{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .roadmap-item:nth-child(2){
+        border-right:0;
+    }
+
+    .roadmap-item:nth-child(-n+2){
+        border-bottom:1px solid var(--line);
+    }
+
+    .status-panel{
+        grid-template-columns:1fr;
+    }
+
+    .analysis-row{
+        grid-template-columns:1fr;
+    }
+
+    .analysis-label{
+        border-bottom:1px solid var(--line);
     }
 }
 
@@ -604,8 +691,21 @@ footer{
         font-size:30px;
     }
 
+    .roadmap{
+        grid-template-columns:1fr;
+    }
+
+    .roadmap-item{
+        border-right:0;
+        border-bottom:1px solid var(--line);
+    }
+
+    .roadmap-item:last-child{
+        border-bottom:0;
+    }
+
     .document{
-        padding:23px;
+        padding:24px;
     }
 
     .page-nav{
@@ -640,26 +740,25 @@ footer{
     <div class="container">
 
         <div class="eyebrow">
-            Research Project 01 · United Nations Materials
+            Research Project 01 · Treaty Body Monitoring
         </div>
 
         <h1>
-            UN Treaty Body<br>
+            CRPD Treaty Body<br>
             <span>Materials</span>
         </h1>
 
         <p class="hero-intro">
-            A primary-source research record documenting United Nations
-            treaty-body materials concerning Malaysia, with particular
-            attention to State reporting, replies to lists of issues and
-            concluding observations.
+            A focused research record on Malaysia's engagement with the
+            Convention on the Rights of Persons with Disabilities and the
+            United Nations treaty-body process.
         </p>
 
         <div class="hero-meta">
+            <div class="meta">CRPD</div>
             <div class="meta">OHCHR</div>
-            <div class="meta">Treaty Bodies</div>
             <div class="meta">Malaysia</div>
-            <div class="meta">Primary Sources</div>
+            <div class="meta">Treaty Monitoring</div>
         </div>
 
     </div>
@@ -677,18 +776,18 @@ footer{
         </div>
 
         <div class="strip-item">
+            <div class="strip-label">Treaty</div>
+            <div class="strip-value">CRPD</div>
+        </div>
+
+        <div class="strip-item">
             <div class="strip-label">Institution</div>
             <div class="strip-value">OHCHR</div>
         </div>
 
         <div class="strip-item">
-            <div class="strip-label">Core Material</div>
-            <div class="strip-value">Treaty-Body Review</div>
-        </div>
-
-        <div class="strip-item">
-            <div class="strip-label">Status</div>
-            <div class="strip-value">Updated 2026</div>
+            <div class="strip-label">Research Status</div>
+            <div class="strip-value">Monitoring</div>
         </div>
 
     </div>
@@ -705,20 +804,21 @@ footer{
         </div>
 
         <a href="#purpose">01 · Purpose</a>
-        <a href="#architecture">02 · Treaty-Body Architecture</a>
-        <a href="#materials">03 · Malaysia Materials</a>
-        <a href="#timeline">04 · Review Sequence</a>
-        <a href="#analysis">05 · Analytical Use</a>
-        <a href="#finding">06 · Preliminary Finding</a>
-        <a href="#caution">07 · Research Caution</a>
-        <a href="#sources">08 · Sources</a>
-        <a href="#integrity">09 · Integrity</a>
+        <a href="#architecture">02 · CRPD Architecture</a>
+        <a href="#status">03 · Malaysia's Position</a>
+        <a href="#materials">04 · Treaty Material</a>
+        <a href="#roadmap">05 · Review Roadmap</a>
+        <a href="#analysis">06 · Analytical Use</a>
+        <a href="#finding">07 · Preliminary Finding</a>
+        <a href="#monitoring">08 · Monitoring</a>
+        <a href="#sources">09 · Sources</a>
+        <a href="#integrity">10 · Integrity</a>
 
         <div class="side-box">
-            <strong>Primary-source principle</strong><br><br>
-            Treaty-body documents are treated as institutional materials.
-            Their observations should be distinguished from binding domestic
-            judicial decisions and from the researcher's own conclusions.
+            <strong>Research status</strong><br><br>
+            The CRPD material is treated as an evolving research record.
+            Further official documents should be added as Malaysia's
+            treaty-body review process develops.
         </div>
 
     </aside>
@@ -735,18 +835,16 @@ footer{
             <h2>Research Purpose</h2>
 
             <p class="lead">
-                This section records official United Nations treaty-body
-                materials concerning Malaysia. The purpose is to understand
-                how treaty monitoring operates as an international mechanism
-                and how its outputs may inform research concerning domestic
-                human rights implementation.
+                This section examines the available official treaty-body
+                material concerning Malaysia under the Convention on the
+                Rights of Persons with Disabilities (CRPD).
             </p>
 
             <p class="lead">
-                The materials are particularly useful for distinguishing
-                between Malaysia's international engagement with a treaty
-                and the separate question of how international standards
-                operate within Malaysian domestic law.
+                The purpose is not merely to record Malaysia's status as a
+                State Party, but to establish a research framework for
+                following the international monitoring process and comparing
+                it with Malaysia's domestic legal and institutional framework.
             </p>
 
         </section>
@@ -757,74 +855,56 @@ footer{
 
             <div class="section-number">02</div>
 
-            <h2>Treaty-Body Architecture</h2>
+            <h2>CRPD Architecture</h2>
 
             <p class="lead">
-                UN human rights treaty bodies examine implementation of the
-                treaties within their respective mandates. The resulting
-                documentation forms part of an international monitoring record.
+                The CRPD establishes an international legal framework focused
+                on equality, non-discrimination, accessibility, participation,
+                inclusion and the enjoyment of rights by persons with
+                disabilities.
             </p>
 
-            <div class="analysis-grid">
+            <div class="principles">
 
-                <div class="analysis-card">
+                <div class="principle">
 
-                    <div class="analysis-label">
-                        State Reporting
-                    </div>
+                    <div class="principle-number">01</div>
 
-                    <h3>Periodic Reporting</h3>
+                    <h3>Equality</h3>
 
                     <p>
-                        States submit reports concerning measures taken to
-                        implement obligations arising under the relevant
-                        treaty.
+                        The Convention approaches disability rights through
+                        equality and non-discrimination.
                     </p>
 
                 </div>
 
-                <div class="analysis-card">
 
-                    <div class="analysis-label">
-                        Questions
-                    </div>
+                <div class="principle">
 
-                    <h3>List of Issues</h3>
+                    <div class="principle-number">02</div>
+
+                    <h3>Participation</h3>
 
                     <p>
-                        Treaty bodies identify matters requiring clarification
-                        or additional information before the review dialogue.
+                        Persons with disabilities are treated as rights
+                        holders whose participation is central to the
+                        Convention's framework.
                     </p>
 
                 </div>
 
-                <div class="analysis-card">
 
-                    <div class="analysis-label">
-                        State Response
-                    </div>
+                <div class="principle">
 
-                    <h3>Replies to Issues</h3>
+                    <div class="principle-number">03</div>
 
-                    <p>
-                        The State provides information responding to questions
-                        raised during the treaty-monitoring process.
-                    </p>
-
-                </div>
-
-                <div class="analysis-card">
-
-                    <div class="analysis-label">
-                        Committee Output
-                    </div>
-
-                    <h3>Concluding Observations</h3>
+                    <h3>Inclusion</h3>
 
                     <p>
-                        Following examination, the treaty body records its
-                        observations and recommendations concerning treaty
-                        implementation.
+                        The Convention provides an international framework
+                        for examining inclusion across social, legal and
+                        institutional settings.
                     </p>
 
                 </div>
@@ -835,123 +915,46 @@ footer{
 
 
         <!-- 03 -->
-        <section id="materials">
+        <section id="status">
 
             <div class="section-number">03</div>
 
-            <h2>Malaysia Materials</h2>
+            <h2>Malaysia's Position</h2>
 
             <p class="lead">
-                The initial collection identifies significant recent materials
-                from the Committee on the Rights of the Child concerning
-                Malaysia's combined second to fourth periodic reports.
+                Malaysia is a State Party to the Convention on the Rights of
+                Persons with Disabilities.
             </p>
 
+            <div class="status-panel">
 
-            <div class="documents">
+                <div class="status-mark">
+                    STATE<br>
+                    PARTY
+                </div>
 
+                <div class="status-content">
 
-                <article class="document">
+                    <h3>
+                        Malaysia's CRPD engagement forms part of the
+                        international human rights treaty framework.
+                    </h3>
 
-                    <div class="document-header">
+                    <p>
+                        The relevant international obligations and monitoring
+                        materials must nevertheless be distinguished from
+                        questions concerning the domestic legal effect of
+                        treaties within Malaysia.
+                    </p>
 
-                        <div class="document-number">01</div>
+                    <p>
+                        This distinction is central to Research Project 01:
+                        international treaty participation and domestic
+                        incorporation are related, but legally distinct,
+                        questions.
+                    </p>
 
-                        <div class="document-type">
-                            Reply to List of Issues
-                        </div>
-
-                    </div>
-
-                    <div class="document-code">
-                        CRC/C/MYS/RQ/2-4
-                    </div>
-
-                    <div class="document-title">
-                        Reply to the List of Issues
-                    </div>
-
-                    <div class="document-date">
-                        12 January 2026
-                    </div>
-
-                    <div class="document-description">
-                        Malaysia's response to the issues raised in the
-                        Committee's examination of the State's combined
-                        second to fourth periodic reports under the
-                        Convention on the Rights of the Child.
-                    </div>
-
-                </article>
-
-
-                <article class="document">
-
-                    <div class="document-header">
-
-                        <div class="document-number">02</div>
-
-                        <div class="document-type">
-                            Treaty-Body Review
-                        </div>
-
-                    </div>
-
-                    <div class="document-code">
-                        CRC · 97th Session
-                    </div>
-
-                    <div class="document-title">
-                        Examination of Malaysia's Combined Second to Fourth
-                        Periodic Reports
-                    </div>
-
-                    <div class="document-date">
-                        January 2026
-                    </div>
-
-                    <div class="document-description">
-                        Malaysia's combined second to fourth periodic reports
-                        were considered by the Committee on the Rights of the
-                        Child during its 97th session.
-                    </div>
-
-                </article>
-
-
-                <article class="document">
-
-                    <div class="document-header">
-
-                        <div class="document-number">03</div>
-
-                        <div class="document-type">
-                            Concluding Observations
-                        </div>
-
-                    </div>
-
-                    <div class="document-code">
-                        CRC/C/MYS/CO/2-4
-                    </div>
-
-                    <div class="document-title">
-                        Concluding Observations on the Combined Second to
-                        Fourth Periodic Reports of Malaysia
-                    </div>
-
-                    <div class="document-date">
-                        5 February 2026
-                    </div>
-
-                    <div class="document-description">
-                        The Committee's concluding observations following its
-                        examination of Malaysia's implementation of the
-                        Convention on the Rights of the Child.
-                    </div>
-
-                </article>
-
+                </div>
 
             </div>
 
@@ -959,164 +962,134 @@ footer{
 
 
         <!-- 04 -->
-        <section id="timeline">
+        <section id="materials">
 
             <div class="section-number">04</div>
 
-            <h2>Review Sequence</h2>
+            <h2>Treaty Material</h2>
 
             <p class="lead">
-                The available 2026 materials can be understood as a sequence
-                rather than as isolated documents.
+                The OHCHR Treaty Body Database currently provides the
+                principal official record for tracking Malaysia's CRPD
+                reporting and review process.
             </p>
 
-            <div class="timeline">
+            <article class="document">
 
-                <div class="timeline-item">
+                <div class="document-top">
 
-                    <div class="timeline-date">
-                        12 January 2026
+                    <div class="document-number">
+                        01
                     </div>
 
-                    <div class="timeline-title">
-                        Malaysia's Reply to the List of Issues
-                    </div>
-
-                    <div class="timeline-text">
-                        The State provides additional information addressing
-                        issues identified during the reporting process.
+                    <div class="document-type">
+                        State Party Report
                     </div>
 
                 </div>
 
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        January 2026
-                    </div>
-
-                    <div class="timeline-title">
-                        Committee Examination
-                    </div>
-
-                    <div class="timeline-text">
-                        The Committee on the Rights of the Child considers
-                        Malaysia's combined second to fourth periodic reports
-                        at its 97th session.
-                    </div>
-
+                <div class="document-code">
+                    CRPD/C/MYS/1
                 </div>
 
-
-                <div class="timeline-item">
-
-                    <div class="timeline-date">
-                        5 February 2026
-                    </div>
-
-                    <div class="timeline-title">
-                        Concluding Observations
-                    </div>
-
-                    <div class="timeline-text">
-                        The Committee publishes its concluding observations
-                        following examination of the State's reports.
-                    </div>
-
+                <div class="document-title">
+                    Initial Report of Malaysia
                 </div>
 
-            </div>
+                <div class="document-note">
+                    The OHCHR Treaty Body Database records Malaysia's initial
+                    State party report under the CRPD. The research archive
+                    records this material as part of the developing review
+                    process and will be updated as additional official
+                    documents become available.
+                </div>
+
+            </article>
 
         </section>
 
 
         <!-- 05 -->
-        <section id="analysis">
+        <section id="roadmap">
 
             <div class="section-number">05</div>
 
-            <h2>Analytical Use</h2>
+            <h2>Review Roadmap</h2>
 
             <p class="lead">
-                Treaty-body materials are particularly useful when examined
-                alongside Malaysian constitutional law, domestic legislation,
-                case law and SUHAKAM materials.
+                The CRPD research record should be developed progressively
+                as Malaysia moves through the treaty-monitoring process.
             </p>
 
-            <div class="analysis-grid">
+            <div class="roadmap">
 
-                <div class="analysis-card">
+                <div class="roadmap-item">
 
-                    <div class="analysis-label">
-                        Question 01
+                    <div class="roadmap-number">
+                        STAGE 01
                     </div>
 
                     <h3>
-                        What does Malaysia report?
+                        State Report
                     </h3>
 
                     <p>
-                        The State's own submissions provide evidence of how
-                        Malaysia describes its implementation measures and
-                        legal framework.
+                        Identify Malaysia's description of domestic measures
+                        taken to implement the Convention.
                     </p>
 
                 </div>
 
 
-                <div class="analysis-card">
+                <div class="roadmap-item">
 
-                    <div class="analysis-label">
-                        Question 02
+                    <div class="roadmap-number">
+                        STAGE 02
                     </div>
 
                     <h3>
-                        What does the Committee identify?
+                        List of Issues
                     </h3>
 
                     <p>
-                        Concluding observations provide the Committee's
-                        assessment and recommendations within its treaty
-                        mandate.
+                        Record questions or requests for clarification raised
+                        by the Committee.
                     </p>
 
                 </div>
 
 
-                <div class="analysis-card">
+                <div class="roadmap-item">
 
-                    <div class="analysis-label">
-                        Question 03
+                    <div class="roadmap-number">
+                        STAGE 03
                     </div>
 
                     <h3>
-                        What is the domestic position?
+                        State Response
                     </h3>
 
                     <p>
-                        The international review record should then be compared
-                        with Malaysian legislation, constitutional provisions,
-                        judicial decisions and institutional practice.
+                        Compare Malaysia's responses with the Committee's
+                        identified areas of concern.
                     </p>
 
                 </div>
 
 
-                <div class="analysis-card">
+                <div class="roadmap-item">
 
-                    <div class="analysis-label">
-                        Question 04
+                    <div class="roadmap-number">
+                        STAGE 04
                     </div>
 
                     <h3>
-                        Where is the implementation gap?
+                        Concluding Observations
                     </h3>
 
                     <p>
-                        Differences between international recommendations,
-                        State reporting and domestic implementation can form
-                        questions for further research.
+                        Analyse the Committee's eventual observations and
+                        recommendations after the review.
                     </p>
 
                 </div>
@@ -1127,32 +1100,76 @@ footer{
 
 
         <!-- 06 -->
-        <section id="finding">
+        <section id="analysis">
 
             <div class="section-number">06</div>
 
-            <h2>Preliminary Finding</h2>
+            <h2>Analytical Use</h2>
 
-            <div class="finding">
+            <p class="lead">
+                The CRPD record becomes more useful when connected to domestic
+                law, institutional practice and other human rights materials
+                collected in Research Project 01.
+            </p>
 
-                <h3>
-                    Treaty-body materials provide an international monitoring
-                    record, not a substitute for domestic legal analysis.
-                </h3>
+            <div class="analysis">
 
-                <p>
-                    The 2026 CRC materials demonstrate how Malaysia's
-                    international treaty engagement can be studied through
-                    a sequence of State reporting, Committee examination and
-                    concluding observations.
-                </p>
+                <div class="analysis-row">
 
-                <p>
-                    For this research project, the significance lies in
-                    connecting that international record with the separate
-                    domestic questions of treaty incorporation, constitutional
-                    interpretation, legislation and institutional practice.
-                </p>
+                    <div class="analysis-label">
+                        International
+                    </div>
+
+                    <div class="analysis-text">
+                        What obligations and standards arise from Malaysia's
+                        participation in the CRPD framework?
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-row">
+
+                    <div class="analysis-label">
+                        Domestic
+                    </div>
+
+                    <div class="analysis-text">
+                        What Malaysian legislation, constitutional provisions
+                        and policies are relevant to the rights protected
+                        under the Convention?
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-row">
+
+                    <div class="analysis-label">
+                        Institutional
+                    </div>
+
+                    <div class="analysis-text">
+                        What role do institutions such as SUHAKAM and relevant
+                        public authorities play in promoting or monitoring
+                        disability rights?
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-row">
+
+                    <div class="analysis-label">
+                        Implementation
+                    </div>
+
+                    <div class="analysis-text">
+                        Where do international commitments, domestic law and
+                        practical implementation intersect or diverge?
+                    </div>
+
+                </div>
 
             </div>
 
@@ -1160,31 +1177,30 @@ footer{
 
 
         <!-- 07 -->
-        <section id="caution">
+        <section id="finding">
 
             <div class="section-number">07</div>
 
-            <h2>Research Caution</h2>
+            <h2>Preliminary Finding</h2>
 
-            <div class="caution">
+            <div class="finding">
 
-                <div class="caution-title">
-                    Important Legal Distinction
-                </div>
+                <h3>
+                    The CRPD research record should be treated as a living
+                    international-law file.
+                </h3>
 
                 <p>
-                    Treaty-body concluding observations should not be presented
-                    as though they were judgments of a Malaysian court or
-                    automatically equivalent to binding domestic legislation.
-                    Their legal character, institutional authority and effect
-                    must be analysed separately.
+                    Unlike a completed case-law review, treaty-body research
+                    develops as new State submissions, Committee questions,
+                    review records and concluding observations become available.
                 </p>
 
                 <p>
-                    Similarly, the existence of an international recommendation
-                    does not by itself establish that Malaysian domestic law
-                    has changed. Domestic implementation requires separate
-                    examination.
+                    The appropriate research method is therefore to preserve
+                    the chronology of the process and distinguish each
+                    institutional document according to its source and legal
+                    function.
                 </p>
 
             </div>
@@ -1193,15 +1209,51 @@ footer{
 
 
         <!-- 08 -->
-        <section id="sources">
+        <section id="monitoring">
 
             <div class="section-number">08</div>
+
+            <h2>Monitoring Note</h2>
+
+            <div class="monitor">
+
+                <div class="monitor-title">
+                    Continuing Research
+                </div>
+
+                <h3>
+                    Follow the official OHCHR record before expanding the
+                    analytical conclusion.
+                </h3>
+
+                <p>
+                    The research should be updated when additional official
+                    CRPD documents concerning Malaysia are published. In
+                    particular, future analysis should incorporate the
+                    Committee's questions, Malaysia's responses and the
+                    eventual concluding observations once officially available.
+                </p>
+
+                <p>
+                    Until those materials are available and verified, the
+                    research should avoid presenting an incomplete review
+                    record as though it were the final treaty-body position.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+        <section id="sources">
+
+            <div class="section-number">09</div>
 
             <h2>Source Architecture</h2>
 
             <p class="lead">
-                The primary institutional source for this section is the
-                Office of the United Nations High Commissioner for Human Rights
+                The principal source for this section is the official OHCHR
                 Treaty Body Database.
             </p>
 
@@ -1212,9 +1264,9 @@ footer{
                 </h3>
 
                 <p>
-                    Used to verify treaty-body documentation concerning
-                    Malaysia, including State reporting and Committee
-                    documentation.
+                    Used to verify Malaysia's CRPD treaty-body documentation,
+                    including the State party reporting record and subsequent
+                    review materials as they become available.
                 </p>
 
                 <div class="source-links">
@@ -1234,7 +1286,7 @@ footer{
                     </a>
 
                     <a
-                        href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/12-un-treaty-body-materials-malaysia.md"
+                        href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/13-crpd-treaty-body-materials-malaysia.md"
                         target="_blank"
                     >
                         VIEW RESEARCH RECORD ↗
@@ -1247,35 +1299,33 @@ footer{
         </section>
 
 
-        <!-- 09 -->
+        <!-- 10 -->
         <section id="integrity">
 
-            <div class="section-number">09</div>
+            <div class="section-number">10</div>
 
             <h2>Research Integrity</h2>
 
             <p class="lead">
-                The treaty-body record is presented according to the authority
-                of each document and its institutional function.
+                The CRPD record is maintained according to a strict distinction
+                between treaty obligations, institutional observations,
+                domestic legal rules and the researcher's own analysis.
             </p>
 
             <div class="integrity">
 
                 <p>
-                    State submissions are treated as evidence of the position
-                    presented by Malaysia. Committee observations are treated
-                    as institutional outputs of the relevant UN treaty body.
-                    Neither should be silently converted into the researcher's
-                    own conclusion.
+                    Official UN documents are treated as primary institutional
+                    materials. Their existence does not by itself establish
+                    the domestic legal effect of the Convention in Malaysia.
                 </p>
 
                 <br>
 
                 <p>
-                    Claims concerning domestic legal effect require separate
-                    support from Malaysian primary legal sources, including
-                    legislation, constitutional provisions and judicial
-                    decisions.
+                    Where the treaty-body record is incomplete, the research
+                    will identify the gap rather than fill it through
+                    speculation or unsupported assumptions.
                 </p>
 
             </div>
@@ -1292,14 +1342,14 @@ footer{
 
             <div class="page-nav">
 
-                <a href="../11/">
+                <a href="../12/">
                     <small>Previous</small>
-                    <strong>11 · Academic Literature</strong>
+                    <strong>12 · UN Treaty Body Materials</strong>
                 </a>
 
-                <a href="../13/">
+                <a href="../14/">
                     <small>Next</small>
-                    <strong>13 · CRPD Treaty Body Materials</strong>
+                    <strong>14 · Research Findings</strong>
                 </a>
 
             </div>
