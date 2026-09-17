@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CRPD | Research Material 05</title>
+
+<meta name="description"
+content="Research Material 05 examining the Convention on the Rights of Persons with Disabilities and its relationship with Malaysia's legal and institutional framework.">
+
+<style>
+
+:root{
+    --ink:#16242b;
+    --muted:#617078;
+    --paper:#f5f8f7;
+    --white:#ffffff;
+    --line:#d8e0df;
+    --teal:#176b68;
+    --teal-dark:#0e4948;
+    --mint:#dceceb;
+    --gold:#b28b4c;
+    --shadow:0 20px 55px rgba(18,40,43,.08);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* NAV */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(245,248,247,.94);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+}
+
+.nav-inner{
+    min-height:72px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:.8rem;
+    font-weight:800;
+    letter-spacing:.14em;
+}
+
+.brand-mark{
+    width:38px;
+    height:38px;
+    border:1px solid var(--teal);
+    color:var(--teal);
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    font-family:Georgia,serif;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    color:var(--muted);
+    font-size:.8rem;
+}
+
+.nav-links a:hover{
+    color:var(--teal);
+}
+
+/* HERO */
+
+.hero{
+    padding:95px 0 80px;
+    background:
+        radial-gradient(circle at 78% 18%,rgba(23,107,104,.13),transparent 27%),
+        linear-gradient(135deg,#f5f8f7,#eaf1f0);
+    border-bottom:1px solid var(--line);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.35fr .65fr;
+    gap:60px;
+    align-items:center;
+}
+
+.eyebrow{
+    color:var(--teal);
+    font-size:.72rem;
+    font-weight:800;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    margin-bottom:22px;
+}
+
+h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(4rem,9vw,8rem);
+    line-height:.84;
+    letter-spacing:-.065em;
+    font-weight:500;
+}
+
+.hero-subtitle{
+    margin-top:27px;
+    max-width:760px;
+    color:var(--muted);
+    font-size:1.08rem;
+}
+
+.hero-symbol{
+    height:260px;
+    width:260px;
+    margin-left:auto;
+    border:1px solid rgba(23,107,104,.25);
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    position:relative;
+    background:rgba(255,255,255,.55);
+}
+
+.hero-symbol::before,
+.hero-symbol::after{
+    content:"";
+    position:absolute;
+    border:1px solid rgba(23,107,104,.18);
+    border-radius:50%;
+}
+
+.hero-symbol::before{
+    inset:24px;
+}
+
+.hero-symbol::after{
+    inset:55px;
+}
+
+.hero-symbol span{
+    position:relative;
+    z-index:2;
+    color:var(--teal);
+    font-family:Georgia,serif;
+    font-size:4rem;
+}
+
+/* META */
+
+.meta{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-bottom:1px solid var(--line);
+    background:white;
+}
+
+.meta-item{
+    padding:25px;
+    border-right:1px solid var(--line);
+}
+
+.meta-item:last-child{
+    border-right:0;
+}
+
+.meta-label{
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:.65rem;
+    margin-bottom:6px;
+}
+
+.meta-value{
+    font-weight:800;
+}
+
+/* MAIN */
+
+main{
+    padding:85px 0;
+}
+
+.section{
+    margin-bottom:110px;
+}
+
+.section-number{
+    color:var(--teal);
+    font-size:.7rem;
+    font-weight:800;
+    letter-spacing:.18em;
+    margin-bottom:12px;
+}
+
+.section-title{
+    font-family:Georgia,serif;
+    font-weight:500;
+    font-size:2.7rem;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.lead{
+    max-width:830px;
+    color:#4e5d64;
+    font-size:1.08rem;
+}
+
+/* RESEARCH QUESTION */
+
+.question{
+    margin-top:35px;
+    padding:42px;
+    background:var(--teal-dark);
+    color:white;
+    border-radius:18px;
+    position:relative;
+    overflow:hidden;
+}
+
+.question::after{
+    content:"CRPD";
+    position:absolute;
+    right:-15px;
+    bottom:-55px;
+    font-family:Georgia,serif;
+    font-size:9rem;
+    color:rgba(255,255,255,.035);
+}
+
+.question-label{
+    position:relative;
+    z-index:2;
+    color:#a9d5d1;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:.68rem;
+    margin-bottom:15px;
+}
+
+.question p{
+    position:relative;
+    z-index:2;
+    font-family:Georgia,serif;
+    font-size:1.5rem;
+    line-height:1.45;
+    max-width:850px;
+}
+
+/* PRINCIPLES */
+
+.principles{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:40px;
+}
+
+.principle{
+    background:white;
+    border:1px solid var(--line);
+    padding:28px;
+    min-height:230px;
+    box-shadow:var(--shadow);
+    transition:.2s ease;
+}
+
+.principle:hover{
+    transform:translateY(-5px);
+    border-color:var(--teal);
+}
+
+.principle-number{
+    color:var(--teal);
+    font-family:Georgia,serif;
+    font-size:1.8rem;
+    margin-bottom:18px;
+}
+
+.principle h3{
+    font-family:Georgia,serif;
+    font-size:1.25rem;
+    margin-bottom:10px;
+}
+
+.principle p{
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+/* LEGAL INTERFACE */
+
+.interface{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:40px;
+}
+
+.interface-card{
+    background:white;
+    border:1px solid var(--line);
+    padding:35px;
+}
+
+.interface-card.featured{
+    background:var(--mint);
+    border-color:#b8d5d2;
+}
+
+.interface-card h3{
+    font-family:Georgia,serif;
+    font-size:1.7rem;
+    margin-bottom:14px;
+}
+
+.interface-card p{
+    color:#56646b;
+}
+
+.interface-list{
+    margin-top:20px;
+    display:grid;
+    gap:10px;
+}
+
+.interface-list div{
+    padding:13px 15px;
+    background:rgba(255,255,255,.7);
+    border-left:3px solid var(--teal);
+    font-size:.9rem;
+}
+
+/* MALAYSIA */
+
+.malaysia{
+    background:var(--ink);
+    color:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.malaysia-grid{
+    display:grid;
+    grid-template-columns:1fr .7fr;
+    gap:55px;
+    align-items:start;
+}
+
+.malaysia h2{
+    font-family:Georgia,serif;
+    font-size:2.7rem;
+    font-weight:500;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.malaysia p{
+    color:#b9c5c8;
+}
+
+.status-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.13);
+    padding:27px;
+}
+
+.status-card span{
+    display:block;
+    color:#a9d5d1;
+    text-transform:uppercase;
+    letter-spacing:.13em;
+    font-size:.65rem;
+    margin-bottom:8px;
+}
+
+.status-card strong{
+    font-family:Georgia,serif;
+    font-size:1.4rem;
+}
+
+/* TREATY PROCESS */
+
+.process{
+    margin-top:40px;
+    display:grid;
+    gap:0;
+}
+
+.process-item{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    border-top:1px solid var(--line);
+    padding:28px 0;
+}
+
+.process-number{
+    color:var(--teal);
+    font-family:Georgia,serif;
+    font-size:1.6rem;
+}
+
+.process-content h3{
+    font-family:Georgia,serif;
+    font-size:1.5rem;
+    margin-bottom:7px;
+}
+
+.process-content p{
+    color:var(--muted);
+    max-width:780px;
+}
+
+/* CURRENT RESEARCH STATUS */
+
+.status-section{
+    display:grid;
+    grid-template-columns:.7fr 1.3fr;
+    gap:45px;
+    background:white;
+    border:1px solid var(--line);
+    padding:45px;
+}
+
+.status-section h3{
+    font-family:Georgia,serif;
+    font-size:2rem;
+    line-height:1.15;
+}
+
+.status-text p{
+    color:var(--muted);
+    margin-bottom:15px;
+}
+
+.note{
+    padding:17px;
+    background:#edf4f3;
+    border-left:3px solid var(--teal);
+    font-size:.9rem;
+}
+
+/* ANALYSIS */
+
+.analysis-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:35px;
+}
+
+.analysis-card{
+    background:white;
+    border:1px solid var(--line);
+    padding:30px;
+}
+
+.analysis-card span{
+    color:var(--teal);
+    font-size:.67rem;
+    letter-spacing:.15em;
+    font-weight:800;
+}
+
+.analysis-card h3{
+    font-family:Georgia,serif;
+    font-size:1.35rem;
+    margin:10px 0;
+}
+
+.analysis-card p{
+    color:var(--muted);
+    font-size:.92rem;
+}
+
+/* FINDING */
+
+.finding{
+    padding:55px;
+    background:var(--mint);
+    border-left:6px solid var(--teal);
+}
+
+.finding h2{
+    font-family:Georgia,serif;
+    font-size:2.6rem;
+    line-height:1.1;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.finding p{
+    max-width:850px;
+    color:#42585a;
+}
+
+/* SOURCES */
+
+.sources{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:35px;
+}
+
+.source{
+    background:white;
+    border:1px solid var(--line);
+    padding:27px;
+}
+
+.source-label{
+    color:var(--teal);
+    text-transform:uppercase;
+    letter-spacing:.13em;
+    font-size:.65rem;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.source h3{
+    font-family:Georgia,serif;
+    font-size:1.25rem;
+    margin-bottom:8px;
+}
+
+.source p{
+    color:var(--muted);
+    font-size:.88rem;
+}
+
+/* INTEGRITY */
+
+.integrity{
+    padding:40px;
+    background:#e9efee;
+    border:1px solid var(--line);
+}
+
+.integrity h3{
+    font-family:Georgia,serif;
+    font-size:1.7rem;
+    margin-bottom:13px;
+}
+
+.integrity p{
+    color:#526066;
+    max-width:850px;
+}
+
+/* PAGE NAV */
+
+.page-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-top:75px;
+}
+
+.page-link{
+    background:white;
+    border:1px solid var(--line);
+    padding:25px;
+    transition:.2s ease;
+}
+
+.page-link:hover{
+    border-color:var(--teal);
+    transform:translateY(-3px);
+}
+
+.page-link small{
+    display:block;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:.62rem;
+    margin-bottom:8px;
+}
+
+.page-link strong{
+    font-family:Georgia,serif;
+    font-size:1.15rem;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--ink);
+    color:#d8e0e1;
+    padding:45px 0;
+}
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.footer-title{
+    font-family:Georgia,serif;
+    color:white;
+    font-size:1.4rem;
+}
+
+.footer-text{
+    color:#96a4a8;
+    font-size:.82rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-grid,
+    .malaysia-grid,
+    .status-section{
+        grid-template-columns:1fr;
+    }
+
+    .hero-symbol{
+        display:none;
+    }
+
+    .meta{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .principles{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .interface,
+    .analysis-grid,
+    .sources{
+        grid-template-columns:1fr;
+    }
+
+    .page-nav{
+        grid-template-columns:1fr;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:560px){
+
+    .principles{
+        grid-template-columns:1fr;
+    }
+
+    .meta{
+        grid-template-columns:1fr;
+    }
+
+    .malaysia,
+    .finding,
+    .status-section{
+        padding:30px;
+    }
+
+    .process-item{
+        grid-template-columns:70px 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="container nav-inner">
+
+<a class="brand" href="../">
+    <span class="brand-mark">F</span>
+    <span>FATHI / R01</span>
+</a>
+
+<div class="nav-links">
+    <a href="#principles">Principles</a>
+    <a href="#malaysia">Malaysia</a>
+    <a href="#status">Research Status</a>
+    <a href="#analysis">Analysis</a>
+</div>
+
+</div>
+
+</nav>
+
+
+<header class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="eyebrow">
+Research Material 05 · International Human Rights Law
+</div>
+
+<h1>CRPD</h1>
+
+<p class="hero-subtitle">
+Convention on the Rights of Persons with Disabilities
+</p>
+
+<p class="hero-subtitle">
+A treaty-focused research dossier examining disability rights,
+international obligations, domestic legal interaction and Malaysia's
+engagement with the UN human rights system.
+</p>
+
+</div>
+
+<div class="hero-symbol">
+<span>05</span>
+</div>
+
+</div>
+
+</header>
+
+
+<section class="meta">
+
+<div class="meta-item">
+<div class="meta-label">Instrument</div>
+<div class="meta-value">CRPD</div>
+</div>
+
+<div class="meta-item">
+<div class="meta-label">Adopted</div>
+<div class="meta-value">2006</div>
+</div>
+
+<div class="meta-item">
+<div class="meta-label">Research Type</div>
+<div class="meta-value">Treaty Analysis</div>
+</div>
+
+<div class="meta-item">
+<div class="meta-label">Jurisdiction</div>
+<div class="meta-value">Malaysia</div>
+</div>
+
+</section>
+
+
+<main>
+
+<div class="container">
+
+
+<section class="section">
+
+<div class="section-number">01 · RESEARCH PURPOSE</div>
+
+<h2 class="section-title">
+Disability rights as a legal research question
+</h2>
+
+<p class="lead">
+This research examines the Convention on the Rights of Persons with
+Disabilities as part of the broader study of international human rights
+law and its interaction with Malaysian law. The focus is on the
+relationship between international standards, domestic legislation,
+institutional implementation and treaty-body monitoring.
+</p>
+
+<div class="question">
+
+<div class="question-label">Central Research Question</div>
+
+<p>
+How does Malaysia's engagement with the CRPD interact with its domestic
+legal and institutional framework for protecting the rights and
+participation of persons with disabilities?
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section" id="principles">
+
+<div class="section-number">02 · CONVENTION FRAMEWORK</div>
+
+<h2 class="section-title">
+Core principles shaping the analysis
+</h2>
+
+<p class="lead">
+The CRPD adopts a rights-based framework in which persons with
+disabilities are treated as rights-holders and active participants in
+society rather than merely as recipients of welfare measures.
+</p>
+
+<div class="principles">
+
+<div class="principle">
+
+<div class="principle-number">01</div>
+
+<h3>Dignity</h3>
+
+<p>
+Respect for inherent dignity forms part of the Convention's
+rights-based approach.
+</p>
+
+</div>
+
+
+<div class="principle">
+
+<div class="principle-number">02</div>
+
+<h3>Equality</h3>
+
+<p>
+The Convention addresses discrimination and promotes equality for
+persons with disabilities.
+</p>
+
+</div>
+
+
+<div class="principle">
+
+<div class="principle-number">03</div>
+
+<h3>Participation</h3>
+
+<p>
+Participation and inclusion are central to the Convention's approach
+to disability rights.
+</p>
+
+</div>
+
+
+<div class="principle">
+
+<div class="principle-number">04</div>
+
+<h3>Accessibility</h3>
+
+<p>
+Accessibility is treated as an important condition for the effective
+exercise of rights.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="section-number">03 · LEGAL INTERFACE</div>
+
+<h2 class="section-title">
+International obligations and domestic law
+</h2>
+
+<div class="interface">
+
+<div class="interface-card featured">
+
+<h3>International plane</h3>
+
+<p>
+At the international level, the CRPD establishes obligations for
+States parties concerning the protection and promotion of the rights
+of persons with disabilities.
+</p>
+
+<div class="interface-list">
+
+<div>International treaty obligations</div>
+
+<div>State reporting</div>
+
+<div>Committee monitoring</div>
+
+<div>International standards</div>
+
+</div>
+
+</div>
+
+
+<div class="interface-card">
+
+<h3>Domestic plane</h3>
+
+<p>
+The domestic analysis asks how those international commitments relate
+to Malaysia's own constitutional, statutory and institutional
+framework.
+</p>
+
+<div class="interface-list">
+
+<div>Federal Constitution</div>
+
+<div>Persons with Disabilities Act 2008</div>
+
+<div>Public institutions</div>
+
+<div>Judicial interpretation</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="malaysia">
+
+<div class="section-number">04 · MALAYSIA</div>
+
+<div class="malaysia">
+
+<div class="malaysia-grid">
+
+<div>
+
+<h2>
+Malaysia's CRPD engagement
+</h2>
+
+<p>
+Malaysia's participation in the CRPD provides a useful case study for
+examining the relationship between international human rights
+commitments and domestic implementation.
+</p>
+
+</div>
+
+
+<div class="status-card">
+
+<span>Treaty position</span>
+
+<strong>State Party</strong>
+
+<br><br>
+
+<span>Domestic framework</span>
+
+<strong>Persons with Disabilities Act 2008</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="section-number">05 · DOMESTIC IMPLEMENTATION</div>
+
+<h2 class="section-title">
+The domestic implementation question
+</h2>
+
+<p class="lead">
+A treaty-based analysis should not stop at ratification. The next
+stage is to identify the domestic laws, institutions and policies
+through which rights are recognised, implemented and monitored.
+</p>
+
+<div class="process">
+
+<div class="process-item">
+
+<div class="process-number">01</div>
+
+<div class="process-content">
+
+<h3>Legal recognition</h3>
+
+<p>
+Identify the relevant constitutional provisions, legislation and
+regulatory instruments concerning persons with disabilities.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="process-item">
+
+<div class="process-number">02</div>
+
+<div class="process-content">
+
+<h3>Institutional implementation</h3>
+
+<p>
+Examine the role of government agencies, public institutions and
+human rights bodies in translating legal standards into practice.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="process-item">
+
+<div class="process-number">03</div>
+
+<div class="process-content">
+
+<h3>Practical accessibility</h3>
+
+<p>
+Consider whether legal recognition is accompanied by effective
+access to education, employment, public services, justice and
+participation.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="process-item">
+
+<div class="process-number">04</div>
+
+<div class="process-content">
+
+<h3>International monitoring</h3>
+
+<p>
+Compare domestic implementation with the documentation and monitoring
+process conducted under the CRPD framework.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="status">
+
+<div class="section-number">06 · RESEARCH STATUS</div>
+
+<div class="status-section">
+
+<div>
+
+<h3>
+Where the research currently stands
+</h3>
+
+</div>
+
+<div class="status-text">
+
+<p>
+The OHCHR Treaty Body Database records Malaysia's initial State party
+report under the CRPD as <strong>CRPD/C/MYS/1</strong>.
+</p>
+
+<p>
+The research will continue to monitor the official UN treaty-body
+materials concerning Malaysia, including the development of the review
+process and any future concluding observations.
+</p>
+
+<div class="note">
+Research status: treaty-body materials require continued monitoring
+as the international review process develops.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="analysis">
+
+<div class="section-number">07 · ANALYTICAL QUESTIONS</div>
+
+<h2 class="section-title">
+Questions for further research
+</h2>
+
+<div class="analysis-grid">
+
+<div class="analysis-card">
+
+<span>QUESTION 01</span>
+
+<h3>
+What is the domestic legal effect of the CRPD?
+</h3>
+
+<p>
+The analysis must distinguish Malaysia's international treaty
+obligations from the domestic enforceability of treaty provisions.
+</p>
+
+</div>
+
+
+<div class="analysis-card">
+
+<span>QUESTION 02</span>
+
+<h3>
+How does the CRPD interact with domestic disability legislation?
+</h3>
+
+<p>
+The research should examine the relationship between international
+standards and the Persons with Disabilities Act 2008.
+</p>
+
+</div>
+
+
+<div class="analysis-card">
+
+<span>QUESTION 03</span>
+
+<h3>
+How should accessibility be evaluated?
+</h3>
+
+<p>
+Further research can examine accessibility not only as physical access
+but also as a condition for effective participation and enjoyment of
+rights.
+</p>
+
+</div>
+
+
+<div class="analysis-card">
+
+<span>QUESTION 04</span>
+
+<h3>
+What does treaty-body monitoring reveal?
+</h3>
+
+<p>
+UN documentation can provide an external source for examining
+implementation, challenges and areas requiring further research.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section finding">
+
+<div class="section-number">08 · PRELIMINARY FINDING</div>
+
+<h2>
+The CRPD shifts the research question from protection to participation.
+</h2>
+
+<p>
+The Convention provides a framework for examining disability through
+human rights, equality, dignity, accessibility and participation.
+For Malaysia, the central research task is therefore to examine how
+international commitments interact with domestic legislation,
+institutions and practical implementation rather than treating
+ratification as the end of the analysis.
+</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="section-number">09 · SOURCE ARCHITECTURE</div>
+
+<h2 class="section-title">
+Primary materials supporting the research
+</h2>
+
+<div class="sources">
+
+<div class="source">
+
+<div class="source-label">Primary</div>
+
+<h3>CRPD Treaty Text</h3>
+
+<p>
+Convention on the Rights of Persons with Disabilities, United Nations,
+2006.
+</p>
+
+</div>
+
+
+<div class="source">
+
+<div class="source-label">Primary</div>
+
+<h3>UN Treaty Collection</h3>
+
+<p>
+Treaty status, participation and other official treaty information
+concerning Malaysia.
+</p>
+
+</div>
+
+
+<div class="source">
+
+<div class="source-label">Primary</div>
+
+<h3>OHCHR Treaty Body Database</h3>
+
+<p>
+State reports and official documentation relating to Malaysia's CRPD
+review process.
+</p>
+
+</div>
+
+
+<div class="source">
+
+<div class="source-label">Domestic</div>
+
+<h3>Persons with Disabilities Act 2008</h3>
+
+<p>
+A key Malaysian statutory source for examining the domestic legal
+framework concerning persons with disabilities.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="integrity">
+
+<h3>Research Integrity</h3>
+
+<p>
+This page is a research framework and does not present a final
+assessment of Malaysia's compliance with the CRPD. International
+obligations, domestic legislation, institutional practice, empirical
+evidence and the researcher's own analysis must remain clearly
+distinguished. Conclusions should be based on primary materials and
+verifiable evidence.
+</p>
+
+</div>
+
+</section>
+
+
+<div class="page-nav">
+
+<a class="page-link" href="../04/">
+
+<small>← Previous Research Material</small>
+
+<strong>04 · Convention on the Elimination of All Forms of Discrimination against Women</strong>
+
+</a>
+
+
+<a class="page-link" href="../06/">
+
+<small>Next Research Material →</small>
+
+<strong>06 · Universal Declaration of Human Rights</strong>
+
+</a>
+
+</div>
+
+
+<div class="page-nav">
+
+<a class="page-link"
+href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/05-convention-on-the-rights-of-persons-with-disabilities.md">
+
+<small>Research Archive</small>
+
+<strong>View Source Material ↗</strong>
+
+</a>
+
+
+<a class="page-link" href="../">
+
+<small>Research Project 01</small>
+
+<strong>← Back to R01</strong>
+
+</a>
+
+</div>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-inner">
+
+<div>
+
+<div class="footer-title">
+FATHI / Research 01
+</div>
+
+<div class="footer-text">
+Malaysia and International Human Rights Law
+</div>
+
+</div>
+
+<div class="footer-text">
+Research Material 05 · CRPD<br>
+Muhammad Fathi Duraini
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
