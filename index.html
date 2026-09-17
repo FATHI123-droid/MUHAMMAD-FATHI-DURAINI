@@ -1,1049 +1,1889 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Muhammad Fathi Duraini — Academic Research in International Relations, International Law, Human Rights and Global Security.">
+<meta name="author" content="Muhammad Fathi Duraini">
+
+<title>Muhammad Fathi Duraini | Academic Research</title>
+
+<style>
+
+:root{
+    --ink:#0b1220;
+    --ink2:#121b2c;
+    --paper:#f6f3eb;
+    --white:#fffdf8;
+    --gold:#b99a5b;
+    --gold2:#d4bc87;
+    --muted:#717989;
+    --line:#d9d5cb;
+    --blue:#263c61;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Arial,Helvetica,sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1180px,90%);
+    margin:auto;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:999;
+
+    height:76px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 5%;
+
+    background:rgba(246,243,235,.82);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(11,18,32,.08);
+}
+
+.logo{
+    font-family:Georgia,serif;
+    font-size:17px;
+    letter-spacing:-.02em;
+}
+
+.logo span{
+    color:var(--gold);
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav-right a{
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    color:var(--muted);
+    transition:.25s;
+}
+
+.nav-right a:hover{
+    color:var(--ink);
+}
+
+.status{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+}
+
+.status-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#6f8f6a;
+    box-shadow:0 0 0 4px rgba(111,143,106,.12);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+    padding-top:76px;
+
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:80px;
+
+    position:relative;
+}
+
+.hero::before{
+    content:"01";
+    position:absolute;
+    top:150px;
+    right:2%;
+
+    font-family:Georgia,serif;
+    font-size:180px;
+    color:rgba(11,18,32,.025);
 
-  <title>Muhammad Fathi Duraini | Research & Human Rights</title>
+    pointer-events:none;
+}
 
-  <meta
-    name="description"
-    content="Academic and professional portfolio of Muhammad Fathi Duraini, an International Relations undergraduate interested in human rights, international law, humanitarian affairs and Malaysia's development."
-  >
+.kicker{
+    display:flex;
+    align-items:center;
+    gap:12px;
 
-  <meta name="author" content="Muhammad Fathi Duraini bin Sahaimi">
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    color:var(--gold);
+    font-weight:bold;
 
-  <style>
-    :root {
-      --bg: #f5f5f2;
-      --surface: #ffffff;
-      --text: #111111;
-      --muted: #686868;
-      --line: #deded8;
-      --dark: #111111;
-      --soft: #ecece7;
-      --accent: #314b42;
-      --max: 1180px;
-      --radius: 24px;
-    }
+    margin-bottom:27px;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+.kicker::before{
+    content:"";
+    width:35px;
+    height:1px;
+    background:var(--gold);
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+.hero h1{
+    font-family:Georgia,serif;
+    font-weight:400;
 
-    body {
-      font-family: Inter, Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
+    font-size:clamp(62px,8vw,112px);
+    line-height:.88;
+    letter-spacing:-.065em;
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    margin-bottom:34px;
+}
 
-    .container {
-      width: min(100% - 40px, var(--max));
-      margin: auto;
-    }
+.hero h1 em{
+    color:var(--gold);
+    font-style:normal;
+}
 
-    /* NAVIGATION */
+.hero-description{
+    max-width:610px;
 
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      backdrop-filter: blur(18px);
-      background: rgba(245, 245, 242, 0.82);
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-    }
+    color:var(--muted);
+    font-size:17px;
+    line-height:1.8;
 
-    .nav-inner {
-      max-width: var(--max);
-      margin: auto;
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
+    margin-bottom:38px;
+}
 
-    .brand {
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
+.hero-actions{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    flex-wrap:wrap;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      font-size: 13px;
-      color: #444;
-    }
+.btn{
+    display:inline-flex;
+    align-items:center;
+    gap:15px;
 
-    .nav-links a {
-      transition: opacity .2s ease;
-    }
+    padding:14px 19px;
 
-    .nav-links a:hover {
-      opacity: .5;
-    }
+    border:1px solid var(--ink);
 
-    /* HERO */
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:.14em;
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 150px 0 100px;
-      position: relative;
-    }
+    transition:.3s;
+}
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.35fr .65fr;
-      gap: 70px;
-      align-items: end;
-    }
+.btn:hover{
+    background:var(--ink);
+    color:white;
+}
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 30px;
-    }
+.btn-arrow{
+    font-size:15px;
+}
 
-    .eyebrow::before {
-      content: "";
-      width: 34px;
-      height: 1px;
-      background: var(--text);
-    }
+.btn-soft{
+    border-color:var(--line);
+    color:var(--muted);
+}
 
-    h1 {
-      font-size: clamp(58px, 9vw, 128px);
-      line-height: .88;
-      letter-spacing: -.075em;
-      font-weight: 800;
-      max-width: 900px;
-    }
 
-    .hero-description {
-      max-width: 590px;
-      margin-top: 38px;
-      font-size: 19px;
-      color: #555;
-    }
+/* =====================================================
+   HERO RESEARCH ENGINE
+===================================================== */
 
-    .hero-side {
-      border-left: 1px solid var(--line);
-      padding-left: 32px;
-      padding-bottom: 8px;
-    }
+.engine{
+    height:520px;
 
-    .hero-side-label {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
+    position:relative;
 
-    .hero-side p {
-      font-size: 17px;
-      line-height: 1.55;
-    }
+    background:var(--ink);
 
-    .hero-actions {
-      display: flex;
-      gap: 12px;
-      margin-top: 42px;
-      flex-wrap: wrap;
-    }
+    border-radius:2px;
 
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 20px;
-      border-radius: 999px;
-      border: 1px solid var(--text);
-      font-size: 13px;
-      font-weight: 700;
-      transition: all .25s ease;
-    }
+    overflow:hidden;
 
-    .button.primary {
-      background: var(--dark);
-      color: white;
-    }
+    box-shadow:
+        25px 30px 0 rgba(11,18,32,.04);
+}
 
-    .button:hover {
-      transform: translateY(-2px);
-    }
+.engine-grid{
+    position:absolute;
+    inset:0;
 
-    .scroll-note {
-      position: absolute;
-      bottom: 35px;
-      left: 20px;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      color: var(--muted);
-    }
+    background-image:
+        linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
 
-    /* MARQUEE */
+    background-size:42px 42px;
+}
 
-    .marquee {
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      overflow: hidden;
-      white-space: nowrap;
-      background: var(--surface);
-    }
+.engine-ring{
+    position:absolute;
 
-    .marquee-track {
-      display: inline-block;
-      padding: 22px 0;
-      animation: marquee 24s linear infinite;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
+    width:330px;
+    height:330px;
 
-    .marquee-track span {
-      margin: 0 30px;
-      color: var(--muted);
-    }
+    border:1px solid rgba(185,154,91,.7);
+    border-radius:50%;
 
-    @keyframes marquee {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-30%);
-      }
-    }
+    top:50%;
+    left:50%;
 
-    /* SECTIONS */
+    transform:translate(-50%,-50%);
+}
 
-    section {
-      padding: 130px 0;
-    }
+.engine-ring::before,
+.engine-ring::after{
+    content:"";
 
-    .section-header {
-      display: grid;
-      grid-template-columns: .35fr 1fr;
-      gap: 50px;
-      margin-bottom: 60px;
-    }
+    position:absolute;
 
-    .section-number {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--muted);
-    }
+    border:1px solid rgba(185,154,91,.28);
+    border-radius:50%;
+}
 
-    .section-title {
-      font-size: clamp(38px, 5vw, 68px);
-      line-height: .98;
-      letter-spacing: -.055em;
-      max-width: 800px;
-    }
+.engine-ring::before{
+    width:230px;
+    height:230px;
+    top:49px;
+    left:49px;
+}
 
-    .section-intro {
-      margin-top: 20px;
-      max-width: 670px;
-      color: var(--muted);
-      font-size: 17px;
-    }
+.engine-ring::after{
+    width:120px;
+    height:120px;
+    top:99px;
+    left:99px;
+}
 
-    /* PORTFOLIO GRID */
+.engine-core{
+    position:absolute;
 
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
+    width:105px;
+    height:105px;
 
-    .portfolio-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 34px;
-      min-height: 330px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition:
-        transform .35s ease,
-        box-shadow .35s ease,
-        border-color .35s ease;
-    }
+    border-radius:50%;
 
-    .portfolio-card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 20px 50px rgba(0,0,0,.07);
-      border-color: #bbb;
-    }
+    background:var(--gold);
 
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+    color:var(--ink);
 
-    .card-number {
-      font-size: 12px;
-      color: var(--muted);
-      font-weight: 700;
-    }
+    top:50%;
+    left:50%;
 
-    .arrow {
-      font-size: 23px;
-      transition: transform .3s ease;
-    }
+    transform:translate(-50%,-50%);
 
-    .portfolio-card:hover .arrow {
-      transform: translate(5px,-5px);
-    }
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    .portfolio-card h3 {
-      font-size: 31px;
-      line-height: 1;
-      letter-spacing: -.04em;
-      margin-bottom: 18px;
-      max-width: 430px;
-    }
+    text-align:center;
 
-    .portfolio-card p {
-      color: var(--muted);
-      max-width: 460px;
-    }
+    font-family:Georgia,serif;
+    font-size:14px;
+    line-height:1.15;
 
-    .tag-row {
-      display: flex;
-      gap: 7px;
-      flex-wrap: wrap;
-      margin-top: 25px;
-    }
+    z-index:3;
+}
 
-    .tag {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-    }
+.orbit-dot{
+    position:absolute;
 
-    /* RESEARCH */
+    width:9px;
+    height:9px;
 
-    .research-layout {
-      display: grid;
-      grid-template-columns: .7fr 1.3fr;
-      gap: 70px;
-      align-items: start;
-    }
+    background:var(--gold2);
+    border-radius:50%;
 
-    .research-note {
-      font-size: 24px;
-      line-height: 1.25;
-      letter-spacing: -.025em;
-    }
+    z-index:5;
+}
 
-    .research-list {
-      border-top: 1px solid var(--line);
-    }
+.dot1{
+    top:23%;
+    left:50%;
+}
 
-    .research-item {
-      display: grid;
-      grid-template-columns: 70px 1fr 30px;
-      gap: 25px;
-      padding: 25px 0;
-      border-bottom: 1px solid var(--line);
-      align-items: center;
-      transition: padding .25s ease;
-    }
+.dot2{
+    top:50%;
+    left:9%;
+}
 
-    .research-item:hover {
-      padding-left: 10px;
-    }
+.dot3{
+    top:75%;
+    right:18%;
+}
 
-    .research-item small {
-      color: var(--muted);
-    }
+.dot4{
+    bottom:11%;
+    left:48%;
+}
 
-    .research-item h4 {
-      font-size: 19px;
-      letter-spacing: -.02em;
-    }
+.engine-label{
+    position:absolute;
 
-    .research-item p {
-      color: var(--muted);
-      font-size: 14px;
-      margin-top: 5px;
-    }
+    color:#8791a2;
 
-    /* METHODOLOGY */
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:.17em;
+}
 
-    .methodology {
-      background: var(--dark);
-      color: white;
-    }
+.engine-label.a{
+    top:24px;
+    left:25px;
+}
 
-    .methodology .section-number,
-    .methodology .section-intro {
-      color: #aaa;
-    }
+.engine-label.b{
+    bottom:24px;
+    right:25px;
+}
 
-    .method-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: #333;
-      border: 1px solid #333;
-    }
+.engine-title{
+    position:absolute;
 
-    .method {
-      background: var(--dark);
-      padding: 32px 25px;
-      min-height: 230px;
-    }
+    bottom:28px;
+    left:27px;
 
-    .method span {
-      font-size: 11px;
-      color: #999;
-    }
+    color:white;
 
-    .method h3 {
-      margin-top: 55px;
-      font-size: 22px;
-      letter-spacing: -.03em;
-    }
+    font-family:Georgia,serif;
+    font-size:20px;
+}
 
-    .method p {
-      margin-top: 10px;
-      color: #999;
-      font-size: 13px;
-    }
 
-    /* CURRENT INTERESTS */
+/* =====================================================
+   SIGNAL BAR
+===================================================== */
 
-    .interest-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+.signal{
+    background:var(--ink2);
+    color:white;
 
-    .interest {
-      padding: 17px 22px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: var(--surface);
-      font-size: 14px;
-      transition: transform .25s ease;
-    }
+    border-top:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
 
-    .interest:hover {
-      transform: translateY(-4px);
-    }
+.signal-inner{
+    min-height:100px;
 
-    /* TIMELINE */
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
 
-    .timeline {
-      border-top: 1px solid var(--line);
-    }
+.signal-item{
+    padding:23px 25px;
 
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 40px;
-      padding: 30px 0;
-      border-bottom: 1px solid var(--line);
-    }
+    border-right:1px solid rgba(255,255,255,.1);
+}
+
+.signal-item:last-child{
+    border-right:none;
+}
+
+.signal-number{
+    font-family:Georgia,serif;
+    font-size:28px;
+    color:var(--gold);
+}
+
+.signal-label{
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    color:#8d96a6;
+}
+
+
+/* =====================================================
+   SECTION COMMON
+===================================================== */
+
+section{
+    padding:120px 0;
+}
+
+.section-kicker{
+    color:var(--gold);
+
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    font-weight:bold;
+
+    margin-bottom:17px;
+}
+
+.section-heading{
+    font-family:Georgia,serif;
+    font-size:clamp(42px,5vw,70px);
+    line-height:.95;
+    font-weight:400;
+    letter-spacing:-.04em;
+
+    margin-bottom:50px;
+}
+
+
+/* =====================================================
+   RESEARCH INDEX
+===================================================== */
+
+.research-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:50px;
+
+    margin-bottom:45px;
+}
+
+.research-intro{
+    max-width:430px;
+
+    font-size:13px;
+    line-height:1.8;
+    color:var(--muted);
+}
+
+.archive{
+    border-top:1px solid var(--line);
+}
+
+.archive-item{
+    display:grid;
+    grid-template-columns:90px 1fr 170px 30px;
+    align-items:center;
+    gap:25px;
+
+    padding:29px 0;
+
+    border-bottom:1px solid var(--line);
+
+    transition:.3s;
+}
+
+.archive-item:hover{
+    padding-left:16px;
+    background:rgba(255,255,255,.38);
+}
+
+.archive-code{
+    color:var(--gold);
+    font-family:Georgia,serif;
+    font-size:22px;
+}
+
+.archive-title{
+    font-family:Georgia,serif;
+    font-size:25px;
+    font-weight:400;
+}
+
+.archive-description{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:4px;
+}
+
+.archive-status{
+    text-align:right;
+
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:.13em;
+
+    color:var(--muted);
+}
+
+.archive-arrow{
+    font-size:20px;
+    color:var(--gold);
+}
+
+
+/* =====================================================
+   FEATURED DOSSIER
+===================================================== */
+
+.dossier-section{
+    background:var(--white);
+}
+
+.dossier{
+    display:grid;
+    grid-template-columns:.75fr 1.25fr;
+
+    min-height:510px;
+}
+
+.dossier-left{
+    position:relative;
+
+    background:var(--ink);
+    color:white;
+
+    padding:45px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    overflow:hidden;
+}
+
+.dossier-left::after{
+    content:"R01";
+
+    position:absolute;
+
+    right:-35px;
+    bottom:-50px;
+
+    font-family:Georgia,serif;
+    font-size:190px;
+
+    color:rgba(255,255,255,.035);
+}
+
+.dossier-meta{
+    color:var(--gold);
+
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.17em;
+}
+
+.dossier-code{
+    font-family:Georgia,serif;
+    font-size:120px;
+    font-weight:400;
+
+    color:white;
+
+    line-height:.8;
+
+    position:relative;
+    z-index:2;
+}
+
+.dossier-files{
+    color:#8791a2;
+
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.13em;
+
+    position:relative;
+    z-index:2;
+}
+
+.dossier-right{
+    padding:60px;
+
+    background:white;
+}
+
+.dossier-right h2{
+    font-family:Georgia,serif;
+    font-weight:400;
+
+    font-size:46px;
+    line-height:1.05;
+
+    max-width:650px;
+
+    margin-bottom:23px;
+}
+
+.dossier-right p{
+    color:var(--muted);
+
+    max-width:640px;
+
+    font-size:14px;
+    line-height:1.9;
 
-    .timeline-year {
-      font-size: 12px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: .08em;
+    margin-bottom:30px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+
+    margin-bottom:35px;
+}
+
+.tag{
+    padding:7px 10px;
+
+    border:1px solid var(--line);
+
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:.09em;
+}
+
+
+/* =====================================================
+   METHOD
+===================================================== */
+
+.method-section{
+    background:var(--paper);
+}
+
+.method-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.method{
+    padding-top:23px;
+
+    border-top:2px solid var(--ink);
+}
+
+.method-num{
+    color:var(--gold);
+
+    font-family:Georgia,serif;
+    font-size:27px;
+}
+
+.method h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    font-weight:400;
+
+    margin:10px 0;
+}
+
+.method p{
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   INTELLECTUAL CONSTELLATION
+===================================================== */
+
+.constellation-section{
+    background:var(--ink);
+    color:white;
+}
+
+.constellation{
+    height:560px;
+
+    position:relative;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at center,
+            rgba(185,154,91,.07),
+            transparent 34%),
+
+        linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+
+    background-size:auto,55px 55px,55px 55px;
+}
+
+.constellation::before{
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    border:1px solid rgba(185,154,91,.16);
+
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+}
+
+.constellation-center{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:145px;
+    height:145px;
+
+    border:1px solid var(--gold);
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    font-family:Georgia,serif;
+    font-size:17px;
+
+    z-index:5;
+}
+
+.constellation-node{
+    position:absolute;
+
+    padding:13px 18px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:rgba(13,20,32,.75);
+
+    font-size:9px;
+
+    text-transform:uppercase;
+    letter-spacing:.12em;
+
+    z-index:4;
+
+    transition:.3s;
+}
+
+.constellation-node:hover{
+    border-color:var(--gold);
+    color:var(--gold2);
+    transform:translateY(-4px);
+}
+
+.c1{
+    top:15%;
+    left:13%;
+}
+
+.c2{
+    top:18%;
+    right:12%;
+}
+
+.c3{
+    bottom:17%;
+    left:10%;
+}
+
+.c4{
+    bottom:14%;
+    right:12%;
+}
+
+.c5{
+    top:49%;
+    left:4%;
+}
+
+.c6{
+    top:48%;
+    right:4%;
+}
+
+
+/* =====================================================
+   RESEARCH PRINCIPLES
+===================================================== */
+
+.principles{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    border-top:1px solid var(--line);
+}
+
+.principle{
+    padding:35px 35px 35px 0;
+
+    border-bottom:1px solid var(--line);
+}
+
+.principle:nth-child(even){
+    padding-left:35px;
+    border-left:1px solid var(--line);
+}
+
+.principle h3{
+    font-family:Georgia,serif;
+    font-size:25px;
+    font-weight:400;
+
+    margin-bottom:10px;
+}
+
+.principle p{
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.profile{
+    display:grid;
+    grid-template-columns:.7fr 1.3fr;
+
+    gap:90px;
+}
+
+.profile-name{
+    font-family:Georgia,serif;
+
+    font-size:48px;
+    line-height:.98;
+}
+
+.profile-copy{
+    color:var(--muted);
+
+    font-size:14px;
+    line-height:1.9;
+
+    max-width:680px;
+}
+
+.profile-copy p{
+    margin-bottom:20px;
+}
+
+.profile-table{
+    margin-top:35px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    border-top:1px solid var(--line);
+}
+
+.profile-row{
+    padding:18px 0;
+
+    border-bottom:1px solid var(--line);
+}
+
+.profile-row:nth-child(odd){
+    margin-right:25px;
+}
+
+.profile-label{
+    display:block;
+
+    color:var(--gold);
+
+    font-size:8px;
+
+    text-transform:uppercase;
+    letter-spacing:.14em;
+
+    margin-bottom:5px;
+}
+
+.profile-value{
+    font-size:12px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    background:#070d17;
+    color:white;
+
+    padding:65px 0;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:40px;
+}
+
+.footer-name{
+    font-family:Georgia,serif;
+    font-size:31px;
+}
+
+.footer-sub{
+    color:#7f8999;
+    font-size:10px;
+
+    margin-top:8px;
+}
+
+.footer-links{
+    display:flex;
+    gap:23px;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+    letter-spacing:.13em;
+
+    color:#a3abb8;
+}
+
+.footer-links a:hover{
+    color:var(--gold);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:900px){
+
+    .nav{
+        padding:0 5%;
     }
 
-    .timeline-item h3 {
-      font-size: 22px;
-      letter-spacing: -.03em;
+    .nav-right a{
+        display:none;
     }
 
-    .timeline-item p {
-      color: var(--muted);
-      margin-top: 7px;
-      max-width: 650px;
+    .hero{
+        grid-template-columns:1fr;
+        gap:50px;
+        padding-top:125px;
+        padding-bottom:80px;
     }
 
-    /* FOOTER */
+    .engine{
+        height:390px;
+    }
 
-    footer {
-      background: var(--dark);
-      color: white;
-      padding: 90px 0 35px;
+    .signal-inner{
+        grid-template-columns:1fr 1fr;
     }
 
-    .footer-main {
-      display: flex;
-      justify-content: space-between;
-      gap: 50px;
-      align-items: flex-end;
-      padding-bottom: 90px;
+    .signal-item:nth-child(2){
+        border-right:none;
     }
 
-    .footer-title {
-      font-size: clamp(42px, 7vw, 90px);
-      line-height: .9;
-      letter-spacing: -.07em;
-      max-width: 700px;
+    .research-header{
+        display:block;
     }
 
-    .footer-links {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      font-size: 14px;
-      color: #bbb;
+    .research-intro{
+        margin-top:25px;
     }
 
-    .footer-links a:hover {
-      color: white;
+    .archive-item{
+        grid-template-columns:65px 1fr 25px;
     }
 
-    .footer-bottom {
-      border-top: 1px solid #333;
-      padding-top: 22px;
-      display: flex;
-      justify-content: space-between;
-      color: #777;
-      font-size: 11px;
+    .archive-status{
+        display:none;
     }
 
-    /* REVEAL */
+    .dossier{
+        grid-template-columns:1fr;
+    }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(25px);
-      transition: opacity .8s ease, transform .8s ease;
+    .method-grid{
+        grid-template-columns:1fr 1fr;
     }
 
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .profile{
+        grid-template-columns:1fr;
+        gap:45px;
     }
 
-    /* MOBILE */
+}
 
-    @media (max-width: 800px) {
+@media(max-width:600px){
 
-      .container {
-        width: min(100% - 28px, var(--max));
-      }
+    section{
+        padding:85px 0;
+    }
 
-      .nav-inner {
-        min-height: 65px;
-        padding: 0 14px;
-      }
+    .hero h1{
+        font-size:58px;
+    }
 
-      .nav-links {
-        display: none;
-      }
+    .engine{
+        height:350px;
+    }
 
-      .hero {
-        padding: 125px 0 100px;
-      }
+    .engine-ring{
+        width:250px;
+        height:250px;
+    }
 
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-      }
+    .engine-ring::before{
+        width:175px;
+        height:175px;
+        top:37px;
+        left:37px;
+    }
 
-      .hero-side {
-        border-left: none;
-        border-top: 1px solid var(--line);
-        padding-left: 0;
-        padding-top: 25px;
-      }
+    .engine-ring::after{
+        width:100px;
+        height:100px;
+        top:74px;
+        left:74px;
+    }
 
-      h1 {
-        font-size: clamp(55px, 17vw, 90px);
-      }
+    .signal-inner{
+        grid-template-columns:1fr 1fr;
+    }
 
-      .hero-description {
-        font-size: 17px;
-      }
+    .archive-item{
+        grid-template-columns:55px 1fr 20px;
+        gap:15px;
+    }
 
-      section {
-        padding: 90px 0;
-      }
+    .archive-title{
+        font-size:20px;
+    }
 
-      .section-header {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin-bottom: 40px;
-      }
+    .dossier-right{
+        padding:35px;
+    }
 
-      .portfolio-grid {
-        grid-template-columns: 1fr;
-      }
+    .dossier-right h2{
+        font-size:35px;
+    }
 
-      .portfolio-card {
-        min-height: 300px;
-      }
+    .method-grid{
+        grid-template-columns:1fr;
+    }
 
-      .research-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
+    .constellation{
+        height:500px;
+    }
 
-      .method-grid {
-        grid-template-columns: 1fr 1fr;
-      }
+    .constellation-center{
+        width:120px;
+        height:120px;
+    }
 
-      .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 8px;
-      }
+    .constellation-node{
+        font-size:7px;
+        padding:9px;
+    }
 
-      .footer-main {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    .principles{
+        grid-template-columns:1fr;
+    }
 
-      .footer-bottom {
-        flex-direction: column;
-        gap: 8px;
-      }
+    .principle,
+    .principle:nth-child(even){
+        padding:25px 0;
+        border-left:none;
     }
 
-    @media (max-width: 480px) {
+    .profile-table{
+        grid-template-columns:1fr;
+    }
 
-      .method-grid {
-        grid-template-columns: 1fr;
-      }
+    .profile-row:nth-child(odd){
+        margin-right:0;
+    }
 
-      .method {
-        min-height: auto;
-      }
+    .footer{
+        flex-direction:column;
+        align-items:flex-start;
+    }
 
-      .method h3 {
-        margin-top: 25px;
-      }
+}
 
-      .research-item {
-        grid-template-columns: 45px 1fr 20px;
-        gap: 12px;
-      }
-    }
-  </style>
+</style>
 </head>
+
 
 <body>
 
-  <!-- NAVIGATION -->
 
-  <nav>
-    <div class="nav-inner">
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-      <a href="#top" class="brand">
-        FATHI / ACADEMIC
-      </a>
+<header class="nav">
 
-      <div class="nav-links">
-        <a href="#portfolio">Portfolio</a>
+    <a href="#" class="logo">
+        Muhammad Fathi <span>Duraini</span>
+    </a>
+
+    <div class="nav-right">
+
         <a href="#research">Research</a>
-        <a href="#interests">Interests</a>
-        <a href="#about">About</a>
-      </div>
+        <a href="#method">Method</a>
+        <a href="#focus">Focus</a>
+        <a href="#profile">Profile</a>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            Research Archive
+        </div>
 
     </div>
-  </nav>
+
+</header>
 
 
-  <!-- HERO -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-  <main id="top">
+<main>
 
-    <section class="hero">
+<section class="container hero">
 
-      <div class="container">
+    <div>
 
-        <div class="hero-grid">
+        <div class="kicker">
+            International Relations · Academic Research
+        </div>
 
-          <div>
+        <h1>
+            Ideas<br>
+            into<br>
+            <em>research.</em>
+        </h1>
 
-            <div class="eyebrow">
-              International Relations
-            </div>
+        <p class="hero-description">
+            A personal academic research environment exploring
+            international law, human rights, humanitarian affairs,
+            international security and the structures shaping
+            global affairs.
+        </p>
 
-            <h1>
-              Muhammad<br>
-              Fathi.
-            </h1>
+        <div class="hero-actions">
 
-            <p class="hero-description">
-              An evolving academic and professional portfolio
-              focused on human rights, international law,
-              humanitarian affairs and Malaysia's development.
-            </p>
+            <a href="#research" class="btn">
+                Enter Research Archive
+                <span class="btn-arrow">↗</span>
+            </a>
 
-            <div class="hero-actions">
-
-              <a href="#portfolio" class="button primary">
-                Explore portfolio
-              </a>
-
-              <a href="https://github.com/" class="button" target="_blank">
-                GitHub ↗
-              </a>
-
-            </div>
-
-          </div>
-
-          <div class="hero-side">
-
-            <div class="hero-side-label">
-              Current position
-            </div>
-
-            <p>
-              International Relations undergraduate
-              documenting research, policy writing and
-              practical engagement.
-            </p>
-
-          </div>
+            <a href="#profile" class="btn btn-soft">
+                Academic Profile
+            </a>
 
         </div>
 
-      </div>
-
-      <div class="scroll-note">
-        Scroll to explore ↓
-      </div>
-
-    </section>
-
-
-    <!-- MARQUEE -->
-
-    <div class="marquee">
-
-      <div class="marquee-track">
-
-        HUMAN RIGHTS
-        <span>•</span>
-
-        INTERNATIONAL LAW
-        <span>•</span>
-
-        HUMANITARIAN AFFAIRS
-        <span>•</span>
-
-        POLICY RESEARCH
-        <span>•</span>
-
-        MALAYSIA
-        <span>•</span>
-
-        INTERNATIONAL RELATIONS
-        <span>•</span>
-
-        HUMAN RIGHTS
-        <span>•</span>
-
-        INTERNATIONAL LAW
-        <span>•</span>
-
-      </div>
-
     </div>
 
 
-    <!-- PORTFOLIO -->
+    <div class="engine">
 
-    <section id="portfolio">
+        <div class="engine-grid"></div>
 
-      <div class="container">
+        <div class="engine-label a">
+            Academic Intelligence System
+        </div>
 
-        <div class="section-header reveal">
+        <div class="engine-label b">
+            Law · Rights · Security
+        </div>
 
-          <div class="section-number">
-            01 / PORTFOLIO
-          </div>
+        <div class="engine-ring"></div>
 
-          <div>
+        <div class="orbit-dot dot1"></div>
+        <div class="orbit-dot dot2"></div>
+        <div class="orbit-dot dot3"></div>
+        <div class="orbit-dot dot4"></div>
 
-            <h2 class="section-title">
-              Four areas.<br>
-              One developing body of work.
+        <div class="engine-core">
+            GLOBAL<br>
+            AFFAIRS
+        </div>
+
+        <div class="engine-title">
+            Research<br>
+            begins with questions.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SIGNAL BAR
+===================================================== -->
+
+<div class="signal">
+
+    <div class="container signal-inner">
+
+        <div class="signal-item">
+            <div class="signal-number">01</div>
+            <div class="signal-label">Active Research Project</div>
+        </div>
+
+        <div class="signal-item">
+            <div class="signal-number">14</div>
+            <div class="signal-label">Research Files</div>
+        </div>
+
+        <div class="signal-item">
+            <div class="signal-number">04</div>
+            <div class="signal-label">Core Fields</div>
+        </div>
+
+        <div class="signal-item">
+            <div class="signal-number">∞</div>
+            <div class="signal-label">Questions to Explore</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     RESEARCH INDEX
+===================================================== -->
+
+<section id="research">
+
+<div class="container">
+
+    <div class="research-header">
+
+        <div>
+
+            <div class="section-kicker">
+                01 · Research Index
+            </div>
+
+            <h2 class="section-heading">
+                The archive.
             </h2>
 
-            <p class="section-intro">
-              This portfolio is organised around four areas
-              that connect academic research with practical
-              engagement.
-            </p>
+        </div>
 
-          </div>
+        <p class="research-intro">
+            Research projects are organised as evolving dossiers,
+            bringing together primary sources, legal materials,
+            academic literature, case law and analytical findings.
+        </p>
+
+    </div>
+
+
+    <div class="archive">
+
+
+        <a
+            href="research/malaysia-international-human-rights-law/"
+            class="archive-item"
+        >
+
+            <div class="archive-code">
+                R01
+            </div>
+
+            <div>
+
+                <div class="archive-title">
+                    Malaysia & International Human Rights Law
+                </div>
+
+                <div class="archive-description">
+                    Constitutional framework · Treaty law ·
+                    Jurisprudence · SUHAKAM · UN mechanisms
+                </div>
+
+            </div>
+
+            <div class="archive-status">
+                Active Research
+            </div>
+
+            <div class="archive-arrow">
+                ↗
+            </div>
+
+        </a>
+
+
+        <div class="archive-item">
+
+            <div class="archive-code">
+                R02
+            </div>
+
+            <div>
+
+                <div class="archive-title">
+                    International Humanitarian Law
+                </div>
+
+                <div class="archive-description">
+                    Armed conflict · Protection of civilians ·
+                    Humanitarian legal frameworks
+                </div>
+
+            </div>
+
+            <div class="archive-status">
+                Developing
+            </div>
+
+            <div class="archive-arrow">
+                →
+            </div>
 
         </div>
 
 
-        <div class="portfolio-grid">
+        <div class="archive-item">
 
-          <!-- RESEARCH -->
-
-          <a
-            href="https://github.com/"
-            target="_blank"
-            class="portfolio-card reveal"
-          >
-
-            <div class="card-top">
-
-              <div class="card-number">
-                01
-              </div>
-
-              <div class="arrow">
-                ↗
-              </div>
-
+            <div class="archive-code">
+                R03
             </div>
 
             <div>
 
-              <h3>
-                Research
-              </h3>
+                <div class="archive-title">
+                    International Security & Global Order
+                </div>
 
-              <p>
-                Original academic research and analytical
-                writing on international relations,
-                human rights and contemporary issues.
-              </p>
-
-              <div class="tag-row">
-                <span class="tag">Academic</span>
-                <span class="tag">Analysis</span>
-                <span class="tag">Research</span>
-              </div>
+                <div class="archive-description">
+                    Conflict · Security institutions ·
+                    International cooperation
+                </div>
 
             </div>
 
-          </a>
-
-
-          <!-- POLICY -->
-
-          <a
-            href="https://github.com/"
-            target="_blank"
-            class="portfolio-card reveal"
-          >
-
-            <div class="card-top">
-
-              <div class="card-number">
-                02
-              </div>
-
-              <div class="arrow">
-                ↗
-              </div>
-
+            <div class="archive-status">
+                Planned
             </div>
 
-            <div>
+            <div class="archive-arrow">
+                →
+            </div>
 
-              <h3>
-                Policy Briefs
-              </h3>
+        </div>
 
-              <p>
-                Concise, evidence-based analysis designed
-                to connect contemporary issues with
-                practical policy options.
-              </p>
 
-              <div class="tag-row">
-                <span class="tag">Policy</span>
-                <span class="tag">Evidence</span>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURED DOSSIER
+===================================================== -->
+
+<section class="dossier-section">
+
+<div class="container">
+
+    <div class="section-kicker">
+        Featured Research Dossier
+    </div>
+
+    <div class="dossier">
+
+
+        <div class="dossier-left">
+
+            <div class="dossier-meta">
+                Research Project · 01
+            </div>
+
+            <div class="dossier-code">
+                R01
+            </div>
+
+            <div class="dossier-files">
+                14 research files · source archive · findings
+            </div>
+
+        </div>
+
+
+        <div class="dossier-right">
+
+            <h2>
+                Malaysia & International Human Rights Law
+            </h2>
+
+            <p>
+                A structured research project examining the relationship
+                between Malaysian domestic law and international human
+                rights law, including constitutional rights, treaty
+                participation, judicial interpretation, SUHAKAM and
+                United Nations treaty-body engagement.
+            </p>
+
+
+            <div class="tags">
+
                 <span class="tag">Malaysia</span>
-              </div>
-
-            </div>
-
-          </a>
-
-
-          <!-- HUMAN RIGHTS -->
-
-          <a
-            href="https://github.com/"
-            target="_blank"
-            class="portfolio-card reveal"
-          >
-
-            <div class="card-top">
-
-              <div class="card-number">
-                03
-              </div>
-
-              <div class="arrow">
-                ↗
-              </div>
-
-            </div>
-
-            <div>
-
-              <h3>
-                Human Rights & Development
-              </h3>
-
-              <p>
-                Research examining the relationship between
-                rights, social development and economic
-                development in Malaysia.
-              </p>
-
-              <div class="tag-row">
                 <span class="tag">Human Rights</span>
-                <span class="tag">Development</span>
-                <span class="tag">Malaysia</span>
-              </div>
+                <span class="tag">International Law</span>
+                <span class="tag">Constitutional Law</span>
+                <span class="tag">Treaty Law</span>
+                <span class="tag">SUHAKAM</span>
 
             </div>
 
-          </a>
-
-
-          <!-- GROUNDWORK -->
-
-          <a
-            href="https://github.com/"
-            target="_blank"
-            class="portfolio-card reveal"
-          >
-
-            <div class="card-top">
-
-              <div class="card-number">
-                04
-              </div>
-
-              <div class="arrow">
-                ↗
-              </div>
-
-            </div>
-
-            <div>
-
-              <h3>
-                Groundwork & Volunteering
-              </h3>
-
-              <p>
-                Practical engagement, volunteering and
-                field-based learning related to human rights,
-                humanitarian affairs and communities.
-              </p>
-
-              <div class="tag-row">
-                <span class="tag">Groundwork</span>
-                <span class="tag">Volunteering</span>
-                <span class="tag">Fieldwork</span>
-              </div>
-
-            </div>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- RESEARCH -->
-
-    <section id="research">
-
-      <div class="container">
-
-        <div class="section-header reveal">
-
-          <div class="section-number">
-            02 / RESEARCH
-          </div>
-
-          <div>
-
-            <h2 class="section-title">
-              Questions before conclusions.
-            </h2>
-
-            <p class="section-intro">
-              Research is treated as a process of asking
-              precise questions, examining evidence and
-              developing defensible arguments.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="research-layout">
-
-          <div class="research-note reveal">
-
-            <p>
-              The objective is not to fill a portfolio
-              with documents. It is to build a record of
-              original academic work over time.
-            </p>
-
-          </div>
-
-
-          <div class="research-list reveal">
 
             <a
-              href="https://github.com/FATHI123-droid/MUHAMMAD-FATHI-DURAINI/tree/main/research/malaysia-international-human-rights-law"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="research-item"
+                href="research/malaysia-international-human-rights-law/"
+                class="btn"
             >
+                Open Research Dossier
+                <span class="btn-arrow">↗</span>
+            </a>
 
-              <small>R01</small>
+        </div>
 
-              <div
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     METHOD
+===================================================== -->
+
+<section id="method" class="method-section">
+
+<div class="container">
+
+    <div class="section-kicker">
+        02 · Research Method
+    </div>
+
+    <h2 class="section-heading">
+        From source<br>
+        to analysis.
+    </h2>
+
+
+    <div class="method-grid">
+
+        <div class="method">
+
+            <div class="method-num">01</div>
+
+            <h3>Source</h3>
+
+            <p>
+                Begin with primary legal materials, official
+                institutional documents, judicial decisions and
+                identifiable academic scholarship.
+            </p>
+
+        </div>
+
+
+        <div class="method">
+
+            <div class="method-num">02</div>
+
+            <h3>Context</h3>
+
+            <p>
+                Establish the legal, institutional and historical
+                context before drawing analytical connections.
+            </p>
+
+        </div>
+
+
+        <div class="method">
+
+            <div class="method-num">03</div>
+
+            <h3>Analysis</h3>
+
+            <p>
+                Distinguish established legal rules, institutional
+                positions, academic interpretations and independent
+                analysis.
+            </p>
+
+        </div>
+
+
+        <div class="method">
+
+            <div class="method-num">04</div>
+
+            <h3>Questions</h3>
+
+            <p>
+                Identify unresolved issues and future research
+                questions rather than forcing predetermined answers.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     INTELLECTUAL CONSTELLATION
+===================================================== -->
+
+<section id="focus" class="constellation-section">
+
+<div class="container">
+
+    <div class="section-kicker">
+        03 · Intellectual Focus
+    </div>
+
+    <h2 class="section-heading">
+        The intellectual<br>
+        constellation.
+    </h2>
+
+
+    <div class="constellation">
+
+        <div class="constellation-center">
+            GLOBAL<br>
+            AFFAIRS
+        </div>
+
+
+        <div class="constellation-node c1">
+            International Law
+        </div>
+
+        <div class="constellation-node c2">
+            Human Rights
+        </div>
+
+        <div class="constellation-node c3">
+            Humanitarian Affairs
+        </div>
+
+        <div class="constellation-node c4">
+            International Security
+        </div>
+
+        <div class="constellation-node c5">
+            International Relations
+        </div>
+
+        <div class="constellation-node c6">
+            Global Governance
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     RESEARCH PRINCIPLES
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+    <div class="section-kicker">
+        Research Philosophy
+    </div>
+
+    <h2 class="section-heading">
+        What the archive<br>
+        is built around.
+    </h2>
+
+
+    <div class="principles">
+
+
+        <div class="principle">
+
+            <h3>
+                Primary sources first.
+            </h3>
+
+            <p>
+                Legal and institutional claims should be traceable
+                to authoritative materials wherever possible.
+            </p>
+
+        </div>
+
+
+        <div class="principle">
+
+            <h3>
+                Distinguish law from interpretation.
+            </h3>
+
+            <p>
+                The archive separates established legal rules from
+                institutional positions, academic arguments and
+                independent analysis.
+            </p>
+
+        </div>
+
+
+        <div class="principle">
+
+            <h3>
+                Research before conclusion.
+            </h3>
+
+            <p>
+                Research questions are explored through evidence
+                rather than built around a predetermined conclusion.
+            </p>
+
+        </div>
+
+
+        <div class="principle">
+
+            <h3>
+                Keep the questions open.
+            </h3>
+
+            <p>
+                Strong research does not only record what is known.
+                It also identifies what remains uncertain or contested.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROFILE
+===================================================== -->
+
+<section id="profile">
+
+<div class="container">
+
+    <div class="profile">
+
+
+        <div>
+
+            <div class="section-kicker">
+                04 · Academic Profile
+            </div>
+
+            <div class="profile-name">
+                Muhammad<br>
+                Fathi Duraini
+            </div>
+
+        </div>
+
+
+        <div class="profile-copy">
+
+            <p>
+                I am a Bachelor of International Relations (Hons.)
+                student at Universiti Sultan Zainal Abidin (UniSZA),
+                currently in Year 2, Semester 3.
+            </p>
+
+            <p>
+                My academic interests centre on international law,
+                human rights, humanitarian affairs and international
+                security. This website serves as a personal research
+                environment for organising sources, developing
+                analytical work and documenting research questions.
+            </p>
+
+            <div class="profile-table">
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Programme
+                    </span>
+
+                    <span class="profile-value">
+                        Bachelor of International Relations (Hons.)
+                    </span>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Institution
+                    </span>
+
+                    <span class="profile-value">
+                        Universiti Sultan Zainal Abidin
+                    </span>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Current Stage
+                    </span>
+
+                    <span class="profile-value">
+                        Year 2 · Semester 3
+                    </span>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span class="profile-label">
+                        Core Interests
+                    </span>
+
+                    <span class="profile-value">
+                        International Law · Human Rights ·
+                        Humanitarian Affairs · International Security
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container footer">
+
+    <div>
+
+        <div class="footer-name">
+            Muhammad Fathi Duraini
+        </div>
+
+        <div class="footer-sub">
+            International Relations · Academic Research · Human Rights
+        </div>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="#research">Research</a>
+        <a href="#method">Method</a>
+        <a href="#focus">Focus</a>
+        <a href="#profile">Profile</a>
+
+    </div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
