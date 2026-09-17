@@ -4,1189 +4,751 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Muhammad Fathi Duraini — Academic Research in International Relations, International Law, Human Rights and Global Security.">
-<meta name="author" content="Muhammad Fathi Duraini">
+<title>Muhammad Fathi Duraini | Research Archive</title>
 
-<title>Muhammad Fathi Duraini | Academic Research</title>
+<meta name="description"
+content="Academic research archive of Muhammad Fathi Duraini, focusing on international relations, international law, human rights and humanitarian affairs.">
 
 <style>
 
-:root{
-    --ink:#0b1220;
-    --ink2:#121b2c;
-    --paper:#f6f3eb;
-    --white:#fffdf8;
-    --gold:#b99a5b;
-    --gold2:#d4bc87;
-    --muted:#717989;
-    --line:#d9d5cb;
-    --blue:#263c61;
+:root {
+    --ink: #111827;
+    --muted: #6b7280;
+    --paper: #f5f3ee;
+    --white: #ffffff;
+    --line: #d9d6ce;
+    --gold: #a78342;
+    --dark: #0c1220;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:Arial,Helvetica,sans-serif;
-    overflow-x:hidden;
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.container{
-    width:min(1180px,90%);
-    margin:auto;
-}
-
-
-/* =====================================================
+/* =========================
    NAVIGATION
-===================================================== */
+========================= */
 
-.nav{
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    z-index:999;
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
-    height:76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    padding: 22px 6vw;
 
-    padding:0 5%;
+    background: rgba(245,243,238,0.92);
+    backdrop-filter: blur(12px);
 
-    background:rgba(246,243,235,.82);
-    backdrop-filter:blur(18px);
-
-    border-bottom:1px solid rgba(11,18,32,.08);
+    border-bottom: 1px solid rgba(17,24,39,0.08);
 }
 
-.logo{
-    font-family:Georgia,serif;
-    font-size:17px;
-    letter-spacing:-.02em;
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
 }
 
-.logo span{
-    color:var(--gold);
+.nav-links {
+    display: flex;
+    gap: 32px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.nav-right{
-    display:flex;
-    align-items:center;
-    gap:30px;
+.nav-links a {
+    color: #4b5563;
 }
 
-.nav-right a{
-    font-size:10px;
-    text-transform:uppercase;
-    letter-spacing:.14em;
-    color:var(--muted);
-    transition:.25s;
+.nav-links a:hover {
+    color: var(--ink);
 }
 
-.nav-right a:hover{
-    color:var(--ink);
-}
-
-.status{
-    display:flex;
-    align-items:center;
-    gap:8px;
-
-    font-size:9px;
-    text-transform:uppercase;
-    letter-spacing:.12em;
-}
-
-.status-dot{
-    width:7px;
-    height:7px;
-    border-radius:50%;
-    background:#6f8f6a;
-    box-shadow:0 0 0 4px rgba(111,143,106,.12);
-}
-
-
-/* =====================================================
+/* =========================
    HERO
-===================================================== */
+========================= */
 
-.hero{
-    min-height:100vh;
-    padding-top:76px;
+.hero {
+    min-height: 100vh;
 
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    align-items:center;
-    gap:80px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
 
-    position:relative;
-}
-
-.hero::before{
-    content:"01";
-    position:absolute;
-    top:150px;
-    right:2%;
-
-    font-family:Georgia,serif;
-    font-size:180px;
-    color:rgba(11,18,32,.025);
-
-    pointer-events:none;
-}
-
-.kicker{
-    display:flex;
-    align-items:center;
-    gap:12px;
-
-    font-size:10px;
-    text-transform:uppercase;
-    letter-spacing:.2em;
-    color:var(--gold);
-    font-weight:bold;
-
-    margin-bottom:27px;
-}
-
-.kicker::before{
-    content:"";
-    width:35px;
-    height:1px;
-    background:var(--gold);
-}
-
-.hero h1{
-    font-family:Georgia,serif;
-    font-weight:400;
-
-    font-size:clamp(62px,8vw,112px);
-    line-height:.88;
-    letter-spacing:-.065em;
-
-    margin-bottom:34px;
-}
-
-.hero h1 em{
-    color:var(--gold);
-    font-style:normal;
-}
-
-.hero-description{
-    max-width:610px;
-
-    color:var(--muted);
-    font-size:17px;
-    line-height:1.8;
-
-    margin-bottom:38px;
-}
-
-.hero-actions{
-    display:flex;
-    align-items:center;
-    gap:13px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    gap:15px;
-
-    padding:14px 19px;
-
-    border:1px solid var(--ink);
-
-    font-size:10px;
-    text-transform:uppercase;
-    letter-spacing:.14em;
-
-    transition:.3s;
-}
-
-.btn:hover{
-    background:var(--ink);
-    color:white;
-}
-
-.btn-arrow{
-    font-size:15px;
-}
-
-.btn-soft{
-    border-color:var(--line);
-    color:var(--muted);
-}
-
-
-/* =====================================================
-   HERO RESEARCH ENGINE
-===================================================== */
+    align-items: center;
 
-.engine{
-    height:520px;
+    padding: 150px 8vw 100px;
 
-    position:relative;
-
-    background:var(--ink);
-
-    border-radius:2px;
-
-    overflow:hidden;
-
-    box-shadow:
-        25px 30px 0 rgba(11,18,32,.04);
-}
-
-.engine-grid{
-    position:absolute;
-    inset:0;
-
-    background-image:
-        linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
-
-    background-size:42px 42px;
-}
-
-.engine-ring{
-    position:absolute;
-
-    width:330px;
-    height:330px;
-
-    border:1px solid rgba(185,154,91,.7);
-    border-radius:50%;
-
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%,-50%);
-}
-
-.engine-ring::before,
-.engine-ring::after{
-    content:"";
-
-    position:absolute;
-
-    border:1px solid rgba(185,154,91,.28);
-    border-radius:50%;
-}
-
-.engine-ring::before{
-    width:230px;
-    height:230px;
-    top:49px;
-    left:49px;
-}
-
-.engine-ring::after{
-    width:120px;
-    height:120px;
-    top:99px;
-    left:99px;
-}
-
-.engine-core{
-    position:absolute;
-
-    width:105px;
-    height:105px;
-
-    border-radius:50%;
-
-    background:var(--gold);
-
-    color:var(--ink);
-
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%,-50%);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    font-family:Georgia,serif;
-    font-size:14px;
-    line-height:1.15;
-
-    z-index:3;
+    position: relative;
+    overflow: hidden;
 }
-
-.orbit-dot{
-    position:absolute;
 
-    width:9px;
-    height:9px;
-
-    background:var(--gold2);
-    border-radius:50%;
-
-    z-index:5;
-}
+.hero::before {
+    content: "RESEARCH";
+    position: absolute;
 
-.dot1{
-    top:23%;
-    left:50%;
-}
+    right: -60px;
+    top: 180px;
 
-.dot2{
-    top:50%;
-    left:9%;
-}
+    font-family: Arial, sans-serif;
+    font-size: clamp(100px, 17vw, 260px);
+    font-weight: 800;
 
-.dot3{
-    top:75%;
-    right:18%;
-}
+    color: rgba(17,24,39,0.025);
 
-.dot4{
-    bottom:11%;
-    left:48%;
+    pointer-events: none;
 }
 
-.engine-label{
-    position:absolute;
+.eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
 
-    color:#8791a2;
+    color: var(--gold);
 
-    font-size:8px;
-    text-transform:uppercase;
-    letter-spacing:.17em;
+    margin-bottom: 28px;
 }
 
-.engine-label.a{
-    top:24px;
-    left:25px;
-}
+.hero h1 {
+    font-size: clamp(55px, 8vw, 125px);
+    line-height: 0.9;
+    font-weight: 400;
+    letter-spacing: -0.05em;
 
-.engine-label.b{
-    bottom:24px;
-    right:25px;
+    max-width: 900px;
 }
 
-.engine-title{
-    position:absolute;
-
-    bottom:28px;
-    left:27px;
-
-    color:white;
-
-    font-family:Georgia,serif;
-    font-size:20px;
+.hero h1 span {
+    display: block;
+    color: #68707d;
 }
 
+.hero-description {
+    margin-top: 42px;
 
-/* =====================================================
-   SIGNAL BAR
-===================================================== */
+    max-width: 610px;
 
-.signal{
-    background:var(--ink2);
-    color:white;
-
-    border-top:1px solid rgba(255,255,255,.08);
-    border-bottom:1px solid rgba(255,255,255,.08);
+    font-size: 18px;
+    color: #4b5563;
 }
-
-.signal-inner{
-    min-height:100px;
 
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-}
+.hero-meta {
+    margin-top: 42px;
 
-.signal-item{
-    padding:23px 25px;
+    display: flex;
+    gap: 40px;
 
-    border-right:1px solid rgba(255,255,255,.1);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.signal-item:last-child{
-    border-right:none;
+.hero-meta strong {
+    display: block;
+    font-size: 12px;
+    color: var(--ink);
+    margin-bottom: 4px;
 }
 
-.signal-number{
-    font-family:Georgia,serif;
-    font-size:28px;
-    color:var(--gold);
-}
+/* =========================
+   HERO SIDE
+========================= */
 
-.signal-label{
-    font-size:8px;
-    text-transform:uppercase;
-    letter-spacing:.14em;
-    color:#8d96a6;
-}
+.hero-index {
+    justify-self: end;
 
+    width: min(330px, 100%);
 
-/* =====================================================
-   SECTION COMMON
-===================================================== */
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
 
-section{
-    padding:120px 0;
+    padding: 28px 0;
 }
-
-.section-kicker{
-    color:var(--gold);
 
-    font-size:9px;
-    text-transform:uppercase;
-    letter-spacing:.2em;
-    font-weight:bold;
+.index-label {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 
-    margin-bottom:17px;
-}
-
-.section-heading{
-    font-family:Georgia,serif;
-    font-size:clamp(42px,5vw,70px);
-    line-height:.95;
-    font-weight:400;
-    letter-spacing:-.04em;
+    color: var(--muted);
 
-    margin-bottom:50px;
+    margin-bottom: 24px;
 }
 
+.index-item {
+    display: flex;
+    justify-content: space-between;
 
-/* =====================================================
-   RESEARCH INDEX
-===================================================== */
-
-.research-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:end;
-    gap:50px;
-
-    margin-bottom:45px;
-}
+    padding: 14px 0;
 
-.research-intro{
-    max-width:430px;
+    border-top: 1px solid var(--line);
 
-    font-size:13px;
-    line-height:1.8;
-    color:var(--muted);
+    font-size: 15px;
 }
 
-.archive{
-    border-top:1px solid var(--line);
+.index-item span:first-child {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: var(--gold);
 }
 
-.archive-item{
-    display:grid;
-    grid-template-columns:90px 1fr 170px 30px;
-    align-items:center;
-    gap:25px;
+/* =========================
+   SECTION
+========================= */
 
-    padding:29px 0;
-
-    border-bottom:1px solid var(--line);
-
-    transition:.3s;
+section {
+    padding: 120px 8vw;
 }
 
-.archive-item:hover{
-    padding-left:16px;
-    background:rgba(255,255,255,.38);
-}
+.section-header {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
 
-.archive-code{
-    color:var(--gold);
-    font-family:Georgia,serif;
-    font-size:22px;
-}
+    border-top: 1px solid var(--ink);
 
-.archive-title{
-    font-family:Georgia,serif;
-    font-size:25px;
-    font-weight:400;
-}
+    padding-top: 22px;
 
-.archive-description{
-    color:var(--muted);
-    font-size:12px;
-    margin-top:4px;
+    margin-bottom: 70px;
 }
-
-.archive-status{
-    text-align:right;
 
-    font-size:8px;
-    text-transform:uppercase;
-    letter-spacing:.13em;
-
-    color:var(--muted);
+.section-number {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
 }
 
-.archive-arrow{
-    font-size:20px;
-    color:var(--gold);
+.section-title {
+    font-size: clamp(40px, 5vw, 72px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.04em;
 }
 
+/* =========================
+   RESEARCH
+========================= */
 
-/* =====================================================
-   FEATURED DOSSIER
-===================================================== */
-
-.dossier-section{
-    background:var(--white);
-}
+.research-feature {
+    display: grid;
+    grid-template-columns: 0.35fr 1.65fr;
 
-.dossier{
-    display:grid;
-    grid-template-columns:.75fr 1.25fr;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 
-    min-height:510px;
+    transition: 0.3s ease;
 }
 
-.dossier-left{
-    position:relative;
-
-    background:var(--ink);
-    color:white;
-
-    padding:45px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-
-    overflow:hidden;
+.research-feature:hover {
+    background: #ebe8e0;
 }
-
-.dossier-left::after{
-    content:"R01";
 
-    position:absolute;
+.research-number {
+    padding: 40px 25px;
 
-    right:-35px;
-    bottom:-50px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
 
-    font-family:Georgia,serif;
-    font-size:190px;
-
-    color:rgba(255,255,255,.035);
+    color: var(--gold);
 }
-
-.dossier-meta{
-    color:var(--gold);
 
-    font-size:9px;
-    text-transform:uppercase;
-    letter-spacing:.17em;
+.research-content {
+    padding: 40px 25px 50px 0;
 }
 
-.dossier-code{
-    font-family:Georgia,serif;
-    font-size:120px;
-    font-weight:400;
+.research-content h3 {
+    font-size: clamp(30px, 4vw, 55px);
 
-    color:white;
+    font-weight: 400;
+    line-height: 1.05;
 
-    line-height:.8;
-
-    position:relative;
-    z-index:2;
+    max-width: 800px;
 }
 
-.dossier-files{
-    color:#8791a2;
+.research-content p {
+    margin-top: 25px;
 
-    font-size:9px;
-    text-transform:uppercase;
-    letter-spacing:.13em;
+    max-width: 700px;
 
-    position:relative;
-    z-index:2;
+    color: var(--muted);
+    font-size: 16px;
 }
 
-.dossier-right{
-    padding:60px;
+.research-tags {
+    margin-top: 30px;
 
-    background:white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.dossier-right h2{
-    font-family:Georgia,serif;
-    font-weight:400;
+.tag {
+    border: 1px solid #c9c5bb;
 
-    font-size:46px;
-    line-height:1.05;
+    padding: 7px 11px;
 
-    max-width:650px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
 
-    margin-bottom:23px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
-.dossier-right p{
-    color:var(--muted);
+.enter {
+    margin-top: 35px;
 
-    max-width:640px;
+    display: inline-block;
 
-    font-size:14px;
-    line-height:1.9;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
 
-    margin-bottom:30px;
-}
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
 
-.tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
+    border-bottom: 1px solid var(--ink);
 
-    margin-bottom:35px;
+    padding-bottom: 5px;
 }
 
-.tag{
-    padding:7px 10px;
+/* =========================
+   COLLECTIONS
+========================= */
 
-    border:1px solid var(--line);
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-    font-size:8px;
-    text-transform:uppercase;
-    letter-spacing:.09em;
+    border-top: 1px solid var(--ink);
 }
-
 
-/* =====================================================
-   METHOD
-===================================================== */
+.collection {
+    min-height: 330px;
 
-.method-section{
-    background:var(--paper);
-}
+    padding: 32px;
 
-.method-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:22px;
-}
+    border-right: 1px solid var(--line);
 
-.method{
-    padding-top:23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    border-top:2px solid var(--ink);
+    transition: 0.3s ease;
 }
 
-.method-num{
-    color:var(--gold);
-
-    font-family:Georgia,serif;
-    font-size:27px;
+.collection:last-child {
+    border-right: none;
 }
-
-.method h3{
-    font-family:Georgia,serif;
-    font-size:23px;
-    font-weight:400;
 
-    margin:10px 0;
+.collection:hover {
+    background: var(--dark);
+    color: white;
 }
 
-.method p{
-    color:var(--muted);
-    font-size:12px;
-    line-height:1.8;
+.collection-number {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: var(--gold);
 }
 
-
-/* =====================================================
-   INTELLECTUAL CONSTELLATION
-===================================================== */
-
-.constellation-section{
-    background:var(--ink);
-    color:white;
+.collection h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.05;
 }
-
-.constellation{
-    height:560px;
-
-    position:relative;
-
-    border:1px solid rgba(255,255,255,.1);
 
-    overflow:hidden;
-
-    background:
-        radial-gradient(circle at center,
-            rgba(185,154,91,.07),
-            transparent 34%),
-
-        linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
-
-    background-size:auto,55px 55px,55px 55px;
+.collection p {
+    font-size: 14px;
+    color: var(--muted);
 }
-
-.constellation::before{
-    content:"";
-
-    position:absolute;
 
-    width:520px;
-    height:520px;
-
-    border:1px solid rgba(185,154,91,.16);
-
-    border-radius:50%;
-
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%,-50%);
+.collection:hover p {
+    color: #cbd0d8;
 }
-
-.constellation-center{
-    position:absolute;
 
-    top:50%;
-    left:50%;
+.collection-link {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
 
-    transform:translate(-50%,-50%);
-
-    width:145px;
-    height:145px;
-
-    border:1px solid var(--gold);
-
-    border-radius:50%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    font-family:Georgia,serif;
-    font-size:17px;
-
-    z-index:5;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
-
-.constellation-node{
-    position:absolute;
-
-    padding:13px 18px;
 
-    border:1px solid rgba(255,255,255,.2);
+/* =========================
+   RESEARCH METHOD
+========================= */
 
-    background:rgba(13,20,32,.75);
-
-    font-size:9px;
-
-    text-transform:uppercase;
-    letter-spacing:.12em;
-
-    z-index:4;
-
-    transition:.3s;
+.method {
+    background: var(--dark);
+    color: white;
 }
 
-.constellation-node:hover{
-    border-color:var(--gold);
-    color:var(--gold2);
-    transform:translateY(-4px);
+.method .section-header {
+    border-color: #5c6472;
 }
 
-.c1{
-    top:15%;
-    left:13%;
-}
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
-.c2{
-    top:18%;
-    right:12%;
+    border-top: 1px solid #343b48;
 }
 
-.c3{
-    bottom:17%;
-    left:10%;
-}
+.method-step {
+    padding: 35px 22px;
 
-.c4{
-    bottom:14%;
-    right:12%;
-}
+    border-right: 1px solid #343b48;
 
-.c5{
-    top:49%;
-    left:4%;
+    min-height: 230px;
 }
 
-.c6{
-    top:48%;
-    right:4%;
+.method-step:last-child {
+    border-right: none;
 }
 
+.method-step span {
+    font-family: Arial, sans-serif;
 
-/* =====================================================
-   RESEARCH PRINCIPLES
-===================================================== */
+    font-size: 10px;
 
-.principles{
-    display:grid;
-    grid-template-columns:1fr 1fr;
+    color: var(--gold);
 
-    border-top:1px solid var(--line);
+    letter-spacing: 0.15em;
 }
 
-.principle{
-    padding:35px 35px 35px 0;
+.method-step h3 {
+    margin-top: 45px;
 
-    border-bottom:1px solid var(--line);
-}
+    font-size: 24px;
 
-.principle:nth-child(even){
-    padding-left:35px;
-    border-left:1px solid var(--line);
+    font-weight: 400;
 }
 
-.principle h3{
-    font-family:Georgia,serif;
-    font-size:25px;
-    font-weight:400;
+.method-step p {
+    margin-top: 15px;
 
-    margin-bottom:10px;
-}
+    font-family: Arial, sans-serif;
+    font-size: 12px;
 
-.principle p{
-    color:var(--muted);
-    font-size:12px;
-    line-height:1.8;
+    color: #aeb5c1;
 }
-
 
-/* =====================================================
+/* =========================
    PROFILE
-===================================================== */
+========================= */
 
-.profile{
-    display:grid;
-    grid-template-columns:.7fr 1.3fr;
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    gap:90px;
+    gap: 80px;
 }
 
-.profile-name{
-    font-family:Georgia,serif;
+.profile-name {
+    font-size: clamp(40px, 5vw, 75px);
 
-    font-size:48px;
-    line-height:.98;
+    line-height: 0.95;
+
+    font-weight: 400;
 }
 
-.profile-copy{
-    color:var(--muted);
+.profile-text {
+    font-size: 18px;
 
-    font-size:14px;
-    line-height:1.9;
-
-    max-width:680px;
+    color: #555d69;
 }
 
-.profile-copy p{
-    margin-bottom:20px;
+.profile-details {
+    margin-top: 40px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
 }
 
-.profile-table{
-    margin-top:35px;
+.profile-row {
+    padding: 15px 0;
 
-    display:grid;
-    grid-template-columns:1fr 1fr;
+    border-top: 1px solid var(--line);
 
-    border-top:1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
 }
 
-.profile-row{
-    padding:18px 0;
-
-    border-bottom:1px solid var(--line);
+.profile-row:last-child {
+    border-bottom: 1px solid var(--line);
 }
 
-.profile-row:nth-child(odd){
-    margin-right:25px;
+.profile-row span:first-child {
+    color: var(--muted);
 }
 
-.profile-label{
-    display:block;
-
-    color:var(--gold);
-
-    font-size:8px;
-
-    text-transform:uppercase;
-    letter-spacing:.14em;
-
-    margin-bottom:5px;
-}
-
-.profile-value{
-    font-size:12px;
-}
-
-
-/* =====================================================
+/* =========================
    FOOTER
-===================================================== */
+========================= */
 
-footer{
-    background:#070d17;
-    color:white;
+footer {
+    background: #080d17;
 
-    padding:65px 0;
+    color: white;
+
+    padding: 80px 8vw;
 }
 
-.footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:end;
-    gap:40px;
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
 }
 
-.footer-name{
-    font-family:Georgia,serif;
-    font-size:31px;
+.footer-title {
+    font-size: clamp(40px, 5vw, 70px);
+
+    font-weight: 400;
+
+    line-height: 0.95;
 }
 
-.footer-sub{
-    color:#7f8999;
-    font-size:10px;
+.footer-right {
+    justify-self: end;
 
-    margin-top:8px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
+    color: #9ca3af;
+
+    line-height: 2;
 }
 
-.footer-links{
-    display:flex;
-    gap:23px;
+.footer-bottom {
+    margin-top: 80px;
 
-    font-size:9px;
+    padding-top: 20px;
 
-    text-transform:uppercase;
-    letter-spacing:.13em;
+    border-top: 1px solid #252c37;
 
-    color:#a3abb8;
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    color: #707887;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer-links a:hover{
-    color:var(--gold);
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-index {
+        justify-self: start;
+        margin-top: 70px;
+    }
+
+    .collections {
+        grid-template-columns: 1fr;
+    }
+
+    .collection {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .method-step {
+        border-right: none;
+        border-bottom: 1px solid #343b48;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-right {
+        justify-self: start;
+    }
 }
 
+@media (max-width: 650px) {
 
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media(max-width:900px){
-
-    .nav{
-        padding:0 5%;
+    nav {
+        padding: 18px 5vw;
     }
 
-    .nav-right a{
-        display:none;
+    .nav-links {
+        gap: 12px;
+        font-size: 9px;
     }
 
-    .hero{
-        grid-template-columns:1fr;
-        gap:50px;
-        padding-top:125px;
-        padding-bottom:80px;
+    .hero {
+        padding: 130px 6vw 80px;
     }
 
-    .engine{
-        height:390px;
+    section {
+        padding: 80px 6vw;
     }
 
-    .signal-inner{
-        grid-template-columns:1fr 1fr;
+    .section-header {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
-    .signal-item:nth-child(2){
-        border-right:none;
+    .research-feature {
+        grid-template-columns: 1fr;
     }
 
-    .research-header{
-        display:block;
+    .research-number {
+        padding-bottom: 0;
     }
 
-    .research-intro{
-        margin-top:25px;
+    .research-content {
+        padding: 25px;
     }
 
-    .archive-item{
-        grid-template-columns:65px 1fr 25px;
+    .hero-meta {
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .archive-status{
-        display:none;
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
     }
-
-    .dossier{
-        grid-template-columns:1fr;
-    }
-
-    .method-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .profile{
-        grid-template-columns:1fr;
-        gap:45px;
-    }
-
-}
-
-@media(max-width:600px){
-
-    section{
-        padding:85px 0;
-    }
-
-    .hero h1{
-        font-size:58px;
-    }
-
-    .engine{
-        height:350px;
-    }
-
-    .engine-ring{
-        width:250px;
-        height:250px;
-    }
-
-    .engine-ring::before{
-        width:175px;
-        height:175px;
-        top:37px;
-        left:37px;
-    }
-
-    .engine-ring::after{
-        width:100px;
-        height:100px;
-        top:74px;
-        left:74px;
-    }
-
-    .signal-inner{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .archive-item{
-        grid-template-columns:55px 1fr 20px;
-        gap:15px;
-    }
-
-    .archive-title{
-        font-size:20px;
-    }
-
-    .dossier-right{
-        padding:35px;
-    }
-
-    .dossier-right h2{
-        font-size:35px;
-    }
-
-    .method-grid{
-        grid-template-columns:1fr;
-    }
-
-    .constellation{
-        height:500px;
-    }
-
-    .constellation-center{
-        width:120px;
-        height:120px;
-    }
-
-    .constellation-node{
-        font-size:7px;
-        padding:9px;
-    }
-
-    .principles{
-        grid-template-columns:1fr;
-    }
-
-    .principle,
-    .principle:nth-child(even){
-        padding:25px 0;
-        border-left:none;
-    }
-
-    .profile-table{
-        grid-template-columns:1fr;
-    }
-
-    .profile-row:nth-child(odd){
-        margin-right:0;
-    }
-
-    .footer{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
 }
 
 </style>
 </head>
 
-
 <body>
 
+<!-- NAVIGATION -->
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
-
-<header class="nav">
+<nav>
 
     <a href="#" class="logo">
-        Muhammad Fathi <span>Duraini</span>
+        MFD
     </a>
 
-    <div class="nav-right">
-
+    <div class="nav-links">
         <a href="#research">Research</a>
+        <a href="#collections">Collections</a>
         <a href="#method">Method</a>
-        <a href="#focus">Focus</a>
         <a href="#profile">Profile</a>
+    </div>
 
-        <div class="status">
-            <span class="status-dot"></span>
-            Research Archive
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+    <div>
+
+        <div class="eyebrow">
+            Academic Research Archive · 2026
+        </div>
+
+        <h1>
+            Muhammad
+            <span>Fathi Duraini.</span>
+        </h1>
+
+        <p class="hero-description">
+            An academic knowledge archive exploring international relations,
+            international law, human rights, humanitarian affairs and global security.
+        </p>
+
+        <div class="hero-meta">
+
+            <div>
+                <strong>Based in</strong>
+                Malaysia
+            </div>
+
+            <div>
+                <strong>Programme</strong>
+                International Relations
+            </div>
+
+            <div>
+                <strong>Stage</strong>
+                Year 2 · Semester 3
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-index">
+
+        <div class="index-label">
+            Archive Index
+        </div>
+
+        <div class="index-item">
+            <span>01</span>
+            Research
+        </div>
+
+        <div class="index-item">
+            <span>02</span>
+            Human Rights & Development
+        </div>
+
+        <div class="index-item">
+            <span>03</span>
+            Policy Briefs
+        </div>
+
+        <div class="index-item">
+            <span>04</span>
+            Groundwork
         </div>
 
     </div>
@@ -1194,696 +756,376 @@ footer{
 </header>
 
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+<!-- RESEARCH -->
 
-<main>
+<section id="research">
 
-<section class="container hero">
+    <div class="section-header">
 
-    <div>
-
-        <div class="kicker">
-            International Relations · Academic Research
+        <div class="section-number">
+            01 / Research
         </div>
 
-        <h1>
-            Ideas<br>
-            into<br>
-            <em>research.</em>
-        </h1>
-
-        <p class="hero-description">
-            A personal academic research environment exploring
-            international law, human rights, humanitarian affairs,
-            international security and the structures shaping
-            global affairs.
-        </p>
-
-        <div class="hero-actions">
-
-            <a href="#research" class="btn">
-                Enter Research Archive
-                <span class="btn-arrow">↗</span>
-            </a>
-
-            <a href="#profile" class="btn btn-soft">
-                Academic Profile
-            </a>
-
-        </div>
+        <h2 class="section-title">
+            Research Archive
+        </h2>
 
     </div>
 
 
-    <div class="engine">
+    <a href="research/r01/" class="research-feature">
 
-        <div class="engine-grid"></div>
-
-        <div class="engine-label a">
-            Academic Intelligence System
+        <div class="research-number">
+            R01
         </div>
 
-        <div class="engine-label b">
-            Law · Rights · Security
+        <div class="research-content">
+
+            <h3>
+                Malaysia & International Human Rights Law
+            </h3>
+
+            <p>
+                A structured undergraduate research dossier examining
+                Malaysia's constitutional framework, human rights legislation,
+                international human rights instruments, case law,
+                treaty-body materials and the relationship between
+                international standards and domestic law.
+            </p>
+
+            <div class="research-tags">
+
+                <span class="tag">Human Rights</span>
+                <span class="tag">International Law</span>
+                <span class="tag">Malaysia</span>
+                <span class="tag">Constitutional Law</span>
+                <span class="tag">Treaty Law</span>
+
+            </div>
+
+            <div class="enter">
+                Enter Research Dossier →
+            </div>
+
         </div>
 
-        <div class="engine-ring"></div>
-
-        <div class="orbit-dot dot1"></div>
-        <div class="orbit-dot dot2"></div>
-        <div class="orbit-dot dot3"></div>
-        <div class="orbit-dot dot4"></div>
-
-        <div class="engine-core">
-            GLOBAL<br>
-            AFFAIRS
-        </div>
-
-        <div class="engine-title">
-            Research<br>
-            begins with questions.
-        </div>
-
-    </div>
+    </a>
 
 </section>
 
 
-<!-- =====================================================
-     SIGNAL BAR
-===================================================== -->
+<!-- COLLECTIONS -->
 
-<div class="signal">
+<section id="collections">
 
-    <div class="container signal-inner">
+    <div class="section-header">
 
-        <div class="signal-item">
-            <div class="signal-number">01</div>
-            <div class="signal-label">Active Research Project</div>
+        <div class="section-number">
+            02 / Collections
         </div>
 
-        <div class="signal-item">
-            <div class="signal-number">14</div>
-            <div class="signal-label">Research Files</div>
-        </div>
-
-        <div class="signal-item">
-            <div class="signal-number">04</div>
-            <div class="signal-label">Core Fields</div>
-        </div>
-
-        <div class="signal-item">
-            <div class="signal-number">∞</div>
-            <div class="signal-label">Questions to Explore</div>
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- =====================================================
-     RESEARCH INDEX
-===================================================== -->
-
-<section id="research">
-
-<div class="container">
-
-    <div class="research-header">
-
-        <div>
-
-            <div class="section-kicker">
-                01 · Research Index
-            </div>
-
-            <h2 class="section-heading">
-                The archive.
-            </h2>
-
-        </div>
-
-        <p class="research-intro">
-            Research projects are organised as evolving dossiers,
-            bringing together primary sources, legal materials,
-            academic literature, case law and analytical findings.
-        </p>
+        <h2 class="section-title">
+            Other Collections
+        </h2>
 
     </div>
 
 
-    <div class="archive">
+    <div class="collections">
 
 
-        <a
-            href="research/malaysia-international-human-rights-law/"
-            class="archive-item"
-        >
+        <a href="human-rights-development/" class="collection">
 
-            <div class="archive-code">
-                R01
+            <div class="collection-number">
+                COLLECTION 02
             </div>
 
             <div>
 
-                <div class="archive-title">
-                    Malaysia & International Human Rights Law
-                </div>
+                <h3>
+                    Human Rights<br>
+                    & Development
+                </h3>
 
-                <div class="archive-description">
-                    Constitutional framework · Treaty law ·
-                    Jurisprudence · SUHAKAM · UN mechanisms
-                </div>
+                <p>
+                    Malaysia-focused analysis examining the relationship
+                    between rights, institutions, policy and development.
+                </p>
 
             </div>
 
-            <div class="archive-status">
-                Active Research
-            </div>
-
-            <div class="archive-arrow">
-                ↗
+            <div class="collection-link">
+                Open Collection →
             </div>
 
         </a>
 
 
-        <div class="archive-item">
+        <a href="policy-briefs/" class="collection">
 
-            <div class="archive-code">
-                R02
+            <div class="collection-number">
+                COLLECTION 03
             </div>
 
             <div>
 
-                <div class="archive-title">
-                    International Humanitarian Law
-                </div>
+                <h3>
+                    Policy<br>
+                    Briefs
+                </h3>
 
-                <div class="archive-description">
-                    Armed conflict · Protection of civilians ·
-                    Humanitarian legal frameworks
-                </div>
+                <p>
+                    Short-form analytical work connecting research,
+                    public policy and contemporary issues.
+                </p>
 
             </div>
 
-            <div class="archive-status">
-                Developing
+            <div class="collection-link">
+                Open Collection →
             </div>
 
-            <div class="archive-arrow">
-                →
-            </div>
-
-        </div>
+        </a>
 
 
-        <div class="archive-item">
+        <a href="groundwork-volunteering/" class="collection">
 
-            <div class="archive-code">
-                R03
+            <div class="collection-number">
+                COLLECTION 04
             </div>
 
             <div>
 
-                <div class="archive-title">
-                    International Security & Global Order
-                </div>
+                <h3>
+                    Groundwork<br>
+                    & Volunteering
+                </h3>
 
-                <div class="archive-description">
-                    Conflict · Security institutions ·
-                    International cooperation
-                </div>
+                <p>
+                    Practical experiences, community engagement and
+                    groundwork connected to human rights and public affairs.
+                </p>
 
             </div>
 
-            <div class="archive-status">
-                Planned
+            <div class="collection-link">
+                Open Collection →
             </div>
 
-            <div class="archive-arrow">
-                →
-            </div>
-
-        </div>
+        </a>
 
 
     </div>
-
-</div>
 
 </section>
 
 
-<!-- =====================================================
-     FEATURED DOSSIER
-===================================================== -->
+<!-- METHOD -->
 
-<section class="dossier-section">
+<section id="method" class="method">
 
-<div class="container">
+    <div class="section-header">
 
-    <div class="section-kicker">
-        Featured Research Dossier
-    </div>
-
-    <div class="dossier">
-
-
-        <div class="dossier-left">
-
-            <div class="dossier-meta">
-                Research Project · 01
-            </div>
-
-            <div class="dossier-code">
-                R01
-            </div>
-
-            <div class="dossier-files">
-                14 research files · source archive · findings
-            </div>
-
+        <div class="section-number">
+            03 / Method
         </div>
 
-
-        <div class="dossier-right">
-
-            <h2>
-                Malaysia & International Human Rights Law
-            </h2>
-
-            <p>
-                A structured research project examining the relationship
-                between Malaysian domestic law and international human
-                rights law, including constitutional rights, treaty
-                participation, judicial interpretation, SUHAKAM and
-                United Nations treaty-body engagement.
-            </p>
-
-
-            <div class="tags">
-
-                <span class="tag">Malaysia</span>
-                <span class="tag">Human Rights</span>
-                <span class="tag">International Law</span>
-                <span class="tag">Constitutional Law</span>
-                <span class="tag">Treaty Law</span>
-                <span class="tag">SUHAKAM</span>
-
-            </div>
-
-
-            <a
-                href="research/malaysia-international-human-rights-law/"
-                class="btn"
-            >
-                Open Research Dossier
-                <span class="btn-arrow">↗</span>
-            </a>
-
-        </div>
+        <h2 class="section-title">
+            How the research is built.
+        </h2>
 
     </div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     METHOD
-===================================================== -->
-
-<section id="method" class="method-section">
-
-<div class="container">
-
-    <div class="section-kicker">
-        02 · Research Method
-    </div>
-
-    <h2 class="section-heading">
-        From source<br>
-        to analysis.
-    </h2>
 
 
     <div class="method-grid">
 
-        <div class="method">
 
-            <div class="method-num">01</div>
+        <div class="method-step">
 
-            <h3>Source</h3>
+            <span>01</span>
+
+            <h3>Sources</h3>
 
             <p>
-                Begin with primary legal materials, official
-                institutional documents, judicial decisions and
-                identifiable academic scholarship.
+                Primary legal instruments, official documents,
+                institutional materials and academic literature.
             </p>
 
         </div>
 
 
-        <div class="method">
+        <div class="method-step">
 
-            <div class="method-num">02</div>
+            <span>02</span>
 
             <h3>Context</h3>
 
             <p>
-                Establish the legal, institutional and historical
-                context before drawing analytical connections.
+                Historical, constitutional, institutional and
+                international context surrounding the issue.
             </p>
 
         </div>
 
 
-        <div class="method">
+        <div class="method-step">
 
-            <div class="method-num">03</div>
+            <span>03</span>
 
             <h3>Analysis</h3>
 
             <p>
-                Distinguish established legal rules, institutional
-                positions, academic interpretations and independent
-                analysis.
+                Structured examination of legal rules,
+                institutions, arguments and evidence.
             </p>
 
         </div>
 
 
-        <div class="method">
+        <div class="method-step">
 
-            <div class="method-num">04</div>
+            <span>04</span>
 
             <h3>Questions</h3>
 
             <p>
-                Identify unresolved issues and future research
-                questions rather than forcing predetermined answers.
+                Identifying unresolved issues, limitations
+                and areas requiring further research.
             </p>
 
         </div>
 
-    </div>
 
-</div>
+        <div class="method-step">
+
+            <span>05</span>
+
+            <h3>Findings</h3>
+
+            <p>
+                Recording conclusions carefully while
+                distinguishing evidence from interpretation.
+            </p>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     INTELLECTUAL CONSTELLATION
-===================================================== -->
-
-<section id="focus" class="constellation-section">
-
-<div class="container">
-
-    <div class="section-kicker">
-        03 · Intellectual Focus
-    </div>
-
-    <h2 class="section-heading">
-        The intellectual<br>
-        constellation.
-    </h2>
-
-
-    <div class="constellation">
-
-        <div class="constellation-center">
-            GLOBAL<br>
-            AFFAIRS
-        </div>
-
-
-        <div class="constellation-node c1">
-            International Law
-        </div>
-
-        <div class="constellation-node c2">
-            Human Rights
-        </div>
-
-        <div class="constellation-node c3">
-            Humanitarian Affairs
-        </div>
-
-        <div class="constellation-node c4">
-            International Security
-        </div>
-
-        <div class="constellation-node c5">
-            International Relations
-        </div>
-
-        <div class="constellation-node c6">
-            Global Governance
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     RESEARCH PRINCIPLES
-===================================================== -->
-
-<section>
-
-<div class="container">
-
-    <div class="section-kicker">
-        Research Philosophy
-    </div>
-
-    <h2 class="section-heading">
-        What the archive<br>
-        is built around.
-    </h2>
-
-
-    <div class="principles">
-
-
-        <div class="principle">
-
-            <h3>
-                Primary sources first.
-            </h3>
-
-            <p>
-                Legal and institutional claims should be traceable
-                to authoritative materials wherever possible.
-            </p>
-
-        </div>
-
-
-        <div class="principle">
-
-            <h3>
-                Distinguish law from interpretation.
-            </h3>
-
-            <p>
-                The archive separates established legal rules from
-                institutional positions, academic arguments and
-                independent analysis.
-            </p>
-
-        </div>
-
-
-        <div class="principle">
-
-            <h3>
-                Research before conclusion.
-            </h3>
-
-            <p>
-                Research questions are explored through evidence
-                rather than built around a predetermined conclusion.
-            </p>
-
-        </div>
-
-
-        <div class="principle">
-
-            <h3>
-                Keep the questions open.
-            </h3>
-
-            <p>
-                Strong research does not only record what is known.
-                It also identifies what remains uncertain or contested.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     PROFILE
-===================================================== -->
+<!-- PROFILE -->
 
 <section id="profile">
 
-<div class="container">
+    <div class="section-header">
 
-    <div class="profile">
+        <div class="section-number">
+            04 / Profile
+        </div>
+
+        <h2 class="section-title">
+            Researcher
+        </h2>
+
+    </div>
+
+
+    <div class="profile-grid">
 
 
         <div>
 
-            <div class="section-kicker">
-                04 · Academic Profile
-            </div>
-
-            <div class="profile-name">
+            <h2 class="profile-name">
                 Muhammad<br>
                 Fathi Duraini
-            </div>
+            </h2>
 
         </div>
 
 
-        <div class="profile-copy">
+        <div>
 
-            <p>
-                I am a Bachelor of International Relations (Hons.)
-                student at Universiti Sultan Zainal Abidin (UniSZA),
-                currently in Year 2, Semester 3.
+            <p class="profile-text">
+
+                Undergraduate student in International Relations
+                developing an academic research practice centred on
+                international law, human rights, humanitarian affairs
+                and global security.
+
             </p>
 
-            <p>
-                My academic interests centre on international law,
-                human rights, humanitarian affairs and international
-                security. This website serves as a personal research
-                environment for organising sources, developing
-                analytical work and documenting research questions.
-            </p>
 
-            <div class="profile-table">
-
+            <div class="profile-details">
 
                 <div class="profile-row">
-
-                    <span class="profile-label">
-                        Programme
-                    </span>
-
-                    <span class="profile-value">
-                        Bachelor of International Relations (Hons.)
-                    </span>
-
+                    <span>Institution</span>
+                    <strong>Universiti Sultan Zainal Abidin</strong>
                 </div>
-
 
                 <div class="profile-row">
-
-                    <span class="profile-label">
-                        Institution
-                    </span>
-
-                    <span class="profile-value">
-                        Universiti Sultan Zainal Abidin
-                    </span>
-
+                    <span>Programme</span>
+                    <strong>Bachelor of International Relations (Hons.)</strong>
                 </div>
-
 
                 <div class="profile-row">
-
-                    <span class="profile-label">
-                        Current Stage
-                    </span>
-
-                    <span class="profile-value">
-                        Year 2 · Semester 3
-                    </span>
-
+                    <span>Current Stage</span>
+                    <strong>Year 2 · Semester 3</strong>
                 </div>
-
 
                 <div class="profile-row">
-
-                    <span class="profile-label">
-                        Core Interests
-                    </span>
-
-                    <span class="profile-value">
-                        International Law · Human Rights ·
-                        Humanitarian Affairs · International Security
-                    </span>
-
+                    <span>Research Interests</span>
+                    <strong>International Law · Human Rights</strong>
                 </div>
-
 
             </div>
 
         </div>
 
     </div>
-
-</div>
 
 </section>
 
-</main>
 
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<!-- FOOTER -->
 
 <footer>
 
-<div class="container footer">
+    <div class="footer-grid">
 
-    <div>
-
-        <div class="footer-name">
-            Muhammad Fathi Duraini
+        <div class="footer-title">
+            A personal archive<br>
+            of academic work.
         </div>
 
-        <div class="footer-sub">
-            International Relations · Academic Research · Human Rights
+
+        <div class="footer-right">
+
+            INTERNATIONAL RELATIONS<br>
+            INTERNATIONAL LAW<br>
+            HUMAN RIGHTS<br>
+            HUMANITARIAN AFFAIRS<br>
+            GLOBAL SECURITY
+
         </div>
 
     </div>
 
 
-    <div class="footer-links">
+    <div class="footer-bottom">
 
-        <a href="#research">Research</a>
-        <a href="#method">Method</a>
-        <a href="#focus">Focus</a>
-        <a href="#profile">Profile</a>
+        <span>
+            © 2026 Muhammad Fathi Duraini
+        </span>
+
+        <span>
+            Academic Research Archive
+        </span>
 
     </div>
-
-</div>
 
 </footer>
-
 
 </body>
 </html>
