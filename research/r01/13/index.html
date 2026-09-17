@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>12 · UN Treaty Body Materials | Malaysia & International Human Rights Law</title>
+
+<meta name="description"
+content="UN Treaty Body Materials concerning Malaysia for Research Project 01: Malaysia and International Human Rights Law by Muhammad Fathi Duraini.">
+
+<style>
+:root{
+    --ink:#17222d;
+    --muted:#66727d;
+    --paper:#f3f5f4;
+    --white:#ffffff;
+    --line:#d9dfdf;
+    --navy:#172c3d;
+    --blue:#356b82;
+    --blue-soft:#dce9ed;
+    --gold:#ad8750;
+    --green:#53756c;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* NAV */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(243,245,244,.94);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+}
+
+.nav-inner{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.brand{
+    font-family:Georgia,serif;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.nav-links{
+    display:flex;
+    gap:24px;
+    font-size:13px;
+    color:var(--muted);
+}
+
+.nav-links a:hover{
+    color:var(--blue);
+}
+
+/* HERO */
+
+.hero{
+    padding:95px 0 75px;
+    background:
+        linear-gradient(135deg,#f7f9f8 0%,#e5edef 100%);
+    border-bottom:1px solid var(--line);
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:10px;
+    font-weight:bold;
+    color:var(--blue);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:clamp(42px,6vw,72px);
+    line-height:1.02;
+    font-weight:normal;
+    letter-spacing:-2px;
+    max-width:950px;
+}
+
+.hero h1 span{
+    color:var(--blue);
+}
+
+.hero-intro{
+    margin-top:28px;
+    max-width:790px;
+    font-family:Georgia,serif;
+    font-size:19px;
+    color:#56636d;
+}
+
+.hero-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:34px;
+}
+
+.meta{
+    padding:9px 13px;
+    background:rgba(255,255,255,.7);
+    border:1px solid var(--line);
+    font-size:11px;
+    color:#5d6871;
+}
+
+/* STRIP */
+
+.research-strip{
+    background:var(--navy);
+    color:white;
+}
+
+.strip-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.strip-item{
+    padding:24px 22px;
+    border-right:1px solid rgba(255,255,255,.12);
+}
+
+.strip-item:last-child{
+    border-right:0;
+}
+
+.strip-label{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:9px;
+    opacity:.6;
+}
+
+.strip-value{
+    margin-top:6px;
+    font-family:Georgia,serif;
+    font-size:16px;
+}
+
+/* MAIN */
+
+.main{
+    display:grid;
+    grid-template-columns:225px 1fr;
+    gap:65px;
+    padding:75px 0;
+}
+
+.side{
+    position:sticky;
+    top:100px;
+    align-self:start;
+}
+
+.side-title{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:10px;
+    color:var(--muted);
+    margin-bottom:16px;
+}
+
+.side a{
+    display:block;
+    padding:8px 0;
+    font-size:12px;
+    color:#68747c;
+}
+
+.side a:hover{
+    color:var(--blue);
+}
+
+.side-box{
+    margin-top:28px;
+    padding:18px;
+    background:var(--white);
+    border:1px solid var(--line);
+    font-size:12px;
+    color:var(--muted);
+}
+
+/* CONTENT */
+
+section{
+    margin-bottom:85px;
+    scroll-margin-top:100px;
+}
+
+.section-number{
+    font-size:10px;
+    letter-spacing:3px;
+    color:var(--gold);
+    font-weight:bold;
+}
+
+h2{
+    margin-top:9px;
+    font-family:Georgia,serif;
+    font-size:36px;
+    line-height:1.15;
+    font-weight:normal;
+}
+
+.lead{
+    margin-top:20px;
+    max-width:800px;
+    color:#56636c;
+    font-size:16px;
+}
+
+/* DOCUMENT CARDS */
+
+.documents{
+    margin-top:35px;
+    display:grid;
+    gap:18px;
+}
+
+.document{
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:28px;
+    position:relative;
+    overflow:hidden;
+}
+
+.document::after{
+    content:"";
+    position:absolute;
+    right:-35px;
+    top:-35px;
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    background:var(--blue-soft);
+}
+
+.document-header{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    position:relative;
+    z-index:1;
+}
+
+.document-number{
+    font-family:Georgia,serif;
+    font-size:27px;
+    color:var(--blue);
+}
+
+.document-type{
+    text-transform:uppercase;
+    letter-spacing:1.8px;
+    font-size:9px;
+    color:var(--muted);
+    padding-top:7px;
+}
+
+.document-code{
+    margin-top:12px;
+    font-family:"Courier New",monospace;
+    font-size:14px;
+    color:var(--navy);
+    font-weight:bold;
+}
+
+.document-title{
+    margin-top:7px;
+    font-family:Georgia,serif;
+    font-size:21px;
+    line-height:1.35;
+}
+
+.document-date{
+    margin-top:11px;
+    font-size:12px;
+    color:var(--muted);
+}
+
+.document-description{
+    margin-top:20px;
+    padding-top:18px;
+    border-top:1px solid #e3e7e7;
+    color:#59656d;
+    font-size:13px;
+    max-width:760px;
+}
+
+/* TIMELINE */
+
+.timeline{
+    margin-top:35px;
+    border-left:2px solid var(--blue-soft);
+    padding-left:30px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:35px;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    width:11px;
+    height:11px;
+    background:var(--blue);
+    border:3px solid var(--paper);
+    border-radius:50%;
+    left:-37px;
+    top:6px;
+}
+
+.timeline-date{
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--blue);
+    font-weight:bold;
+}
+
+.timeline-title{
+    margin-top:5px;
+    font-family:Georgia,serif;
+    font-size:19px;
+}
+
+.timeline-text{
+    margin-top:8px;
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* ANALYTICAL GRID */
+
+.analysis-grid{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.analysis-card{
+    padding:25px;
+    background:var(--white);
+    border:1px solid var(--line);
+}
+
+.analysis-label{
+    text-transform:uppercase;
+    letter-spacing:1.7px;
+    color:var(--gold);
+    font-size:9px;
+    font-weight:bold;
+}
+
+.analysis-card h3{
+    margin-top:8px;
+    font-family:Georgia,serif;
+    font-size:18px;
+    font-weight:normal;
+}
+
+.analysis-card p{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* FINDING */
+
+.finding{
+    margin-top:30px;
+    padding:35px;
+    background:var(--navy);
+    color:white;
+}
+
+.finding h3{
+    font-family:Georgia,serif;
+    font-size:25px;
+    font-weight:normal;
+}
+
+.finding p{
+    margin-top:16px;
+    color:#dce3e6;
+    max-width:800px;
+    font-size:14px;
+}
+
+/* CAUTION */
+
+.caution{
+    margin-top:30px;
+    border:1px solid #d7c9ad;
+    background:#faf7f0;
+    padding:27px;
+}
+
+.caution-title{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:9px;
+    color:#80673d;
+    font-weight:bold;
+}
+
+.caution p{
+    margin-top:11px;
+    color:#655f55;
+    font-size:13px;
+}
+
+/* SOURCES */
+
+.source-box{
+    margin-top:30px;
+    padding:30px;
+    background:var(--white);
+    border:1px solid var(--line);
+}
+
+.source-box h3{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:21px;
+}
+
+.source-box p{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:13px;
+}
+
+.source-links{
+    margin-top:22px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.source-links a{
+    padding:10px 14px;
+    background:var(--navy);
+    color:white;
+    font-size:11px;
+}
+
+/* INTEGRITY */
+
+.integrity{
+    border-left:3px solid var(--gold);
+    padding-left:25px;
+    color:#59646d;
+}
+
+/* NAV */
+
+.page-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-top:30px;
+}
+
+.page-nav a{
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:22px;
+}
+
+.page-nav a:hover{
+    border-color:var(--blue);
+}
+
+.page-nav small{
+    display:block;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:9px;
+    color:var(--muted);
+}
+
+.page-nav strong{
+    display:block;
+    margin-top:7px;
+    font-family:Georgia,serif;
+    font-size:17px;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid var(--line);
+    padding:45px 0;
+    color:var(--muted);
+    font-size:12px;
+}
+
+.footer-grid{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.footer-title{
+    font-family:Georgia,serif;
+    color:var(--ink);
+    font-size:16px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .strip-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .main{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .side{
+        position:relative;
+        top:auto;
+    }
+
+    .analysis-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:560px){
+
+    .hero{
+        padding:70px 0 55px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero-intro{
+        font-size:16px;
+    }
+
+    .strip-grid{
+        grid-template-columns:1fr;
+    }
+
+    .strip-item{
+        border-right:0;
+        border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    .document{
+        padding:23px;
+    }
+
+    .page-nav{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-inner">
+
+        <a class="brand" href="../../../../">
+            Fathi · Research Archive
+        </a>
+
+        <div class="nav-links">
+            <a href="../../">R01</a>
+            <a href="../../../../">Portfolio</a>
+            <a href="#materials">Materials</a>
+            <a href="#integrity">Integrity</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<header class="hero">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            Research Project 01 · United Nations Materials
+        </div>
+
+        <h1>
+            UN Treaty Body<br>
+            <span>Materials</span>
+        </h1>
+
+        <p class="hero-intro">
+            A primary-source research record documenting United Nations
+            treaty-body materials concerning Malaysia, with particular
+            attention to State reporting, replies to lists of issues and
+            concluding observations.
+        </p>
+
+        <div class="hero-meta">
+            <div class="meta">OHCHR</div>
+            <div class="meta">Treaty Bodies</div>
+            <div class="meta">Malaysia</div>
+            <div class="meta">Primary Sources</div>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="research-strip">
+
+    <div class="container strip-grid">
+
+        <div class="strip-item">
+            <div class="strip-label">Project</div>
+            <div class="strip-value">R01</div>
+        </div>
+
+        <div class="strip-item">
+            <div class="strip-label">Institution</div>
+            <div class="strip-value">OHCHR</div>
+        </div>
+
+        <div class="strip-item">
+            <div class="strip-label">Core Material</div>
+            <div class="strip-value">Treaty-Body Review</div>
+        </div>
+
+        <div class="strip-item">
+            <div class="strip-label">Status</div>
+            <div class="strip-value">Updated 2026</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<main class="container main">
+
+    <aside class="side">
+
+        <div class="side-title">
+            Materials Index
+        </div>
+
+        <a href="#purpose">01 · Purpose</a>
+        <a href="#architecture">02 · Treaty-Body Architecture</a>
+        <a href="#materials">03 · Malaysia Materials</a>
+        <a href="#timeline">04 · Review Sequence</a>
+        <a href="#analysis">05 · Analytical Use</a>
+        <a href="#finding">06 · Preliminary Finding</a>
+        <a href="#caution">07 · Research Caution</a>
+        <a href="#sources">08 · Sources</a>
+        <a href="#integrity">09 · Integrity</a>
+
+        <div class="side-box">
+            <strong>Primary-source principle</strong><br><br>
+            Treaty-body documents are treated as institutional materials.
+            Their observations should be distinguished from binding domestic
+            judicial decisions and from the researcher's own conclusions.
+        </div>
+
+    </aside>
+
+
+    <div class="content">
+
+
+        <!-- 01 -->
+        <section id="purpose">
+
+            <div class="section-number">01</div>
+
+            <h2>Research Purpose</h2>
+
+            <p class="lead">
+                This section records official United Nations treaty-body
+                materials concerning Malaysia. The purpose is to understand
+                how treaty monitoring operates as an international mechanism
+                and how its outputs may inform research concerning domestic
+                human rights implementation.
+            </p>
+
+            <p class="lead">
+                The materials are particularly useful for distinguishing
+                between Malaysia's international engagement with a treaty
+                and the separate question of how international standards
+                operate within Malaysian domestic law.
+            </p>
+
+        </section>
+
+
+        <!-- 02 -->
+        <section id="architecture">
+
+            <div class="section-number">02</div>
+
+            <h2>Treaty-Body Architecture</h2>
+
+            <p class="lead">
+                UN human rights treaty bodies examine implementation of the
+                treaties within their respective mandates. The resulting
+                documentation forms part of an international monitoring record.
+            </p>
+
+            <div class="analysis-grid">
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        State Reporting
+                    </div>
+
+                    <h3>Periodic Reporting</h3>
+
+                    <p>
+                        States submit reports concerning measures taken to
+                        implement obligations arising under the relevant
+                        treaty.
+                    </p>
+
+                </div>
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        Questions
+                    </div>
+
+                    <h3>List of Issues</h3>
+
+                    <p>
+                        Treaty bodies identify matters requiring clarification
+                        or additional information before the review dialogue.
+                    </p>
+
+                </div>
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        State Response
+                    </div>
+
+                    <h3>Replies to Issues</h3>
+
+                    <p>
+                        The State provides information responding to questions
+                        raised during the treaty-monitoring process.
+                    </p>
+
+                </div>
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        Committee Output
+                    </div>
+
+                    <h3>Concluding Observations</h3>
+
+                    <p>
+                        Following examination, the treaty body records its
+                        observations and recommendations concerning treaty
+                        implementation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+        <section id="materials">
+
+            <div class="section-number">03</div>
+
+            <h2>Malaysia Materials</h2>
+
+            <p class="lead">
+                The initial collection identifies significant recent materials
+                from the Committee on the Rights of the Child concerning
+                Malaysia's combined second to fourth periodic reports.
+            </p>
+
+
+            <div class="documents">
+
+
+                <article class="document">
+
+                    <div class="document-header">
+
+                        <div class="document-number">01</div>
+
+                        <div class="document-type">
+                            Reply to List of Issues
+                        </div>
+
+                    </div>
+
+                    <div class="document-code">
+                        CRC/C/MYS/RQ/2-4
+                    </div>
+
+                    <div class="document-title">
+                        Reply to the List of Issues
+                    </div>
+
+                    <div class="document-date">
+                        12 January 2026
+                    </div>
+
+                    <div class="document-description">
+                        Malaysia's response to the issues raised in the
+                        Committee's examination of the State's combined
+                        second to fourth periodic reports under the
+                        Convention on the Rights of the Child.
+                    </div>
+
+                </article>
+
+
+                <article class="document">
+
+                    <div class="document-header">
+
+                        <div class="document-number">02</div>
+
+                        <div class="document-type">
+                            Treaty-Body Review
+                        </div>
+
+                    </div>
+
+                    <div class="document-code">
+                        CRC · 97th Session
+                    </div>
+
+                    <div class="document-title">
+                        Examination of Malaysia's Combined Second to Fourth
+                        Periodic Reports
+                    </div>
+
+                    <div class="document-date">
+                        January 2026
+                    </div>
+
+                    <div class="document-description">
+                        Malaysia's combined second to fourth periodic reports
+                        were considered by the Committee on the Rights of the
+                        Child during its 97th session.
+                    </div>
+
+                </article>
+
+
+                <article class="document">
+
+                    <div class="document-header">
+
+                        <div class="document-number">03</div>
+
+                        <div class="document-type">
+                            Concluding Observations
+                        </div>
+
+                    </div>
+
+                    <div class="document-code">
+                        CRC/C/MYS/CO/2-4
+                    </div>
+
+                    <div class="document-title">
+                        Concluding Observations on the Combined Second to
+                        Fourth Periodic Reports of Malaysia
+                    </div>
+
+                    <div class="document-date">
+                        5 February 2026
+                    </div>
+
+                    <div class="document-description">
+                        The Committee's concluding observations following its
+                        examination of Malaysia's implementation of the
+                        Convention on the Rights of the Child.
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+        <section id="timeline">
+
+            <div class="section-number">04</div>
+
+            <h2>Review Sequence</h2>
+
+            <p class="lead">
+                The available 2026 materials can be understood as a sequence
+                rather than as isolated documents.
+            </p>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        12 January 2026
+                    </div>
+
+                    <div class="timeline-title">
+                        Malaysia's Reply to the List of Issues
+                    </div>
+
+                    <div class="timeline-text">
+                        The State provides additional information addressing
+                        issues identified during the reporting process.
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        January 2026
+                    </div>
+
+                    <div class="timeline-title">
+                        Committee Examination
+                    </div>
+
+                    <div class="timeline-text">
+                        The Committee on the Rights of the Child considers
+                        Malaysia's combined second to fourth periodic reports
+                        at its 97th session.
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        5 February 2026
+                    </div>
+
+                    <div class="timeline-title">
+                        Concluding Observations
+                    </div>
+
+                    <div class="timeline-text">
+                        The Committee publishes its concluding observations
+                        following examination of the State's reports.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 05 -->
+        <section id="analysis">
+
+            <div class="section-number">05</div>
+
+            <h2>Analytical Use</h2>
+
+            <p class="lead">
+                Treaty-body materials are particularly useful when examined
+                alongside Malaysian constitutional law, domestic legislation,
+                case law and SUHAKAM materials.
+            </p>
+
+            <div class="analysis-grid">
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        Question 01
+                    </div>
+
+                    <h3>
+                        What does Malaysia report?
+                    </h3>
+
+                    <p>
+                        The State's own submissions provide evidence of how
+                        Malaysia describes its implementation measures and
+                        legal framework.
+                    </p>
+
+                </div>
+
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        Question 02
+                    </div>
+
+                    <h3>
+                        What does the Committee identify?
+                    </h3>
+
+                    <p>
+                        Concluding observations provide the Committee's
+                        assessment and recommendations within its treaty
+                        mandate.
+                    </p>
+
+                </div>
+
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        Question 03
+                    </div>
+
+                    <h3>
+                        What is the domestic position?
+                    </h3>
+
+                    <p>
+                        The international review record should then be compared
+                        with Malaysian legislation, constitutional provisions,
+                        judicial decisions and institutional practice.
+                    </p>
+
+                </div>
+
+
+                <div class="analysis-card">
+
+                    <div class="analysis-label">
+                        Question 04
+                    </div>
+
+                    <h3>
+                        Where is the implementation gap?
+                    </h3>
+
+                    <p>
+                        Differences between international recommendations,
+                        State reporting and domestic implementation can form
+                        questions for further research.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+        <section id="finding">
+
+            <div class="section-number">06</div>
+
+            <h2>Preliminary Finding</h2>
+
+            <div class="finding">
+
+                <h3>
+                    Treaty-body materials provide an international monitoring
+                    record, not a substitute for domestic legal analysis.
+                </h3>
+
+                <p>
+                    The 2026 CRC materials demonstrate how Malaysia's
+                    international treaty engagement can be studied through
+                    a sequence of State reporting, Committee examination and
+                    concluding observations.
+                </p>
+
+                <p>
+                    For this research project, the significance lies in
+                    connecting that international record with the separate
+                    domestic questions of treaty incorporation, constitutional
+                    interpretation, legislation and institutional practice.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+        <section id="caution">
+
+            <div class="section-number">07</div>
+
+            <h2>Research Caution</h2>
+
+            <div class="caution">
+
+                <div class="caution-title">
+                    Important Legal Distinction
+                </div>
+
+                <p>
+                    Treaty-body concluding observations should not be presented
+                    as though they were judgments of a Malaysian court or
+                    automatically equivalent to binding domestic legislation.
+                    Their legal character, institutional authority and effect
+                    must be analysed separately.
+                </p>
+
+                <p>
+                    Similarly, the existence of an international recommendation
+                    does not by itself establish that Malaysian domestic law
+                    has changed. Domestic implementation requires separate
+                    examination.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 08 -->
+        <section id="sources">
+
+            <div class="section-number">08</div>
+
+            <h2>Source Architecture</h2>
+
+            <p class="lead">
+                The primary institutional source for this section is the
+                Office of the United Nations High Commissioner for Human Rights
+                Treaty Body Database.
+            </p>
+
+            <div class="source-box">
+
+                <h3>
+                    OHCHR Treaty Body Database
+                </h3>
+
+                <p>
+                    Used to verify treaty-body documentation concerning
+                    Malaysia, including State reporting and Committee
+                    documentation.
+                </p>
+
+                <div class="source-links">
+
+                    <a
+                        href="https://tbinternet.ohchr.org/"
+                        target="_blank"
+                    >
+                        OHCHR TREATY BODY DATABASE ↗
+                    </a>
+
+                    <a
+                        href="https://www.ohchr.org/"
+                        target="_blank"
+                    >
+                        OHCHR ↗
+                    </a>
+
+                    <a
+                        href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/12-un-treaty-body-materials-malaysia.md"
+                        target="_blank"
+                    >
+                        VIEW RESEARCH RECORD ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+        <section id="integrity">
+
+            <div class="section-number">09</div>
+
+            <h2>Research Integrity</h2>
+
+            <p class="lead">
+                The treaty-body record is presented according to the authority
+                of each document and its institutional function.
+            </p>
+
+            <div class="integrity">
+
+                <p>
+                    State submissions are treated as evidence of the position
+                    presented by Malaysia. Committee observations are treated
+                    as institutional outputs of the relevant UN treaty body.
+                    Neither should be silently converted into the researcher's
+                    own conclusion.
+                </p>
+
+                <br>
+
+                <p>
+                    Claims concerning domestic legal effect require separate
+                    support from Malaysian primary legal sources, including
+                    legislation, constitutional provisions and judicial
+                    decisions.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- NAVIGATION -->
+        <section>
+
+            <div class="section-number">CONTINUE</div>
+
+            <h2>Research Sequence</h2>
+
+            <div class="page-nav">
+
+                <a href="../11/">
+                    <small>Previous</small>
+                    <strong>11 · Academic Literature</strong>
+                </a>
+
+                <a href="../13/">
+                    <small>Next</small>
+                    <strong>13 · CRPD Treaty Body Materials</strong>
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-title">
+                Research Project 01
+            </div>
+
+            <div>
+                Malaysia &amp; International Human Rights Law
+            </div>
+        </div>
+
+        <div>
+            Muhammad Fathi Duraini<br>
+            Bachelor of International Relations (Hons.) · UniSZA
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
