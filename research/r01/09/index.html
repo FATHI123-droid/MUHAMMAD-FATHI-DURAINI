@@ -4,30 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ICESCR | Research Project 01</title>
+<title>Research Findings | Malaysia & International Human Rights Law</title>
 
 <meta name="description"
-content="Academic research dossier on the International Covenant on Economic, Social and Cultural Rights and its relationship with Malaysia.">
+content="Research findings and analytical synthesis on Malaysia and international human rights law.">
 
 <style>
 :root{
-    --ink:#172033;
-    --muted:#687080;
-    --paper:#f6f3ec;
-    --paper-2:#eee9df;
-    --white:#fffdf9;
-    --blue:#314b63;
-    --blue-dark:#203449;
-    --gold:#b28a45;
-    --line:#d9d2c5;
-    --green:#687d6a;
-    --shadow:0 20px 60px rgba(23,32,51,.08);
+    --ink:#101820;
+    --navy:#17283d;
+    --blue:#294b68;
+    --gold:#b18a45;
+    --cream:#f6f3ed;
+    --paper:#fbfaf7;
+    --line:#ddd8cf;
+    --muted:#69727b;
+    --soft:#eef2f4;
+    --green:#466b5c;
+    --red:#8d5149;
 }
 
 *{
     box-sizing:border-box;
-    margin:0;
-    padding:0;
 }
 
 html{
@@ -35,10 +33,11 @@ html{
 }
 
 body{
-    background:var(--paper);
+    margin:0;
+    background:var(--cream);
     color:var(--ink);
     font-family:Arial, Helvetica, sans-serif;
-    line-height:1.7;
+    line-height:1.75;
 }
 
 a{
@@ -47,23 +46,23 @@ a{
 }
 
 .container{
-    width:min(1180px,92%);
+    width:min(1180px, calc(100% - 42px));
     margin:auto;
 }
 
 /* NAVIGATION */
 
-.navbar{
+.nav{
     position:sticky;
     top:0;
-    z-index:1000;
-    background:rgba(246,243,236,.94);
-    backdrop-filter:blur(14px);
+    z-index:100;
+    background:rgba(246,243,237,.94);
+    backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line);
 }
 
 .nav-inner{
-    min-height:72px;
+    min-height:70px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -71,18 +70,17 @@ a{
 }
 
 .brand{
-    font-size:13px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    font-weight:700;
-    color:var(--blue-dark);
+    font-family:Georgia, serif;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:.02em;
 }
 
 .nav-links{
     display:flex;
-    gap:22px;
+    gap:25px;
     font-size:13px;
-    color:var(--muted);
+    color:#4f5962;
 }
 
 .nav-links a:hover{
@@ -92,438 +90,499 @@ a{
 /* HERO */
 
 .hero{
-    padding:100px 0 85px;
+    padding:90px 0 70px;
     background:
-        radial-gradient(circle at 85% 20%,rgba(104,125,106,.13),transparent 27%),
-        linear-gradient(135deg,#f7f4ed 0%,#ebe7dc 100%);
+        radial-gradient(circle at 82% 20%, rgba(177,138,69,.12), transparent 28%),
+        linear-gradient(180deg,#fbfaf7 0%,#f6f3ed 100%);
     border-bottom:1px solid var(--line);
 }
 
 .kicker{
-    display:flex;
+    display:inline-flex;
     align-items:center;
-    gap:12px;
+    gap:10px;
     color:var(--gold);
-    font-size:12px;
-    letter-spacing:3px;
     text-transform:uppercase;
-    font-weight:700;
-    margin-bottom:25px;
+    letter-spacing:.18em;
+    font-size:11px;
+    font-weight:bold;
 }
 
-.kicker span{
-    width:38px;
+.kicker::before{
+    content:"";
+    width:30px;
     height:1px;
     background:var(--gold);
 }
 
 .hero h1{
     max-width:900px;
+    margin:22px 0 20px;
     font-family:Georgia, "Times New Roman", serif;
-    font-size:clamp(42px,6vw,78px);
-    line-height:1.02;
-    font-weight:500;
-    letter-spacing:-2px;
-    margin-bottom:28px;
+    font-size:clamp(46px,7vw,82px);
+    line-height:.98;
+    letter-spacing:-.045em;
+    font-weight:normal;
 }
 
-.hero h1 em{
+.hero h1 span{
     color:var(--blue);
-    font-style:normal;
 }
 
-.hero-description{
+.hero p{
     max-width:760px;
-    color:#586171;
+    margin:0;
+    color:#59636c;
     font-size:18px;
 }
 
 .hero-meta{
+    margin-top:38px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.meta{
+    padding:9px 14px;
+    border:1px solid var(--line);
+    background:#fffdf9;
+    font-size:12px;
+    color:#555f68;
+}
+
+/* FINDINGS BAR */
+
+.findings-bar{
+    background:var(--navy);
+    color:white;
+}
+
+.findings-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    margin-top:60px;
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
 }
 
-.meta-box{
-    padding:24px 20px;
-    border-right:1px solid var(--line);
+.finding-stat{
+    padding:28px 24px;
+    border-right:1px solid rgba(255,255,255,.12);
 }
 
-.meta-box:last-child{
+.finding-stat:last-child{
     border-right:none;
 }
 
-.meta-label{
-    font-size:10px;
-    letter-spacing:2px;
+.finding-stat strong{
+    display:block;
+    font-family:Georgia, serif;
+    font-size:25px;
+    font-weight:normal;
+    margin-bottom:4px;
+}
+
+.finding-stat span{
+    font-size:11px;
+    color:#cbd4dc;
     text-transform:uppercase;
-    color:var(--muted);
-    margin-bottom:7px;
+    letter-spacing:.08em;
 }
 
-.meta-value{
-    font-size:14px;
-    font-weight:700;
-    color:var(--blue-dark);
+/* MAIN */
+
+main{
+    padding:80px 0;
 }
 
-/* MAIN LAYOUT */
-
-.main{
-    padding:90px 0;
-}
-
-.research-layout{
+.layout{
     display:grid;
     grid-template-columns:220px 1fr;
     gap:70px;
 }
 
-.side-index{
+.sidebar{
     position:sticky;
-    top:105px;
+    top:100px;
     align-self:start;
 }
 
-.side-title{
+.sidebar-title{
     font-size:10px;
     text-transform:uppercase;
-    letter-spacing:2px;
+    letter-spacing:.16em;
     color:var(--gold);
+    font-weight:bold;
     margin-bottom:20px;
-    font-weight:700;
 }
 
-.side-index a{
+.sidebar a{
     display:block;
-    padding:8px 0;
+    padding:7px 0;
     font-size:12px;
-    color:var(--muted);
+    color:#69727b;
     border-bottom:1px solid transparent;
 }
 
-.side-index a:hover{
-    color:var(--blue);
+.sidebar a:hover{
+    color:var(--navy);
 }
 
-/* CONTENT */
+.content{
+    min-width:0;
+}
 
 .section{
-    margin-bottom:100px;
+    margin-bottom:95px;
     scroll-margin-top:100px;
 }
 
 .section-number{
-    font-family:Georgia,serif;
-    font-size:13px;
+    font-size:11px;
     color:var(--gold);
-    letter-spacing:2px;
-    margin-bottom:12px;
+    font-weight:bold;
+    letter-spacing:.15em;
+    text-transform:uppercase;
 }
 
 .section h2{
-    font-family:Georgia,"Times New Roman",serif;
-    font-size:38px;
-    line-height:1.15;
-    font-weight:500;
-    margin-bottom:25px;
-    color:var(--blue-dark);
+    font-family:Georgia, serif;
+    font-size:42px;
+    line-height:1.12;
+    font-weight:normal;
+    margin:10px 0 20px;
+    letter-spacing:-.025em;
 }
 
-.section-intro{
-    font-size:19px;
-    color:#4e5969;
-    max-width:800px;
-    margin-bottom:35px;
+.lead{
+    max-width:780px;
+    font-size:17px;
+    color:#56616a;
 }
 
-.section p{
-    max-width:820px;
-    color:#505968;
-    margin-bottom:20px;
-}
+/* BIG FINDING */
 
-.pull-quote{
-    margin:42px 0;
-    padding:35px 40px;
-    background:var(--blue-dark);
-    color:#f8f5ee;
-    border-left:4px solid var(--gold);
-    box-shadow:var(--shadow);
-}
-
-.pull-quote p{
-    color:#f8f5ee;
-    font-family:Georgia,serif;
-    font-size:24px;
-    line-height:1.45;
-    margin:0;
-}
-
-/* RIGHTS GRID */
-
-.rights-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
+.hero-finding{
     margin-top:35px;
-}
-
-.right-card{
-    background:var(--white);
+    padding:38px;
+    background:var(--paper);
     border:1px solid var(--line);
-    padding:28px;
-    transition:.25s ease;
+    border-left:5px solid var(--gold);
 }
 
-.right-card:hover{
-    transform:translateY(-4px);
-    box-shadow:var(--shadow);
-}
-
-.right-card-number{
-    font-family:Georgia,serif;
-    font-size:14px;
-    color:var(--gold);
-    margin-bottom:12px;
-}
-
-.right-card h3{
-    font-family:Georgia,serif;
-    font-size:21px;
-    color:var(--blue-dark);
-    margin-bottom:10px;
-}
-
-.right-card p{
-    font-size:14px;
-    margin:0;
-}
-
-/* ANALYTICAL TABLE */
-
-.analysis-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:30px;
-    background:var(--white);
-}
-
-.analysis-table th,
-.analysis-table td{
-    border:1px solid var(--line);
-    padding:18px;
-    text-align:left;
-    vertical-align:top;
-}
-
-.analysis-table th{
-    background:var(--blue-dark);
-    color:white;
-    font-size:12px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-}
-
-.analysis-table td{
-    font-size:14px;
-    color:#505968;
-}
-
-/* STATUS CARD */
-
-.status-card{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:0;
-    background:var(--white);
-    border:1px solid var(--line);
-    margin-top:35px;
-}
-
-.status-side{
-    padding:35px;
-}
-
-.status-side:first-child{
-    border-right:1px solid var(--line);
-}
-
-.status-label{
+.hero-finding .label{
     font-size:10px;
     text-transform:uppercase;
-    letter-spacing:2px;
-    color:var(--muted);
-    margin-bottom:10px;
+    letter-spacing:.15em;
+    color:var(--gold);
+    font-weight:bold;
 }
 
-.status-main{
-    font-family:Georgia,serif;
-    font-size:30px;
-    color:var(--blue-dark);
+.hero-finding p{
+    margin:16px 0 0;
+    font-family:Georgia, serif;
+    font-size:27px;
+    line-height:1.45;
+    color:var(--navy);
 }
 
-/* FRAMEWORK */
+/* FINDING CARDS */
 
-.framework{
-    margin-top:35px;
-    border:1px solid var(--line);
-    background:var(--white);
-}
-
-.framework-row{
+.cards{
     display:grid;
-    grid-template-columns:180px 1fr;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    margin-top:32px;
+}
+
+.card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    padding:28px;
+}
+
+.card-index{
+    font-size:11px;
+    color:var(--gold);
+    font-weight:bold;
+}
+
+.card h3{
+    margin:12px 0 9px;
+    font-family:Georgia, serif;
+    font-size:22px;
+    font-weight:normal;
+}
+
+.card p{
+    margin:0;
+    color:#5f6870;
+    font-size:14px;
+}
+
+/* ARCHITECTURE */
+
+.architecture{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+}
+
+.arch-node{
+    background:var(--paper);
+    padding:25px 18px;
+    min-height:190px;
+}
+
+.arch-node .num{
+    font-size:10px;
+    color:var(--gold);
+    font-weight:bold;
+}
+
+.arch-node h3{
+    font-family:Georgia, serif;
+    font-size:20px;
+    font-weight:normal;
+    margin:15px 0 8px;
+}
+
+.arch-node p{
+    font-size:12px;
+    color:#68727a;
+    margin:0;
+}
+
+/* MATRIX */
+
+.matrix{
+    margin-top:30px;
+    border:1px solid var(--line);
+    background:var(--paper);
+}
+
+.matrix-row{
+    display:grid;
+    grid-template-columns:1.1fr 1.5fr 1.5fr;
     border-bottom:1px solid var(--line);
 }
 
-.framework-row:last-child{
+.matrix-row:last-child{
     border-bottom:none;
 }
 
-.framework-label{
-    padding:22px;
-    background:var(--paper-2);
-    font-size:11px;
-    letter-spacing:1px;
+.matrix-row > div{
+    padding:19px 20px;
+    border-right:1px solid var(--line);
+    font-size:13px;
+}
+
+.matrix-row > div:last-child{
+    border-right:none;
+}
+
+.matrix-head{
+    background:var(--navy);
+    color:white;
+    font-size:10px!important;
     text-transform:uppercase;
-    font-weight:700;
-    color:var(--blue-dark);
+    letter-spacing:.1em;
 }
 
-.framework-content{
-    padding:22px;
-    color:#505968;
-    font-size:14px;
-}
+/* QUESTIONS */
 
-/* SOURCE ARCHITECTURE */
-
-.source-list{
-    display:grid;
-    gap:14px;
+.question-list{
     margin-top:30px;
+    border-top:1px solid var(--line);
 }
 
-.source-item{
-    display:flex;
-    justify-content:space-between;
-    gap:25px;
-    align-items:center;
-    padding:20px 24px;
-    background:var(--white);
+.question{
+    display:grid;
+    grid-template-columns:60px 1fr;
+    gap:20px;
+    padding:25px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.question-number{
+    color:var(--gold);
+    font-family:Georgia, serif;
+    font-size:22px;
+}
+
+.question p{
+    margin:0;
+    font-family:Georgia, serif;
+    font-size:19px;
+    color:var(--navy);
+}
+
+/* LIMITATIONS */
+
+.caution{
+    margin-top:30px;
+    padding:30px;
+    background:#f0eee8;
     border:1px solid var(--line);
 }
 
-.source-type{
-    font-size:10px;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    color:var(--gold);
+.caution strong{
+    font-family:Georgia, serif;
+    font-size:20px;
+    font-weight:normal;
 }
 
-.source-name{
-    font-family:Georgia,serif;
-    font-size:17px;
-    color:var(--blue-dark);
+.caution p{
+    margin-bottom:0;
+    color:#606a72;
+    font-size:14px;
+}
+
+/* SOURCES */
+
+.source-box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+    margin-top:30px;
+    padding:28px;
+    background:var(--navy);
+    color:white;
+}
+
+.source-box p{
+    margin:0;
+    color:#d5dde3;
+    font-size:13px;
+}
+
+.source-link{
+    flex-shrink:0;
+    padding:11px 16px;
+    border:1px solid rgba(255,255,255,.35);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+.source-link:hover{
+    background:white;
+    color:var(--navy);
 }
 
 /* INTEGRITY */
 
 .integrity{
-    background:#e9eee8;
-    border:1px solid #d3dbd1;
     padding:40px;
+    border:1px solid var(--line);
+    background:#fffdf9;
 }
 
-.integrity h3{
-    font-family:Georgia,serif;
-    font-size:27px;
-    color:var(--blue-dark);
-    margin-bottom:15px;
+.integrity blockquote{
+    margin:0 0 25px;
+    padding-left:25px;
+    border-left:3px solid var(--gold);
+    font-family:Georgia, serif;
+    font-size:24px;
+    line-height:1.5;
+    color:var(--navy);
 }
 
 .integrity p{
-    margin-bottom:15px;
+    margin:0;
+    color:#606970;
+    font-size:14px;
 }
 
-/* NAVIGATION FOOTER */
-
-.page-navigation{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-    margin-top:90px;
-}
+/* FOOTER NAV */
 
 .page-nav{
-    padding:28px;
-    border:1px solid var(--line);
-    background:var(--white);
+    margin-top:100px;
+    padding-top:30px;
+    border-top:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
 }
 
-.page-nav.next{
-    text-align:right;
+.page-nav a{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
 }
 
-.page-nav-label{
-    font-size:10px;
-    text-transform:uppercase;
-    letter-spacing:2px;
+.page-nav small{
     color:var(--gold);
-    margin-bottom:8px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:10px;
 }
 
-.page-nav-title{
-    font-family:Georgia,serif;
-    font-size:19px;
-    color:var(--blue-dark);
+.page-nav strong{
+    font-family:Georgia, serif;
+    font-size:18px;
+    font-weight:normal;
 }
 
 /* FOOTER */
 
 footer{
-    background:var(--blue-dark);
-    color:#dce2e7;
-    padding:55px 0;
+    padding:45px 0;
+    background:var(--navy);
+    color:#cbd3da;
 }
 
-.footer-grid{
+.footer-inner{
     display:flex;
     justify-content:space-between;
     gap:30px;
-}
-
-.footer-title{
-    font-family:Georgia,serif;
-    font-size:25px;
-    margin-bottom:8px;
-}
-
-.footer-text{
-    color:#aeb8c2;
-    font-size:13px;
-}
-
-.footer-links{
-    display:flex;
-    gap:22px;
     font-size:12px;
-    color:#c7ced5;
 }
 
-.footer-links a:hover{
+.footer-inner strong{
     color:white;
 }
 
 /* RESPONSIVE */
 
-@media(max-width:850px){
+@media(max-width:900px){
 
-    .nav-inner{
-        min-height:62px;
+    .findings-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .architecture{
+        grid-template-columns:1fr;
+    }
+
+    .layout{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:static;
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px 18px;
+        border-bottom:1px solid var(--line);
+        padding-bottom:20px;
+    }
+
+    .sidebar-title{
+        width:100%;
+    }
+
+    .sidebar a{
+        border-bottom:1px solid var(--line);
+    }
+}
+
+@media(max-width:650px){
+
+    .container{
+        width:min(100% - 28px,1180px);
     }
 
     .nav-links{
@@ -531,115 +590,73 @@ footer{
     }
 
     .hero{
-        padding:70px 0 60px;
+        padding:65px 0 55px;
     }
-
-    .hero-meta{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .meta-box:nth-child(2){
-        border-right:none;
-    }
-
-    .meta-box:nth-child(-n+2){
-        border-bottom:1px solid var(--line);
-    }
-
-    .research-layout{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .side-index{
-        position:relative;
-        top:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:0 20px;
-        padding-bottom:25px;
-        border-bottom:1px solid var(--line);
-    }
-
-    .side-title{
-        grid-column:1/-1;
-    }
-
-    .rights-grid{
-        grid-template-columns:1fr;
-    }
-
-    .status-card{
-        grid-template-columns:1fr;
-    }
-
-    .status-side:first-child{
-        border-right:none;
-        border-bottom:1px solid var(--line);
-    }
-
-    .framework-row{
-        grid-template-columns:1fr;
-    }
-
-    .page-navigation{
-        grid-template-columns:1fr;
-    }
-
-    .page-nav.next{
-        text-align:left;
-    }
-
-    .footer-grid{
-        flex-direction:column;
-    }
-
-    .footer-links{
-        flex-wrap:wrap;
-    }
-}
-
-@media(max-width:520px){
 
     .hero h1{
-        font-size:44px;
+        font-size:48px;
     }
 
-    .hero-description{
+    .hero p{
         font-size:16px;
     }
 
-    .hero-meta{
+    .findings-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .finding-stat{
+        padding:20px 14px;
+    }
+
+    .finding-stat strong{
+        font-size:20px;
+    }
+
+    main{
+        padding:55px 0;
+    }
+
+    .section{
+        margin-bottom:70px;
+    }
+
+    .section h2{
+        font-size:34px;
+    }
+
+    .cards{
         grid-template-columns:1fr;
     }
 
-    .meta-box{
+    .matrix-row{
+        grid-template-columns:1fr;
+    }
+
+    .matrix-row > div{
         border-right:none;
         border-bottom:1px solid var(--line);
     }
 
-    .meta-box:last-child{
-        border-bottom:none;
+    .source-box{
+        flex-direction:column;
+        align-items:flex-start;
     }
 
-    .section h2{
-        font-size:31px;
+    .integrity{
+        padding:25px;
     }
 
-    .pull-quote{
-        padding:28px;
-    }
-
-    .pull-quote p{
+    .integrity blockquote{
         font-size:20px;
     }
 
-    .source-item{
-        display:block;
+    .page-nav{
+        flex-direction:column;
     }
 
-    .source-name{
-        margin-top:6px;
+    .footer-inner{
+        flex-direction:column;
     }
 }
 </style>
@@ -649,100 +666,106 @@ footer{
 
 <!-- NAVIGATION -->
 
-<nav class="navbar">
-    <div class="container nav-inner">
+<nav class="nav">
+<div class="container nav-inner">
 
-        <a href="../" class="brand">
-            Research Project 01
-        </a>
+<a href="../" class="brand">
+R01 · Research Findings
+</a>
 
-        <div class="nav-links">
-            <a href="../">R01 Overview</a>
-            <a href="../../">Portfolio</a>
-            <a href="#analysis">Analysis</a>
-            <a href="#sources">Sources</a>
-        </div>
+<div class="nav-links">
+<a href="#findings">Findings</a>
+<a href="#architecture">Architecture</a>
+<a href="#matrix">Analysis</a>
+<a href="#questions">Questions</a>
+<a href="#integrity">Integrity</a>
+</div>
 
-    </div>
+</div>
 </nav>
 
 
 <!-- HERO -->
 
 <header class="hero">
+<div class="container">
 
-    <div class="container">
+<div class="kicker">
+Research Project 01 · Final Synthesis
+</div>
 
-        <div class="kicker">
-            <span></span>
-            International Human Rights Law
-        </div>
+<h1>
+What the research<br>
+<span>establishes.</span>
+</h1>
 
-        <h1>
-            International Covenant on
-            <em>Economic, Social and Cultural Rights</em>
-        </h1>
+<p>
+A consolidated analytical account of the relationship between
+Malaysian constitutional law, international human rights law,
+domestic institutions, courts and United Nations mechanisms.
+</p>
 
-        <p class="hero-description">
-            A research dossier examining the legal architecture of the ICESCR,
-            the protection of economic, social and cultural rights, and the
-            relationship between international human rights standards and
-            Malaysia's domestic legal framework.
-        </p>
+<div class="hero-meta">
+<div class="meta">Malaysia</div>
+<div class="meta">International Human Rights Law</div>
+<div class="meta">Constitutional Law</div>
+<div class="meta">Treaty Implementation</div>
+<div class="meta">SUHAKAM</div>
+</div>
 
-        <div class="hero-meta">
-
-            <div class="meta-box">
-                <div class="meta-label">Project</div>
-                <div class="meta-value">R01</div>
-            </div>
-
-            <div class="meta-box">
-                <div class="meta-label">Instrument</div>
-                <div class="meta-value">ICESCR</div>
-            </div>
-
-            <div class="meta-box">
-                <div class="meta-label">Adopted</div>
-                <div class="meta-value">1966</div>
-            </div>
-
-            <div class="meta-box">
-                <div class="meta-label">Malaysia</div>
-                <div class="meta-value">Not a State Party</div>
-            </div>
-
-        </div>
-
-    </div>
-
+</div>
 </header>
 
 
-<!-- MAIN -->
+<!-- FINDINGS BAR -->
 
-<main class="main">
+<section class="findings-bar" id="findings">
+<div class="container findings-grid">
 
-<div class="container research-layout">
+<div class="finding-stat">
+<strong>01</strong>
+<span>Domestic Legal Framework</span>
+</div>
+
+<div class="finding-stat">
+<strong>02</strong>
+<span>Treaty Interface</span>
+</div>
+
+<div class="finding-stat">
+<strong>03</strong>
+<span>Institutional Bridge</span>
+</div>
+
+<div class="finding-stat">
+<strong>04</strong>
+<span>International Monitoring</span>
+</div>
+
+</div>
+</section>
 
 
-<!-- SIDE INDEX -->
+<main>
 
-<aside class="side-index">
+<div class="container layout">
 
-    <div class="side-title">
-        Research Index
-    </div>
+<!-- SIDEBAR -->
 
-    <a href="#purpose">01 · Purpose</a>
-    <a href="#rights">02 · Rights Architecture</a>
-    <a href="#obligations">03 · State Obligations</a>
-    <a href="#malaysia">04 · Malaysia</a>
-    <a href="#interface">05 · Domestic Interface</a>
-    <a href="#analysis">06 · Analytical Questions</a>
-    <a href="#finding">07 · Preliminary Finding</a>
-    <a href="#sources">08 · Source Architecture</a>
-    <a href="#integrity">09 · Research Integrity</a>
+<aside class="sidebar">
+
+<div class="sidebar-title">
+Research Map
+</div>
+
+<a href="#purpose">01 · Purpose</a>
+<a href="#findings-main">02 · Findings</a>
+<a href="#architecture">03 · Architecture</a>
+<a href="#distinctions">04 · Distinctions</a>
+<a href="#questions">05 · Questions</a>
+<a href="#limitations">06 · Limitations</a>
+<a href="#sources">07 · Sources</a>
+<a href="#integrity">08 · Integrity</a>
 
 </aside>
 
@@ -752,667 +775,473 @@ footer{
 <div class="content">
 
 
-<!-- 01 -->
+<!-- PURPOSE -->
 
 <section class="section" id="purpose">
 
-    <div class="section-number">01 · Research Purpose</div>
+<div class="section-number">01 · Purpose</div>
 
-    <h2>
-        Why study the ICESCR?
-    </h2>
+<h2>
+From source collection<br>
+to legal analysis.
+</h2>
 
-    <p class="section-intro">
-        Economic, social and cultural rights form an important part of the
-        international human rights system. The ICESCR provides a treaty-based
-        framework for examining how states address rights connected with
-        livelihood, health, education, work, social protection and participation
-        in cultural life.
-    </p>
+<p class="lead">
+This section consolidates the principal findings emerging from
+Research Project 01. The purpose is not to present every source
+again, but to identify the legal relationships, institutional
+interfaces and analytical distinctions that became visible across
+the research process.
+</p>
 
-    <p>
-        This research examines the Covenant as an international legal instrument
-        and considers how its standards interact with Malaysia's constitutional,
-        statutory and institutional framework.
-    </p>
+<div class="hero-finding">
 
-    <p>
-        The objective is not to assume that international treaty standards
-        automatically operate as domestic law. Instead, the research separates
-        international obligations, domestic legal effect, constitutional
-        interpretation and institutional practice.
-    </p>
+<div class="label">
+Central Research Proposition
+</div>
 
-    <div class="pull-quote">
-        <p>
-            The central question is not simply what rights the Covenant
-            recognises, but how international standards can be analysed
-            alongside the domestic legal order.
-        </p>
-    </div>
+<p>
+Malaysia's engagement with international human rights law must be
+understood through the interaction between its domestic constitutional
+framework, treaty commitments, judicial interpretation, institutional
+practice and international monitoring mechanisms.
+</p>
+
+</div>
 
 </section>
 
 
-<!-- 02 -->
+<!-- MAIN FINDINGS -->
 
-<section class="section" id="rights">
+<section class="section" id="findings-main">
 
-    <div class="section-number">02 · Rights Architecture</div>
+<div class="section-number">02 · Principal Findings</div>
 
-    <h2>
-        The economic, social and cultural rights framework
-    </h2>
+<h2>
+The research establishes<br>
+five central propositions.
+</h2>
 
-    <p class="section-intro">
-        The ICESCR addresses a broad range of rights that concern material
-        well-being, social participation and human dignity.
-    </p>
+<div class="cards">
 
-    <div class="rights-grid">
+<div class="card">
+<div class="card-index">FINDING 01</div>
+<h3>Domestic law remains central</h3>
+<p>
+The Federal Constitution and domestic legislation remain the
+principal legal framework through which enforceable rights operate
+within Malaysia's domestic legal system.
+</p>
+</div>
 
-        <div class="right-card">
-            <div class="right-card-number">01</div>
-            <h3>Right to Work</h3>
-            <p>
-                Protection of the opportunity to earn a living through freely
-                chosen or accepted work.
-            </p>
-        </div>
 
-        <div class="right-card">
-            <div class="right-card-number">02</div>
-            <h3>Just and Favourable Conditions</h3>
-            <p>
-                Standards concerning fair working conditions, remuneration,
-                safety and rest.
-            </p>
-        </div>
+<div class="card">
+<div class="card-index">FINDING 02</div>
+<h3>Ratification is not incorporation</h3>
+<p>
+Malaysia's participation in an international treaty does not,
+by itself, mean that the treaty automatically becomes directly
+enforceable domestic law.
+</p>
+</div>
 
-        <div class="right-card">
-            <div class="right-card-number">03</div>
-            <h3>Trade Union Rights</h3>
-            <p>
-                Protection concerning the formation and participation of
-                trade unions and related collective activity.
-            </p>
-        </div>
 
-        <div class="right-card">
-            <div class="right-card-number">04</div>
-            <h3>Social Security</h3>
-            <p>
-                Recognition of the right to social security, including social
-                insurance.
-            </p>
-        </div>
+<div class="card">
+<div class="card-index">FINDING 03</div>
+<h3>Courts form an important interface</h3>
+<p>
+Malaysian constitutional jurisprudence demonstrates that questions
+of rights, interpretation and international law can intersect,
+while the domestic legal effect of treaties remains a distinct issue.
+</p>
+</div>
 
-        <div class="right-card">
-            <div class="right-card-number">05</div>
-            <h3>Family Protection</h3>
-            <p>
-                Protection of the family and related rights concerning
-                motherhood, children and young persons.
-            </p>
-        </div>
 
-        <div class="right-card">
-            <div class="right-card-number">06</div>
-            <h3>Adequate Standard of Living</h3>
-            <p>
-                Recognition of rights concerning food, clothing, housing and
-                the continuous improvement of living conditions.
-            </p>
-        </div>
+<div class="card">
+<div class="card-index">FINDING 04</div>
+<h3>SUHAKAM creates an institutional bridge</h3>
+<p>
+SUHAKAM provides an important institutional point of interaction
+between domestic human rights practice and international standards,
+mechanisms and recommendations.
+</p>
+</div>
 
-        <div class="right-card">
-            <div class="right-card-number">07</div>
-            <h3>Health</h3>
-            <p>
-                Recognition of the right to the highest attainable standard of
-                physical and mental health.
-            </p>
-        </div>
 
-        <div class="right-card">
-            <div class="right-card-number">08</div>
-            <h3>Education</h3>
-            <p>
-                Recognition of education as a right and the development of
-                accessible educational opportunities.
-            </p>
-        </div>
+<div class="card">
+<div class="card-index">FINDING 05</div>
+<h3>International monitoring adds another layer</h3>
+<p>
+UN treaty bodies provide a separate international mechanism through
+which Malaysia's treaty implementation and human rights practice
+can be examined and documented.
+</p>
+</div>
 
-        <div class="right-card">
-            <div class="right-card-number">09</div>
-            <h3>Cultural Life</h3>
-            <p>
-                Protection of participation in cultural life and related
-                cultural, scientific and creative interests.
-            </p>
-        </div>
 
-        <div class="right-card">
-            <div class="right-card-number">10</div>
-            <h3>Scientific Progress</h3>
-            <p>
-                Recognition of interests connected with scientific and
-                technological progress and its benefits.
-            </p>
-        </div>
+<div class="card">
+<div class="card-index">SYNTHESIS</div>
+<h3>The system is multi-layered</h3>
+<p>
+The relationship is therefore better understood as an interaction
+between multiple legal and institutional layers rather than as a
+simple domestic-versus-international distinction.
+</p>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 
-<!-- 03 -->
+<!-- ARCHITECTURE -->
 
-<section class="section" id="obligations">
+<section class="section" id="architecture">
 
-    <div class="section-number">03 · State Obligations</div>
+<div class="section-number">03 · Analytical Architecture</div>
 
-    <h2>
-        Progressive realisation and international responsibility
-    </h2>
+<h2>
+Five layers of interaction.
+</h2>
 
-    <p class="section-intro">
-        A central feature of the ICESCR is its treatment of implementation as
-        an ongoing process rather than a single legislative event.
-    </p>
+<p class="lead">
+The research can be organised into five connected analytical layers.
+Each performs a different legal or institutional function.
+</p>
 
-    <p>
-        Article 2(1) requires each State Party to take steps, individually and
-        through international assistance and cooperation, to the maximum of
-        its available resources with a view to achieving progressively the
-        full realisation of the rights recognised in the Covenant.
-    </p>
+<div class="architecture">
 
-    <p>
-        This creates an important analytical distinction between the existence
-        of a treaty obligation and the practical implementation of that
-        obligation.
-    </p>
+<div class="arch-node">
+<div class="num">01</div>
+<h3>Constitution</h3>
+<p>
+Provides the principal domestic constitutional framework for
+fundamental liberties and rights.
+</p>
+</div>
 
-    <div class="framework">
+<div class="arch-node">
+<div class="num">02</div>
+<h3>Treaties</h3>
+<p>
+Create international obligations for States that become parties,
+subject to the legal framework governing their domestic effect.
+</p>
+</div>
 
-        <div class="framework-row">
-            <div class="framework-label">International Level</div>
-            <div class="framework-content">
-                State Party obligations under the Covenant.
-            </div>
-        </div>
+<div class="arch-node">
+<div class="num">03</div>
+<h3>Courts</h3>
+<p>
+Interpret constitutional and statutory provisions and determine
+questions arising within domestic litigation.
+</p>
+</div>
 
-        <div class="framework-row">
-            <div class="framework-label">Implementation</div>
-            <div class="framework-content">
-                Legislative, administrative, policy and institutional measures.
-            </div>
-        </div>
+<div class="arch-node">
+<div class="num">04</div>
+<h3>SUHAKAM</h3>
+<p>
+Provides an institutional human rights mechanism connecting
+domestic practice with international standards.
+</p>
+</div>
 
-        <div class="framework-row">
-            <div class="framework-label">Resources</div>
-            <div class="framework-content">
-                Assessment of available resources and progressive realisation.
-            </div>
-        </div>
+<div class="arch-node">
+<div class="num">05</div>
+<h3>UN Mechanisms</h3>
+<p>
+Provide international monitoring, reporting and review mechanisms
+concerning treaty implementation.
+</p>
+</div>
 
-        <div class="framework-row">
-            <div class="framework-label">Accountability</div>
-            <div class="framework-content">
-                Reporting, review and engagement with international monitoring
-                mechanisms.
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- 04 -->
-
-<section class="section" id="malaysia">
-
-    <div class="section-number">04 · Malaysia</div>
-
-    <h2>
-        Malaysia's treaty position
-    </h2>
-
-    <p class="section-intro">
-        Malaysia's relationship with the ICESCR must be distinguished from its
-        participation in other international human rights instruments.
-    </p>
-
-    <div class="status-card">
-
-        <div class="status-side">
-
-            <div class="status-label">
-                Treaty Status
-            </div>
-
-            <div class="status-main">
-                Not a State Party
-            </div>
-
-            <p style="margin-top:15px;">
-                Malaysia has not ratified the International Covenant on
-                Economic, Social and Cultural Rights.
-            </p>
-
-        </div>
-
-        <div class="status-side">
-
-            <div class="status-label">
-                Analytical Consequence
-            </div>
-
-            <div class="status-main">
-                Distinguish the legal layers
-            </div>
-
-            <p style="margin-top:15px;">
-                International treaty obligations must be distinguished from
-                domestic constitutional rights, legislation, policy and
-                broader international human rights standards.
-            </p>
-
-        </div>
-
-    </div>
-
-    <p style="margin-top:30px;">
-        The absence of State Party status means that the Covenant should not
-        simply be presented as a source of treaty obligations binding Malaysia
-        in the same manner as it would bind a State Party.
-    </p>
-
-    <p>
-        Nevertheless, the ICESCR remains relevant to comparative human rights
-        research, international standards and the broader development of
-        economic, social and cultural rights within the international human
-        rights system.
-    </p>
+</div>
 
 </section>
 
 
-<!-- 05 -->
+<!-- DISTINCTIONS -->
 
-<section class="section" id="interface">
+<section class="section" id="distinctions">
 
-    <div class="section-number">05 · Domestic Interface</div>
+<div class="section-number">04 · Key Legal Distinctions</div>
 
-    <h2>
-        International standards and Malaysian law
-    </h2>
+<h2>
+What must not<br>
+be conflated.
+</h2>
 
-    <p class="section-intro">
-        The relationship between international human rights standards and
-        Malaysian domestic law requires careful legal separation.
-    </p>
+<p class="lead">
+Several distinctions became particularly important during the
+research. Maintaining these distinctions prevents international
+human rights analysis from overstating the legal effect of
+international instruments within Malaysia.
+</p>
 
-    <table class="analysis-table">
+<div class="matrix">
 
-        <thead>
-            <tr>
-                <th>Legal Layer</th>
-                <th>Research Question</th>
-            </tr>
-        </thead>
+<div class="matrix-row">
+<div class="matrix-head">Concept</div>
+<div class="matrix-head">What it means</div>
+<div class="matrix-head">What it does not necessarily mean</div>
+</div>
 
-        <tbody>
+<div class="matrix-row">
+<div><strong>Ratification</strong></div>
+<div>Malaysia becomes internationally bound by the treaty according to its treaty commitments.</div>
+<div>The treaty automatically becomes directly enforceable domestic law.</div>
+</div>
 
-            <tr>
-                <td><strong>Federal Constitution</strong></td>
-                <td>
-                    Which constitutional provisions protect rights that
-                    correspond with economic, social or cultural interests?
-                </td>
-            </tr>
+<div class="matrix-row">
+<div><strong>Incorporation</strong></div>
+<div>International rules are given domestic legal effect through the relevant domestic legal mechanism.</div>
+<div>Ratification and incorporation are legally identical.</div>
+</div>
 
-            <tr>
-                <td><strong>Domestic Legislation</strong></td>
-                <td>
-                    Which Malaysian statutes provide protection relevant to
-                    work, education, health, social protection or equality?
-                </td>
-            </tr>
+<div class="matrix-row">
+<div><strong>International standard</strong></div>
+<div>Provides a norm, obligation, interpretation or benchmark within the international legal framework.</div>
+<div>Every international standard automatically creates a domestic cause of action.</div>
+</div>
 
-            <tr>
-                <td><strong>International Law</strong></td>
-                <td>
-                    What standards are articulated by the ICESCR and related
-                    international instruments?
-                </td>
-            </tr>
+<div class="matrix-row">
+<div><strong>Judicial reference</strong></div>
+<div>A court may consider international law or comparative material in an appropriate interpretive context.</div>
+<div>The court has necessarily incorporated the treaty into Malaysian domestic law.</div>
+</div>
 
-            <tr>
-                <td><strong>Judicial Interpretation</strong></td>
-                <td>
-                    How have Malaysian courts approached international law when
-                    considering domestic legal questions?
-                </td>
-            </tr>
+<div class="matrix-row">
+<div><strong>SUHAKAM recommendation</strong></div>
+<div>Represents an institutional human rights recommendation or position within SUHAKAM's statutory role.</div>
+<div>It is equivalent to a judicial judgment or legislation.</div>
+</div>
 
-            <tr>
-                <td><strong>Institutional Practice</strong></td>
-                <td>
-                    How do institutions such as SUHAKAM engage with economic,
-                    social and cultural rights?
-                </td>
-            </tr>
-
-        </tbody>
-
-    </table>
-
-    <p style="margin-top:30px;">
-        A key principle guiding this research is that international standards
-        should not be presented as automatically incorporated into Malaysian
-        domestic law. Their legal status must be established separately from
-        their persuasive, interpretive or comparative significance.
-    </p>
+</div>
 
 </section>
 
 
-<!-- 06 -->
+<!-- PRELIMINARY FINDING -->
 
-<section class="section" id="analysis">
+<section class="section">
 
-    <div class="section-number">06 · Analytical Questions</div>
+<div class="section-number">05 · Preliminary Finding</div>
 
-    <h2>
-        Questions for further research
-    </h2>
+<h2>
+The analytical conclusion.
+</h2>
 
-    <p class="section-intro">
-        The ICESCR opens several research pathways concerning implementation,
-        constitutional protection and Malaysia's international engagement.
-    </p>
+<div class="hero-finding">
 
-    <div class="framework">
+<div class="label">
+Research Finding
+</div>
 
-        <div class="framework-row">
-            <div class="framework-label">01</div>
-            <div class="framework-content">
-                How are economic, social and cultural rights protected under
-                Malaysian constitutional and statutory law?
-            </div>
-        </div>
+<p>
+The relationship between Malaysia and international human rights law
+is neither complete separation nor automatic domestic application.
+It is a structured interaction shaped by constitutional law, treaty
+participation, domestic legal rules, judicial interpretation,
+institutional mechanisms and international review.
+</p>
 
-        <div class="framework-row">
-            <div class="framework-label">02</div>
-            <div class="framework-content">
-                What explains Malaysia's non-ratification of the ICESCR?
-            </div>
-        </div>
+</div>
 
-        <div class="framework-row">
-            <div class="framework-label">03</div>
-            <div class="framework-content">
-                How does Malaysia's treaty practice compare across different
-                human rights conventions?
-            </div>
-        </div>
-
-        <div class="framework-row">
-            <div class="framework-label">04</div>
-            <div class="framework-content">
-                How does SUHAKAM approach economic, social and cultural rights
-                within its statutory mandate?
-            </div>
-        </div>
-
-        <div class="framework-row">
-            <div class="framework-label">05</div>
-            <div class="framework-content">
-                What domestic legal developments could strengthen protection of
-                economic, social and cultural rights?
-            </div>
-        </div>
-
-        <div class="framework-row">
-            <div class="framework-label">06</div>
-            <div class="framework-content">
-                What would be the legal and institutional implications of
-                future ratification?
-            </div>
-        </div>
-
-    </div>
+<p class="lead" style="margin-top:28px;">
+This finding provides the basis for further research into how
+international human rights standards influence domestic legal
+development, institutional recommendations and implementation
+without assuming that international instruments automatically
+operate as domestic law.
+</p>
 
 </section>
 
 
-<!-- 07 -->
+<!-- QUESTIONS -->
 
-<section class="section" id="finding">
+<section class="section" id="questions">
 
-    <div class="section-number">07 · Preliminary Finding</div>
+<div class="section-number">06 · Further Research</div>
 
-    <h2>
-        A framework of rights, implementation and accountability
-    </h2>
+<h2>
+The research does not<br>
+end here.
+</h2>
 
-    <p class="section-intro">
-        The ICESCR provides a comprehensive international framework for
-        economic, social and cultural rights, but its relevance to Malaysia
-        must be analysed through several distinct legal layers.
-    </p>
+<p class="lead">
+The findings generate several questions that require deeper doctrinal,
+institutional and empirical research.
+</p>
 
-    <p>
-        First, Malaysia is not a State Party to the Covenant. Therefore, the
-        Covenant should not be treated as creating ICESCR treaty obligations
-        for Malaysia in the same manner as for States Parties.
-    </p>
+<div class="question-list">
 
-    <p>
-        Second, many of the substantive interests addressed by the Covenant
-        may nevertheless arise within Malaysia through constitutional
-        provisions, domestic legislation, public policy and other
-        international instruments to which Malaysia is party.
-    </p>
+<div class="question">
+<div class="question-number">01</div>
+<p>
+How do Malaysian courts determine when international human rights
+standards are relevant to constitutional interpretation?
+</p>
+</div>
 
-    <p>
-        Third, the distinction between international standards and domestic
-        legal effect remains essential. Comparative or interpretive relevance
-        does not by itself establish incorporation into Malaysian law.
-    </p>
+<div class="question">
+<div class="question-number">02</div>
+<p>
+How effectively are Malaysia's treaty commitments translated into
+domestic policy, legislation and institutional practice?
+</p>
+</div>
 
-    <div class="pull-quote">
-        <p>
-            The most useful research question is therefore not whether the
-            ICESCR simply “applies” to Malaysia, but how its standards can be
-            analytically situated within Malaysia's wider human rights
-            framework.
-        </p>
-    </div>
+<div class="question">
+<div class="question-number">03</div>
+<p>
+What practical role does SUHAKAM play in connecting international
+human rights standards with domestic implementation?
+</p>
+</div>
+
+<div class="question">
+<div class="question-number">04</div>
+<p>
+How are UN treaty-body recommendations reflected in Malaysia's
+subsequent legal and policy responses?
+</p>
+</div>
+
+<div class="question">
+<div class="question-number">05</div>
+<p>
+What explains the different patterns of treaty participation across
+Malaysia's international human rights commitments?
+</p>
+</div>
+
+</div>
 
 </section>
 
 
-<!-- 08 -->
+<!-- LIMITATIONS -->
+
+<section class="section" id="limitations">
+
+<div class="section-number">07 · Research Limitations</div>
+
+<h2>
+What this project<br>
+does not claim.
+</h2>
+
+<div class="caution">
+
+<strong>Research caution</strong>
+
+<p>
+This project is an academic research archive and preliminary legal
+analysis. It does not constitute legal advice, does not attempt to
+provide an exhaustive account of Malaysian human rights law, and
+does not treat incomplete treaty-body records as final institutional
+positions. The analysis distinguishes primary legal sources,
+institutional materials, academic interpretations and the researcher's
+own analytical observations.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SOURCES -->
 
 <section class="section" id="sources">
 
-    <div class="section-number">08 · Source Architecture</div>
+<div class="section-number">08 · Source Architecture</div>
 
-    <h2>
-        Primary sources first
-    </h2>
+<h2>
+Every finding should<br>
+remain traceable.
+</h2>
 
-    <p class="section-intro">
-        The research prioritises authoritative legal and institutional
-        materials before secondary academic interpretation.
-    </p>
+<p class="lead">
+The research findings are derived from the source collection developed
+throughout Research Project 01, including domestic legal materials,
+international instruments, Malaysian case law, UN treaty-body
+materials, SUHAKAM materials and academic literature.
+</p>
 
-    <div class="source-list">
+<div class="source-box">
 
-        <a class="source-item"
-           href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-economic-social-and-cultural-rights"
-           target="_blank"
-           rel="noopener">
+<p>
+The complete source archive and research findings are maintained in
+the project's GitHub repository.
+</p>
 
-            <div>
-                <div class="source-type">Primary International Source</div>
-                <div class="source-name">
-                    International Covenant on Economic, Social and Cultural Rights
-                </div>
-            </div>
+<a
+class="source-link"
+href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/14-research-findings.md"
+target="_blank"
+rel="noopener"
+>
+View Research File
+</a>
 
-            <div>↗</div>
-
-        </a>
-
-
-        <a class="source-item"
-           href="https://treaties.un.org/"
-           target="_blank"
-           rel="noopener">
-
-            <div>
-                <div class="source-type">Treaty Database</div>
-                <div class="source-name">
-                    United Nations Treaty Collection
-                </div>
-            </div>
-
-            <div>↗</div>
-
-        </a>
-
-
-        <a class="source-item"
-           href="https://www.ohchr.org/en/treaty-bodies/cescr"
-           target="_blank"
-           rel="noopener">
-
-            <div>
-                <div class="source-type">UN Treaty Body</div>
-                <div class="source-name">
-                    Committee on Economic, Social and Cultural Rights
-                </div>
-            </div>
-
-            <div>↗</div>
-
-        </a>
-
-
-        <a class="source-item"
-           href="https://www.suhakam.org.my/"
-           target="_blank"
-           rel="noopener">
-
-            <div>
-                <div class="source-type">National Human Rights Institution</div>
-                <div class="source-name">
-                    Human Rights Commission of Malaysia
-                </div>
-            </div>
-
-            <div>↗</div>
-
-        </a>
-
-
-        <a class="source-item"
-           href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI/blob/main/research/malaysia-international-human-rights-law/08-international-covenant-on-economic-social-and-cultural-rights.md"
-           target="_blank"
-           rel="noopener">
-
-            <div>
-                <div class="source-type">Research Archive</div>
-                <div class="source-name">
-                    View Research Source File
-                </div>
-            </div>
-
-            <div>↗</div>
-
-        </a>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- 09 -->
+<!-- INTEGRITY -->
 
 <section class="section" id="integrity">
 
-    <div class="section-number">09 · Research Integrity</div>
+<div class="section-number">09 · Research Integrity</div>
 
-    <div class="integrity">
+<h2>
+The standard behind<br>
+the research.
+</h2>
 
-        <h3>
-            Evidence before conclusion.
-        </h3>
+<div class="integrity">
 
-        <p>
-            This research distinguishes between international treaty
-            obligations, domestic legal rules, institutional positions,
-            academic interpretations and the researcher's own analysis.
-        </p>
+<blockquote>
+“A strong argument begins with a source that can be checked.”
+</blockquote>
 
-        <p>
-            The absence of Malaysian ratification of the ICESCR is not treated
-            as evidence that economic, social or cultural rights are absent
-            from Malaysian law. The domestic legal framework must be examined
-            independently.
-        </p>
+<p>
+The research distinguishes established legal rules, institutional
+positions, academic interpretations, empirical material and the
+researcher's own analysis. Sources are not selected merely to support
+a predetermined conclusion. Where competing interpretations exist,
+the relevant positions and their legal or evidential foundations
+should be identified and examined.
+</p>
 
-        <p>
-            Where legal or academic interpretations differ, the research will
-            identify the competing positions and examine the sources on which
-            they are based.
-        </p>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- PAGE NAVIGATION -->
+<!-- PAGE NAV -->
 
-<div class="page-navigation">
+<div class="page-nav">
 
-    <a href="../07/" class="page-nav">
+<a href="../13/">
+<small>Previous</small>
+<strong>13 · CRPD Treaty-Body Materials</strong>
+</a>
 
-        <div class="page-nav-label">
-            ← Previous
-        </div>
-
-        <div class="page-nav-title">
-            07 · ICCPR
-        </div>
-
-    </a>
-
-
-    <a href="../09/" class="page-nav next">
-
-        <div class="page-nav-label">
-            Next →
-        </div>
-
-        <div class="page-nav-title">
-            09 · Malaysian Human Rights Case Law
-        </div>
-
-    </a>
+<a href="../">
+<small>Return</small>
+<strong>R01 · Research Overview</strong>
+</a>
 
 </div>
 
 
 </div>
 </div>
-
 </main>
 
 
@@ -1420,40 +1249,19 @@ footer{
 
 <footer>
 
-    <div class="container footer-grid">
+<div class="container footer-inner">
 
-        <div>
+<div>
+<strong>Muhammad Fathi Duraini</strong><br>
+Research Project 01 · Malaysia & International Human Rights Law
+</div>
 
-            <div class="footer-title">
-                Research Project 01
-            </div>
+<div>
+Year 2 · Bachelor of International Relations (Hons.)<br>
+Universiti Sultan Zainal Abidin
+</div>
 
-            <div class="footer-text">
-                Malaysia & International Human Rights Law
-            </div>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a href="../">
-                R01 Overview
-            </a>
-
-            <a href="../../">
-                Academic Portfolio
-            </a>
-
-            <a href="https://github.com/muhammadfathiduraini/MUHAMMAD-FATHI-DURAINI"
-               target="_blank"
-               rel="noopener">
-                GitHub
-            </a>
-
-        </div>
-
-    </div>
+</div>
 
 </footer>
 
